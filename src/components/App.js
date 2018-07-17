@@ -1,10 +1,28 @@
 // @flow
 
-import React from 'react';
+import React, { PureComponent } from 'react';
+import { IntlProvider } from 'react-intl';
+import Header from './Header';
+import Main from './Main';
+import Footer from './Footer';
 
-const App = () => {
+import messages from './messages';
+
+type Props = {
+    lang: string;
+}
+
+const App = ({ lang }: Props) => {
     return (
-        <h1>Новое приложение</h1>
+        <IntlProvider 
+            locale={ lang }
+            messages={messages[lang]}>
+            <div>
+                <Header />
+                <Main />
+                <Footer />
+            </div>
+        </IntlProvider>
     )
 }
 
