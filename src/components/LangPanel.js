@@ -2,7 +2,11 @@
 
 import React from 'react';
 
-const LangPanel = ({ onSetLocale = f => f }) => {
+type Props = {
+    onSetLocale: Function;
+}
+
+const LangPanel = ({ onSetLocale = f => f }: Props) => {
     return (
         <ul className="app-lang-panel">
             <li className="app-lang-panel-item">
@@ -15,7 +19,7 @@ const LangPanel = ({ onSetLocale = f => f }) => {
                 <button 
                     type="button"
                     className="app-lang-panel-button"
-                    onClick={() => onSetLocale('ru')}>РУ</button>
+                    onClick={() => onSetLocale('ru')}>RU</button>
             </li>
         </ul>
     )

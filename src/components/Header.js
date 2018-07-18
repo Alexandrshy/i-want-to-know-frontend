@@ -2,11 +2,12 @@
 
 import React from 'react';
 import LangPanelContainer from '../containers/LangPanelContainer';
+import { FormattedMessage } from 'react-intl';
 
 const Header = () => {
     return (
         <header className="app-header">
-            <a>Добавить книгу</a>
+            <a><FormattedMessage id="app-link-add-book" /></a>
             <LangPanelContainer />
         </header>
     )

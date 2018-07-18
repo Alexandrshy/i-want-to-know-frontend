@@ -1,3 +1,5 @@
+// @flow
+
 const data = {
     locale: {
         lang: 'en'

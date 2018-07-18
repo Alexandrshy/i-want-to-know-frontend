@@ -1,16 +1,26 @@
 // @flow
 
 import React from 'react';
+import { Link } from 'react-router-dom';
+import { FormattedMessage } from 'react-intl';
 
 const Footer = () => {
     return (
         <footer className="app-footer">
-            <ul>
-                <li><a>О проекте</a></li>
-                <li><a>Вопрос-Ответ</a></li>
-                <li><a>Контакты</a></li>
-            </ul>
-            <p>Разработал Александр в 2018</p>
+            <nav className="app-footer-nav">
+                <ul className="app-footer-nav-list">
+                    <li className="app-footer-nav-item">
+                        <Link className="app-footer-nav-link" to="/about"><FormattedMessage id="app-footer-link-1" /></Link>
+                    </li>
+                    <li className="app-footer-nav-item">
+                        <Link className="app-footer-nav-link" to="/faq"><FormattedMessage id="app-footer-link-2" /></Link>
+                    </li>
+                    <li className="app-footer-nav-item">
+                        <Link className="app-footer-nav-link" to="/contacts"><FormattedMessage id="app-footer-link-3" /></Link>
+                    </li>
+                </ul>
+            </nav>
+            <p><FormattedMessage id="app-footer-dev" /></p>
         </footer>
     )
 }
