@@ -1,12 +1,13 @@
 // @flow
 
 type State = [];
-type Action = { type: '' }
+type Action = { type: "" };
 
-function books(state: State = [], action: Action = { type: '' }): State {
-    switch(action.type) {    
-        default: return state;
-    }
+function books(state: State = [], action: Action = { type: "" }): State {
+  switch (action.type) {
+    default:
+      return state;
+  }
 }
 
 export default books;

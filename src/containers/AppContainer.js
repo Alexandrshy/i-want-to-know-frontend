@@ -1,13 +1,15 @@
 // @flow
 
-import { connect } from 'react-redux';
+import { connect } from "react-redux";
+import { withRouter } from "react-router";
 
-import App from '../components/App';
+import App from "../components/App";
 
-const mapStateToProps = state => {
-    return {
-        lang: state.locale.lang
-    }
-}
+const mapStateToProps = (state, match) => {
+  return {
+    lang: state.locale.lang,
+    match: match
+  };
+};
 
-export default connect(mapStateToProps)(App);
+export default withRouter(connect(mapStateToProps)(App));

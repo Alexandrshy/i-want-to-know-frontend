@@ -1,12 +1,10 @@
 // @flow
 
-import React from 'react';
-import Main from '../components/Main';
+import React from "react";
+import MainContainer from "../containers/MainContainer";
 
-const HomePage = () => {
-    return(
-        <Main />
-    )
-}
+const HomePage = ({ match, location, history }) => {
+  return <MainContainer match={match} location={location} history={history} />;
+};
 
 export default HomePage;

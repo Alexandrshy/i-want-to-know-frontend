@@ -1,11 +1,9 @@
 // @flow
 
-import React from 'react';
+import React from "react";
 
 const AboutPage = () => {
-    return(
-        <p>Абаут</p>
-    )
-}
+  return <p>Абаут</p>;
+};
 
 export default AboutPage;
