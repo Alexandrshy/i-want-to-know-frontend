@@ -32,11 +32,7 @@ const App = ({ lang }: Props) => {
             <Route path="/about" component={AboutPage} />
             <Route path="/faq" component={FaqPage} />
             <Route path="/contacts" component={ContactPage} />
-            {/* <Route
-              exact
-              path="/books/:pathParam1?/:pathParam2?/:pathParam3?/:pathParam4?/:pathParam5?"
-              component={BooksPanelContainer}
-            />
+            {/*
             <Route path="/book/:filter/:book" component={Book} /> */}
             <Route component={NotFound} />
           </Switch>

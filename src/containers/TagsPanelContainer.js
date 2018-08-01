@@ -2,10 +2,10 @@
 
 import { connect } from "react-redux";
 
-import BooksPanel from "../components/BooksPanel";
+import TagsPanel from "../components/TagsPanel";
 import parseQueryString from "../untils/parseQueryString";
 
-const mapStateToProps = (state, { location, history }) => {
+const mapStateToProps = (state, { match, location, history }) => {
   const objURL = parseQueryString(location.search);
   let listID = [];
 
@@ -23,10 +23,10 @@ const mapStateToProps = (state, { location, history }) => {
   });
 
   return {
-    lang: state.locale.lang,
-    books: state.books,
+    location: location,
+    history: history,
     tags: tagsWithStatus
   };
 };
 
-export default connect(mapStateToProps)(BooksPanel);
+export default connect(mapStateToProps)(TagsPanel);

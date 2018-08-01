@@ -3,8 +3,8 @@
 import React from "react";
 import MainContainer from "../containers/MainContainer";
 
-const HomePage = ({ match, location, history }) => {
-  return <MainContainer match={match} location={location} history={history} />;
+const HomePage = ({ location, history }) => {
+  return <MainContainer location={location} history={history} />;
 };
 
 export default HomePage;

@@ -3,43 +3,16 @@
 import React from "react";
 import { Route, Link } from "react-router-dom";
 
+import TagsPanelContainer from "../containers/TagsPanelContainer";
+
 import parseQueryString from "../untils/parseQueryString";
 import changeQueryObject from "../untils/changeQueryObject";
+import joinURL from "../untils/joinURL";
 
-const Books = ({ lang, books, tags, history, location }) => {
+const Books = ({ lang, books, tags, location, history }) => {
   return (
     <div>
-      <ul>
-        {tags.map(item => (
-          <li
-            key={item.id}
-            className={`${item.active === true ? "is-active" : ""}`}
-          >
-            <label>
-              {lang === "ru" ? item.titleRU : item.titleEN}
-              <input
-                name="1"
-                type="checkbox"
-                value={`${item.id}`}
-                data-group={`${item.tagGroup}`}
-                onChange={e => {
-                  // history.push(`?test=${item.id}`);
-                  const tagGroup = e.target.getAttribute("data-group");
-                  const tagID = e.target.value;
-
-                  console.log(
-                    changeQueryObject(
-                      parseQueryString(location.search),
-                      tagGroup,
-                      tagID
-                    )
-                  );
-                }}
-              />
-            </label>
-          </li>
-        ))}
-      </ul>
+      <TagsPanelContainer location={location} history={history} />
       <ul>
         {books.map(item => (
           <li key={item.id}>
