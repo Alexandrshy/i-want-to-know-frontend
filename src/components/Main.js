@@ -2,6 +2,7 @@
 
 import React from "react";
 import BooksPanelContainer from "../containers/BooksPanelContainer";
+import BooksPanel from "./BooksPanel";
 import { FormattedMessage } from "react-intl";
 
 const Main = ({ lang, location, history }) => {
@@ -10,7 +11,7 @@ const Main = ({ lang, location, history }) => {
       <h1>
         <FormattedMessage id="app-title" />
       </h1>
-      <BooksPanelContainer location={location} history={history} />
+      <BooksPanel location={location} history={history} />
     </div>
   );
 };

@@ -30,189 +30,216 @@ const data = {
       tagGroup: "lang",
       titleRU: "На русском",
       titleEN: "In Russian",
-      language: "ru"
+      language: "ru",
+      tagSelected: false
     },
     {
       id: 2,
       tagGroup: "lang",
       titleRU: "На английском",
       titleEN: "In English",
-      language: "all"
+      language: "all",
+      tagSelected: false
     },
     {
       id: 3,
       tagGroup: "tech",
       titleRU: "Angular",
       titleEN: "Angular",
-      language: "all"
+      language: "all",
+      tagSelected: false
     },
     {
       id: 4,
       tagGroup: "tech",
       titleRU: "Babel",
       titleEN: "Babel",
-      language: "all"
+      language: "all",
+      tagSelected: false
     },
     {
       id: 5,
       tagGroup: "tech",
       titleRU: "CSS",
       titleEN: "CSS",
-      language: "all"
+      language: "all",
+      tagSelected: false
     },
     {
       id: 6,
       tagGroup: "tech",
       titleRU: "GIT",
       titleEN: "GIT",
-      language: "all"
+      language: "all",
+      tagSelected: false
     },
     {
       id: 7,
       tagGroup: "tech",
       titleRU: "HTML",
       titleEN: "HTML",
-      language: "all"
+      language: "all",
+      tagSelected: false
     },
     {
       id: 8,
       tagGroup: "tech",
       titleRU: "JavaScript",
       titleEN: "JavaScript",
-      language: "all"
+      language: "all",
+      tagSelected: false
     },
     {
       id: 9,
       tagGroup: "tech",
       titleRU: "Node.js",
       titleEN: "Node.js",
-      language: "all"
+      language: "all",
+      tagSelected: false
     },
     {
       id: 10,
       tagGroup: "tech",
       titleRU: "React",
       titleEN: "React",
-      language: "all"
+      language: "all",
+      tagSelected: false
     },
     {
       id: 11,
       tagGroup: "tech",
       titleRU: "Redux",
       titleEN: "Redux",
-      language: "all"
+      language: "all",
+      tagSelected: false
     },
     {
       id: 12,
       tagGroup: "tech",
       titleRU: "TypeScript",
       titleEN: "TypeScript",
-      language: "all"
+      language: "all",
+      tagSelected: false
     },
     {
       id: 13,
       tagGroup: "tech",
       titleRU: "Flow",
       titleEN: "Flow",
-      language: "all"
+      language: "all",
+      tagSelected: false
     },
     {
       id: 14,
       tagGroup: "tech",
       titleRU: "Vue",
       titleEN: "Vue",
-      language: "all"
+      language: "all",
+      tagSelected: false
     },
     {
       id: 15,
       tagGroup: "tech",
       titleRU: "Webpack",
       titleEN: "Webpack",
-      language: "all"
+      language: "all",
+      tagSelected: false
     },
     {
       id: 16,
       tagGroup: "tech",
       titleRU: "jQuery",
       titleEN: "jQuery",
-      language: "all"
+      language: "all",
+      tagSelected: false
     },
     {
       id: 17,
       tagGroup: "tech",
       titleRU: "npm",
       titleEN: "npm",
-      language: "all"
+      language: "all",
+      tagSelected: false
     },
     {
       id: 18,
       tagGroup: "level",
       titleRU: "Начальный уровень",
       titleEN: "First level",
-      language: "all"
+      language: "all",
+      tagSelected: false
     },
     {
       id: 19,
       tagGroup: "level",
       titleRU: "Средний уровень",
       titleEN: "Average level",
-      language: "all"
+      language: "all",
+      tagSelected: false
     },
     {
       id: 20,
       tagGroup: "level",
       titleRU: "Продвинутый уровень",
       titleEN: "Advanced level",
-      language: "all"
+      language: "all",
+      tagSelected: false
     },
     {
       id: 21,
       tagGroup: "tech",
       titleRU: "Разработка веб-приложений",
       titleEN: "Building web-applications",
-      language: "all"
+      language: "all",
+      tagSelected: false
     },
     {
       id: 22,
       tagGroup: "tech",
       titleRU: "Регулярные выражения",
       titleEN: "Regular expressions",
-      language: "all"
+      language: "all",
+      tagSelected: false
     },
     {
       id: 23,
       tagGroup: "tech",
       titleRU: "Шаблоны проектирования",
       titleEN: "Design Patterns",
-      language: "all"
+      language: "all",
+      tagSelected: false
     },
     {
       id: 24,
       tagGroup: "tech",
       titleRU: "SVG",
       titleEN: "SVG",
-      language: "all"
+      language: "all",
+      tagSelected: false
     },
     {
       id: 25,
       tagGroup: "tech",
       titleRU: "WebGL",
       titleEN: "WebGL",
-      language: "all"
+      language: "all",
+      tagSelected: false
     },
     {
       id: 26,
       tagGroup: "tech",
       titleRU: "Дизайн",
       titleEN: "Design",
-      language: "all"
+      language: "all",
+      tagSelected: false
     },
     {
       id: 27,
       tagGroup: "tech",
       titleRU: "Тестирование",
       titleEN: "Testing",
-      language: "all"
+      language: "all",
+      tagSelected: false
     }
   ]
 };
