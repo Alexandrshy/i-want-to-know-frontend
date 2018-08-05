@@ -21,12 +21,12 @@ const data = {
       free: false,
       desc:
         "<p>After reading this book, you are going to be able to:</p><ul><li>Understand the latest features of ES6 JavaScript and TypeScript.</li><li>Build an Angular 2 application from scratch using TypeScript and the Angular command line interface.</li><li>Write code using the paradigm of reactive programming with RxJS and Observables.</li><li>Know how to Unit Test Angular using Jasmine, Karma and the Angular Test Bed</li></ul><p>The first chapter in the course is a quickstart where you dive straight into writing your first Angular application. We use the web editor plunker so you can get started writing code ASAP.</p><p>In this quickstart you'll get a 50,000 foot view of the major features of Angular.</p><p>Then chapter by chapter we go much deeper into each of these features. I'll cover the theory for that feature, using plunker as much as possible so you can try out the code yourself in a browser. Then you'll practice what you've learnt with either an online quiz or a set of flash cards.</p>",
-      tag: [2, 3, 12]
+      tag: ["2", "3", "12"]
     }
   ],
   tags: [
     {
-      id: 1,
+      id: "1",
       tagGroup: "lang",
       titleRU: "На русском",
       titleEN: "In Russian",
@@ -34,7 +34,7 @@ const data = {
       tagSelected: false
     },
     {
-      id: 2,
+      id: "2",
       tagGroup: "lang",
       titleRU: "На английском",
       titleEN: "In English",
@@ -42,7 +42,7 @@ const data = {
       tagSelected: false
     },
     {
-      id: 3,
+      id: "3",
       tagGroup: "tech",
       titleRU: "Angular",
       titleEN: "Angular",
@@ -50,7 +50,7 @@ const data = {
       tagSelected: false
     },
     {
-      id: 4,
+      id: "4",
       tagGroup: "tech",
       titleRU: "Babel",
       titleEN: "Babel",
@@ -58,7 +58,7 @@ const data = {
       tagSelected: false
     },
     {
-      id: 5,
+      id: "5",
       tagGroup: "tech",
       titleRU: "CSS",
       titleEN: "CSS",
@@ -66,7 +66,7 @@ const data = {
       tagSelected: false
     },
     {
-      id: 6,
+      id: "6",
       tagGroup: "tech",
       titleRU: "GIT",
       titleEN: "GIT",
@@ -74,7 +74,7 @@ const data = {
       tagSelected: false
     },
     {
-      id: 7,
+      id: "7",
       tagGroup: "tech",
       titleRU: "HTML",
       titleEN: "HTML",
@@ -82,7 +82,7 @@ const data = {
       tagSelected: false
     },
     {
-      id: 8,
+      id: "8",
       tagGroup: "tech",
       titleRU: "JavaScript",
       titleEN: "JavaScript",
@@ -90,7 +90,7 @@ const data = {
       tagSelected: false
     },
     {
-      id: 9,
+      id: "9",
       tagGroup: "tech",
       titleRU: "Node.js",
       titleEN: "Node.js",
@@ -98,7 +98,7 @@ const data = {
       tagSelected: false
     },
     {
-      id: 10,
+      id: "10",
       tagGroup: "tech",
       titleRU: "React",
       titleEN: "React",
@@ -106,7 +106,7 @@ const data = {
       tagSelected: false
     },
     {
-      id: 11,
+      id: "11",
       tagGroup: "tech",
       titleRU: "Redux",
       titleEN: "Redux",
@@ -114,7 +114,7 @@ const data = {
       tagSelected: false
     },
     {
-      id: 12,
+      id: "12",
       tagGroup: "tech",
       titleRU: "TypeScript",
       titleEN: "TypeScript",
@@ -122,7 +122,7 @@ const data = {
       tagSelected: false
     },
     {
-      id: 13,
+      id: "13",
       tagGroup: "tech",
       titleRU: "Flow",
       titleEN: "Flow",
@@ -130,7 +130,7 @@ const data = {
       tagSelected: false
     },
     {
-      id: 14,
+      id: "14",
       tagGroup: "tech",
       titleRU: "Vue",
       titleEN: "Vue",
@@ -138,7 +138,7 @@ const data = {
       tagSelected: false
     },
     {
-      id: 15,
+      id: "15",
       tagGroup: "tech",
       titleRU: "Webpack",
       titleEN: "Webpack",
@@ -146,7 +146,7 @@ const data = {
       tagSelected: false
     },
     {
-      id: 16,
+      id: "16",
       tagGroup: "tech",
       titleRU: "jQuery",
       titleEN: "jQuery",
@@ -154,7 +154,7 @@ const data = {
       tagSelected: false
     },
     {
-      id: 17,
+      id: "17",
       tagGroup: "tech",
       titleRU: "npm",
       titleEN: "npm",
@@ -162,7 +162,7 @@ const data = {
       tagSelected: false
     },
     {
-      id: 18,
+      id: "18",
       tagGroup: "level",
       titleRU: "Начальный уровень",
       titleEN: "First level",
@@ -170,7 +170,7 @@ const data = {
       tagSelected: false
     },
     {
-      id: 19,
+      id: "19",
       tagGroup: "level",
       titleRU: "Средний уровень",
       titleEN: "Average level",
@@ -178,7 +178,7 @@ const data = {
       tagSelected: false
     },
     {
-      id: 20,
+      id: "20",
       tagGroup: "level",
       titleRU: "Продвинутый уровень",
       titleEN: "Advanced level",
@@ -186,7 +186,7 @@ const data = {
       tagSelected: false
     },
     {
-      id: 21,
+      id: "21",
       tagGroup: "tech",
       titleRU: "Разработка веб-приложений",
       titleEN: "Building web-applications",
@@ -194,7 +194,7 @@ const data = {
       tagSelected: false
     },
     {
-      id: 22,
+      id: "22",
       tagGroup: "tech",
       titleRU: "Регулярные выражения",
       titleEN: "Regular expressions",
@@ -202,7 +202,7 @@ const data = {
       tagSelected: false
     },
     {
-      id: 23,
+      id: "23",
       tagGroup: "tech",
       titleRU: "Шаблоны проектирования",
       titleEN: "Design Patterns",
@@ -210,7 +210,7 @@ const data = {
       tagSelected: false
     },
     {
-      id: 24,
+      id: "24",
       tagGroup: "tech",
       titleRU: "SVG",
       titleEN: "SVG",
@@ -218,7 +218,7 @@ const data = {
       tagSelected: false
     },
     {
-      id: 25,
+      id: "25",
       tagGroup: "tech",
       titleRU: "WebGL",
       titleEN: "WebGL",
@@ -226,7 +226,7 @@ const data = {
       tagSelected: false
     },
     {
-      id: 26,
+      id: "26",
       tagGroup: "tech",
       titleRU: "Дизайн",
       titleEN: "Design",
@@ -234,7 +234,7 @@ const data = {
       tagSelected: false
     },
     {
-      id: 27,
+      id: "27",
       tagGroup: "tech",
       titleRU: "Тестирование",
       titleEN: "Testing",

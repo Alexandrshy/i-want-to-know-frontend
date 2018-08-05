@@ -8,8 +8,8 @@ import { selectTag } from "../actions";
 
 const mapStateToProps = (state, { location, history }) => {
   return {
-    location: location,
-    history: history,
+    location,
+    history,
     lang: state.locale.lang,
     tags: state.tags
   };

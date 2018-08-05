@@ -24,20 +24,17 @@ class TagItem extends PureComponent {
     });
   }
   render() {
+    const { tagSelected, titleRU, titleEN, id, tagGroup } = this.props.item;
     return (
-      <li
-        className={`${this.props.item.tagSelected === true ? "is-active" : ""}`}
-      >
+      <li className={`${tagSelected === true ? "is-active" : ""}`}>
         <label>
-          {this.props.lang === "ru"
-            ? this.props.item.titleRU
-            : this.props.item.titleEN}
+          {this.props.lang === "ru" ? titleRU : titleEN}
           <input
             name="1"
             type="checkbox"
-            checked={this.props.item.tagSelected}
-            value={`${this.props.item.id}`}
-            data-group={`${this.props.item.tagGroup}`}
+            checked={tagSelected}
+            value={`${id}`}
+            data-group={`${tagGroup}`}
             onChange={e => {
               const tagGroup = e.target.getAttribute("data-group");
               const tagID = e.target.value;

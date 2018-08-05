@@ -7,8 +7,8 @@ import parseQueryString from "../untils/parseQueryString";
 
 const mapStateToProps = (state, { location, history }) => {
   return {
-    location: location,
-    history: history
+    location,
+    history
   };
 };
 

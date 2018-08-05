@@ -2,8 +2,7 @@
 
 import React from "react";
 
-const BooksList = ({ lang, tags, item }) => {
-  console.log("tags", tags);
+const BooksList = ({ lang, tags, item, location, history }) => {
   return (
     <li>
       {lang === "ru" ? (

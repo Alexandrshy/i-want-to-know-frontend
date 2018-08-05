@@ -14,7 +14,7 @@ const Books = ({ location, history }) => {
   return (
     <div>
       <TagsPanelContainer location={location} history={history} />
-      <BooksListContainer />
+      <BooksListContainer location={location} history={history} />
     </div>
   );
 };
