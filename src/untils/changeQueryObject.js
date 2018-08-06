@@ -1,4 +1,14 @@
-const changeQueryObject = (obj, group, id) => {
+// @flow
+
+const changeQueryObject = (
+  obj: {
+    level?: Array<string>,
+    lang?: Array<string>,
+    tech?: Array<string>
+  },
+  group: string,
+  id: string
+) => {
   let newObj = { ...obj };
   if (!newObj.hasOwnProperty(group)) {
     newObj = { ...newObj, [group]: [id] };

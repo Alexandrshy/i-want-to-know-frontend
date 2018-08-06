@@ -4,8 +4,15 @@ import React from "react";
 import BooksPanelContainer from "../containers/BooksPanelContainer";
 import BooksPanel from "./BooksPanel";
 import { FormattedMessage } from "react-intl";
+import type { Location, History } from "react-router";
 
-const Main = ({ lang, location, history }) => {
+type Props = {
+  lang: string,
+  location: Location,
+  history: History
+};
+
+const Main = ({ lang, location, history }: Props) => {
   return (
     <div>
       <h1>

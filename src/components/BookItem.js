@@ -1,8 +1,38 @@
 //@flow
 
 import React from "react";
+import type { Location, History } from "react-router";
 
-const BooksList = ({ lang, tags, item, location, history }) => {
+type Props = {
+  lang: string,
+  tags: Array<{
+    id: string,
+    tagGroup: string,
+    titleRU: string,
+    titleEN: string,
+    language: string,
+    tagSelected: boolean
+  }>,
+  item: {
+    id: number,
+    titleRU: string,
+    titleEN: string,
+    authorsRU: string,
+    authorsEN: string,
+    linkRU: string,
+    linkEN: string,
+    length: number,
+    lang: string,
+    date: string,
+    free: boolean,
+    desc: string,
+    tag: Array<string>
+  },
+  location: Location,
+  history: History
+};
+
+const BooksList = ({ lang, tags, item, location, history }: Props) => {
   return (
     <li>
       {lang === "ru" ? (

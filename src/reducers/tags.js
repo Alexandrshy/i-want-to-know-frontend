@@ -2,10 +2,17 @@
 
 import { SELECT_TAG } from "../actions";
 
-type State = boolean;
+type State = Array<{
+  id: string,
+  tagGroup: string,
+  titleRU: string,
+  titleEN: string,
+  language: string,
+  tagSelected: boolean
+}>;
 type Action = { type: "SELECT_TAG", id: number };
 
-function tags(state: State = false, action: Action): State {
+function tags(state: State = [], action: Action): State {
   switch (action.type) {
     case SELECT_TAG:
       const tag = state.map(tag => {

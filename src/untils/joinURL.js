@@ -1,4 +1,12 @@
-const joinURL = (obj = {}) => {
+// @flow
+
+const joinURL = (
+  obj: {
+    level?: Array<string>,
+    lang?: Array<string>,
+    tech?: Array<string>
+  } = {}
+) => {
   let newStringURL = "";
   for (var prop in obj) {
     newStringURL = `${newStringURL}${prop}=${obj[prop].join()}&`;

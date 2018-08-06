@@ -1,18 +1,22 @@
 // @flow
 
 import React from "react";
+import "./LangPanel.css";
 
 type Props = {
+  lang: string,
   onSetLocale: Function
 };
 
-const LangPanel = ({ onSetLocale = f => f }: Props) => {
+const LangPanel = ({ onSetLocale = f => f, lang }: Props) => {
   return (
-    <ul className="app-lang-panel">
+    <ul className="app-lang-panel-list">
       <li className="app-lang-panel-item">
         <button
           type="button"
-          className="app-lang-panel-button"
+          className={`app-lang-panel-button${
+            lang === "en" ? ` is-active` : ``
+          }`}
           onClick={() => onSetLocale("en")}
         >
           EN
@@ -21,7 +25,9 @@ const LangPanel = ({ onSetLocale = f => f }: Props) => {
       <li className="app-lang-panel-item">
         <button
           type="button"
-          className="app-lang-panel-button"
+          className={`app-lang-panel-button${
+            lang === "ru" ? ` is-active` : ``
+          }`}
           onClick={() => onSetLocale("ru")}
         >
           RU

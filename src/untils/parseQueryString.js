@@ -1,4 +1,6 @@
-const parseQueryString = queryString => {
+// @flow
+
+const parseQueryString = (queryString: string) => {
   if (queryString.length === 0) return {};
   let params = {};
   let temp = [];

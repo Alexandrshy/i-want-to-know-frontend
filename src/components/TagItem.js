@@ -2,15 +2,38 @@
 
 import React, { PureComponent } from "react";
 import { Route, Link } from "react-router-dom";
-
+import type { Location, History } from "react-router";
 import parseQueryString from "../untils/parseQueryString";
 import changeQueryObject from "../untils/changeQueryObject";
 import joinURL from "../untils/joinURL";
 
-class TagItem extends PureComponent {
-  constructor(props) {
+type Props = {
+  lang: string,
+  tags: Array<{
+    id: string,
+    tagGroup: string,
+    titleRU: string,
+    titleEN: string,
+    language: string,
+    tagSelected: boolean
+  }>,
+  item: {
+    id: number,
+    titleRU: string,
+    titleEN: string,
+    tagGroup: string,
+    tagSelected: boolean
+  },
+  onSelectTag: Function,
+  location: Location,
+  history: History
+};
+
+class TagItem extends PureComponent<Props> {
+  constructor(props: Props) {
     super(props);
   }
+
   componentDidMount() {
     const objURL = parseQueryString(this.props.location.search);
 

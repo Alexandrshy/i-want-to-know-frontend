@@ -2,15 +2,19 @@
 
 import React from "react";
 import { Route, Link } from "react-router-dom";
-
+import type { Location, History } from "react-router";
 import TagsPanelContainer from "../containers/TagsPanelContainer";
 import BooksListContainer from "../containers/BooksListContainer";
-
 import parseQueryString from "../untils/parseQueryString";
 import changeQueryObject from "../untils/changeQueryObject";
 import joinURL from "../untils/joinURL";
 
-const Books = ({ location, history }) => {
+type Props = {
+  location: Location,
+  history: History
+};
+
+const Books = ({ location, history }: Props) => {
   return (
     <div>
       <TagsPanelContainer location={location} history={history} />

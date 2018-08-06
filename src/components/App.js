@@ -26,7 +26,7 @@ const App = ({ lang }: Props) => {
     <IntlProvider locale={lang} messages={messages[lang]}>
       <div>
         <Header />
-        <main className="app-main">
+        <main className="app-main app-container">
           <Switch>
             <Route exact path="/" component={HomePage} />
             <Route path="/about" component={AboutPage} />

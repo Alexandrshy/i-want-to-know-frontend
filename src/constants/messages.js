@@ -1,3 +1,5 @@
+// @flow
+
 export default {
   en: {
     "app-title": "Library Frontend-development",

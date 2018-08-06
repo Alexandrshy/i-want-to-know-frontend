@@ -1,0 +1,39 @@
+.app-lang-panel-list {
+  margin: 0 -5px;
+}
+
+.app-lang-panel-item {
+  position: relative;
+  display: inline-block;
+  padding: 0 5px;
+  vertical-align: middle;
+}
+
+.app-lang-panel-item:before {
+  content: "|";
+  position: absolute;
+  top: 0;
+  right: 0;
+  transform: translate(50%, 0);
+}
+
+.app-lang-panel-item:last-child:before {
+  display: none;
+}
+
+.app-lang-panel-button {
+  font-size: 14px;
+  background-color: transparent;
+  border: 0;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.app-lang-panel-button:hover {
+  text-decoration: none;
+}
+
+.app-lang-panel-button.is-active {
+  text-decoration: none;
+  color: #999;
+}

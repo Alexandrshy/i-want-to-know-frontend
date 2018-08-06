@@ -1,0 +1,12 @@
+.app-header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 75px;
+  padding: 0 50px;
+}
+
+.app-header-item-link {
+  display: inline-block;
+  vertical-align: middle;
+}
