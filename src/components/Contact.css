@@ -1,0 +1,39 @@
+.app-contact-title {
+  margin: 0;
+  padding: 75px 0;
+  font-size: 34px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.app-contact-text {
+  max-width: 480px;
+  margin: 0 auto 90px;
+}
+
+.app-contact-list {
+  margin: 40px 0;
+}
+
+.app-contact-item {
+  position: relative;
+  padding-left: 30px;
+  margin-bottom: 20px;
+}
+
+.app-contact-item::before {
+  content: "#";
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.app-contact-item:last-child {
+  margin-bottom: 0;
+}
+
+.app-contact-text p,
+.app-contact-text li {
+  font-size: 18px;
+  line-height: 1.5;
+}

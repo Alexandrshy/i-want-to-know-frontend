@@ -6,6 +6,7 @@ import type { Location, History } from "react-router";
 import parseQueryString from "../untils/parseQueryString";
 import changeQueryObject from "../untils/changeQueryObject";
 import joinURL from "../untils/joinURL";
+import "./TagItem.css";
 
 type Props = {
   lang: string,
@@ -49,10 +50,11 @@ class TagItem extends PureComponent<Props> {
   render() {
     const { tagSelected, titleRU, titleEN, id, tagGroup } = this.props.item;
     return (
-      <li className={`${tagSelected === true ? "is-active" : ""}`}>
-        <label>
+      <li className={`app-tag-item${tagSelected === true ? " is-active" : ""}`}>
+        <label className="app-tag-label">
           {this.props.lang === "ru" ? titleRU : titleEN}
           <input
+            className="app-tag-input"
             name="1"
             type="checkbox"
             checked={tagSelected}

@@ -16,7 +16,7 @@ type Props = {
 
 const Books = ({ location, history }: Props) => {
   return (
-    <div>
+    <div className="app-bookshelf">
       <TagsPanelContainer location={location} history={history} />
       <BooksListContainer location={location} history={history} />
     </div>

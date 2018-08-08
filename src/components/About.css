@@ -1,0 +1,22 @@
+.app-about-title {
+  margin: 0;
+  padding: 75px 0;
+  font-size: 34px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.app-about-text {
+  max-width: 700px;
+  margin: 0 auto 90px;
+}
+
+.app-about-text p {
+  margin-bottom: 20px;
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+.app-about-text p:last-child {
+  margin-bottom: 0;
+}

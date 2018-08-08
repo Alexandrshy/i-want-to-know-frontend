@@ -1,9 +1,10 @@
 // @flow
 
 import React from "react";
+import Faq from "../components/Faq";
 
 const FaqPage = () => {
-  return <p>Вопрос-ответ</p>;
+  return <Faq />;
 };
 
 export default FaqPage;

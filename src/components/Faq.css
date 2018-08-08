@@ -1,0 +1,41 @@
+.app-faq-title {
+  margin: 0;
+  padding: 75px 0;
+  font-size: 34px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.app-faq-list {
+  max-width: 700px;
+  margin: 0 auto 90px;
+}
+
+.app-faq-item {
+  margin-bottom: 40px;
+}
+
+.app-faq-item:last-child {
+  margin-bottom: 0;
+}
+
+.app-faq-question {
+  position: relative;
+  margin-bottom: 20px;
+  font-size: 21px;
+  font-weight: 700;
+  line-height: 1.5;
+}
+
+.app-faq-question:before {
+  content: "#";
+  position: absolute;
+  top: 0;
+  left: -8px;
+  transform: translate(-100%, 0);
+}
+
+.app-faq-answer {
+  font-size: 18px;
+  line-height: 1.5;
+}
