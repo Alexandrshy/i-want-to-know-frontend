@@ -5,6 +5,7 @@ import _ from "lodash";
 import type { Location, History } from "react-router";
 import BooksItemContainer from "../containers/BookItemContainer";
 import parseQueryString from "../untils/parseQueryString";
+import "./BooksList.css";
 
 type Props = {
   books: Array<{
@@ -41,7 +42,7 @@ const BooksList = ({ books, location, history }: Props) => {
   });
 
   return (
-    <ul>
+    <ul className="app-books-list">
       {filteredBooks.map(item => (
         <BooksItemContainer
           key={item.id}

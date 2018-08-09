@@ -1,17 +1,23 @@
 .app-tag-item {
   display: inline-block;
-  margin: 10px;
+  margin: 5px;
 }
 
 .app-tag-label {
   position: relative;
   display: block;
-  padding: 6px 35px 6px 15px;
+  padding: 6px 15px;
   border: 1px solid #a9b1b5;
   color: #a9b1b5;
   border-radius: 30px;
   transition: all 0.3s;
   cursor: pointer;
+}
+
+.app-tag-item.is-active .app-tag-label {
+  background-color: #fff;
+  border-color: #fff;
+  color: #111;
 }
 
 .app-tag-label:hover {
@@ -24,33 +30,4 @@
   width: 0;
   height: 0;
   visibility: hidden;
-}
-
-.app-tag-delete {
-  display: block;
-  position: absolute;
-  right: 0;
-  top: 50%;
-}
-
-.app-tag-delete:before,
-.app-tag-delete:after {
-  content: "";
-  position: absolute;
-  top: 45%;
-  right: 5px;
-  transition: 0.2s all;
-  width: 25px;
-  height: 3px;
-  border-radius: 3px;
-  background: #fff;
-  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.1);
-}
-
-.app-tag-delete:before {
-  transform: rotate(45deg);
-}
-
-.app-tag-delete:after {
-  transform: rotate(-45deg);
 }

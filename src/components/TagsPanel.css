@@ -1,12 +1,12 @@
 .app-tags {
-  margin-bottom: 45px;
+  margin-bottom: 60px;
 }
 
 .app-tags-group {
   padding: 10px;
-  margin: 0 -10px 20px;
+  margin: 0 0 10px;
   background-color: #111;
-  border-radius: 3px;
+  border-radius: 4px;
 }
 
 .app-tags-group:last-child {

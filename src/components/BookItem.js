@@ -2,6 +2,8 @@
 
 import React from "react";
 import type { Location, History } from "react-router";
+import { Link } from "react-router-dom";
+import "./BookItem.css";
 
 type Props = {
   lang: string,
@@ -26,7 +28,8 @@ type Props = {
     date: string,
     free: boolean,
     desc: string,
-    tag: Array<string>
+    tag: Array<string>,
+    picture: string
   },
   location: Location,
   history: History
@@ -34,36 +37,25 @@ type Props = {
 
 const BooksList = ({ lang, tags, item, location, history }: Props) => {
   return (
-    <li>
-      {lang === "ru" ? (
-        <div>
-          <p>{item.titleRU}</p>
-          <p>{item.authorsRU}</p>
-          <p>{item.length}</p>
-          <p>{item.lang}</p>
-          <p>
+    <li className="app-book-item">
+      <Link className="app-book-link" to={`/book/${item.id}`}>
+        <div className="app-book-item-img-wrapper">
+          <img src={`${item.picture}`} className="app-book-item-img" />
+        </div>
+        <p className="app-book-item-name">
+          {lang === "ru" ? item.titleRU : item.titleEN}
+        </p>
+        <p className="app-book-item-authors">
+          {lang === "ru" ? item.authorsRU : item.authorsEN}
+        </p>
+        {/* <p>
             {item.tag.map(itemElem => (
               <span key={`tag-${itemElem}`}>
                 {tags.find(tagElem => tagElem.id === itemElem).titleRU}
               </span>
             ))}
-          </p>
-        </div>
-      ) : (
-        <div>
-          <p>{item.titleEN}</p>
-          <p>{item.authorsEN}</p>
-          <p>{item.length}</p>
-          <p>{item.lang}</p>
-          <p>
-            {item.tag.map(itemElem => (
-              <span key={`tag-${itemElem}`}>
-                {tags.find(tagElem => tagElem.id === itemElem).titleEN}
-              </span>
-            ))}
-          </p>
-        </div>
-      )}
+          </p> */}
+      </Link>
     </li>
   );
 };

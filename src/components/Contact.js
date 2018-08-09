@@ -1,12 +1,14 @@
 // @flow
 
 import React from "react";
+import LinkMain from "./LinkMain";
 import { FormattedMessage } from "react-intl";
 import "./Contact.css";
 
 const Contact = () => {
   return (
     <div className="app-contact">
+      <LinkMain />
       <h1 className="app-contact-title">
         <FormattedMessage id="app-footer-link-3" />
       </h1>

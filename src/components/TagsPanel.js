@@ -33,7 +33,7 @@ class TagsPanel extends PureComponent<Props> {
     return (
       <div className="app-tags">
         {filterTags.map(filterTag => (
-          <ul className="app-tags-group" key={filterTag.tagGroup}>
+          <ul className={`app-tags-group app-tags-group--${filterTag.tagGroup}`} key={filterTag.tagGroup}>
             {filterTag.tags.map(item => (
               <TagItemContainer
                 key={item.id}

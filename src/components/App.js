@@ -9,8 +9,9 @@ import HomePage from "../pages/HomePage";
 import AboutPage from "../pages/AboutPage";
 import FaqPage from "../pages/FaqPage";
 import ContactPage from "../pages/ContactPage";
+import BookPage from "../pages/BookPage";
 import BooksPanelContainer from "../containers/BooksPanelContainer";
-import Book from "../pages/BookPages";
+// import Book from "../pages/BookPages";
 import NotFound from "../pages/NotFound";
 import "./App.css";
 
@@ -32,8 +33,7 @@ const App = ({ lang }: Props) => {
               <Route path="/about" component={AboutPage} />
               <Route path="/faq" component={FaqPage} />
               <Route path="/contacts" component={ContactPage} />
-              {/*
-              <Route path="/book/:filter/:book" component={Book} /> */}
+              <Route path="/book/:book" component={BookPage} />
               <Route component={NotFound} />
             </Switch>
           </main>
