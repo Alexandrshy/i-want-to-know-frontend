@@ -76,6 +76,7 @@ class TagItem extends PureComponent<Props> {
               this.props.onSelectTag(this.props.item.id);
             }}
           />
+          <span className="app-tag-delete" />
         </label>
       </li>
     );
