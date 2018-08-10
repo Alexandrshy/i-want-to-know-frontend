@@ -48,13 +48,6 @@ const BooksList = ({ lang, tags, item, location, history }: Props) => {
         <p className="app-book-item-authors">
           {lang === "ru" ? item.authorsRU : item.authorsEN}
         </p>
-        {/* <p>
-            {item.tag.map(itemElem => (
-              <span key={`tag-${itemElem}`}>
-                {tags.find(tagElem => tagElem.id === itemElem).titleRU}
-              </span>
-            ))}
-          </p> */}
       </Link>
     </li>
   );

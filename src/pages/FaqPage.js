@@ -1,7 +1,7 @@
 // @flow
 
 import React from "react";
-import Faq from "../components/Faq";
+import Faq from "../components/Faq/Faq";
 
 const FaqPage = () => {
   return <Faq />;

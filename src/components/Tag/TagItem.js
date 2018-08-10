@@ -3,9 +3,9 @@
 import React, { PureComponent } from "react";
 import { Route, Link } from "react-router-dom";
 import type { Location, History } from "react-router";
-import parseQueryString from "../untils/parseQueryString";
-import changeQueryObject from "../untils/changeQueryObject";
-import joinURL from "../untils/joinURL";
+import parseQueryString from "../../untils/parseQueryString";
+import changeQueryObject from "../../untils/changeQueryObject";
+import joinURL from "../../untils/joinURL";
 import "./TagItem.css";
 
 type Props = {
@@ -26,6 +26,7 @@ type Props = {
     tagSelected: boolean
   },
   onSelectTag: Function,
+  onSetFilter: Function,
   location: Location,
   history: History
 };
@@ -47,12 +48,21 @@ class TagItem extends PureComponent<Props> {
       return tag;
     });
   }
+
   render() {
     const { tagSelected, titleRU, titleEN, id, tagGroup } = this.props.item;
+    const {
+      lang,
+      location,
+      item,
+      history,
+      onSelectTag,
+      onSetFilter
+    } = this.props;
     return (
       <li className={`app-tag-item${tagSelected === true ? " is-active" : ""}`}>
         <label className="app-tag-label">
-          {this.props.lang === "ru" ? titleRU : titleEN}
+          {lang === "ru" ? titleRU : titleEN}
           <input
             className="app-tag-input"
             name="1"
@@ -63,17 +73,17 @@ class TagItem extends PureComponent<Props> {
             onChange={e => {
               const tagGroup = e.target.getAttribute("data-group");
               const tagID = e.target.value;
-
-              this.props.history.push(
-                joinURL(
-                  changeQueryObject(
-                    parseQueryString(this.props.location.search),
-                    tagGroup,
-                    tagID
-                  )
+              const stringURL = joinURL(
+                changeQueryObject(
+                  parseQueryString(location.search),
+                  tagGroup,
+                  tagID
                 )
               );
-              this.props.onSelectTag(this.props.item.id);
+
+              history.push(stringURL);
+              onSelectTag(item.id);
+              onSetFilter(stringURL);
             }}
           />
           <span className="app-tag-delete" />

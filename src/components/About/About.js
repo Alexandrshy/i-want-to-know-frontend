@@ -1,7 +1,7 @@
 // @flow
 
 import React from "react";
-import LinkMain from "./LinkMain";
+import LinkMain from "../Link/LinkMain";
 import { FormattedMessage } from "react-intl";
 import "./About.css";
 

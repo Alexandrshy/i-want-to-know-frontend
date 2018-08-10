@@ -1,0 +1,15 @@
+.app-main-wrapper {
+  margin-top: 45px;
+  text-align: center;
+}
+
+.app-main {
+  position: relative;
+}
+
+.app-main-icon {
+  position: absolute;
+  top: 2px;
+  left: -18px;
+  width: 15px;
+}

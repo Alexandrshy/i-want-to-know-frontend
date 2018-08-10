@@ -1,6 +1,7 @@
 // @flow
 
 const data = {
+  filter: "",
   locale: {
     lang: "en"
   },

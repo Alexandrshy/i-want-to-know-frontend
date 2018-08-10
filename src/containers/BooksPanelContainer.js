@@ -2,7 +2,7 @@
 
 import { connect } from "react-redux";
 import { selectTag } from "../actions";
-import BooksPanel from "../components/BooksPanel";
+import BooksPanel from "../components/Book/BooksPanel";
 import parseQueryString from "../untils/parseQueryString";
 
 const mapStateToProps = (state, { location, history }) => {

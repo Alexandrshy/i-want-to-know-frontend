@@ -1,10 +1,9 @@
 // @flow
 
 import { connect } from "react-redux";
-
-import TagItem from "../components/TagItem";
+import TagItem from "../components/Tag/TagItem";
 import parseQueryString from "../untils/parseQueryString";
-import { selectTag } from "../actions";
+import { selectTag, setFilter } from "../actions";
 
 const mapStateToProps = (state, { location, history }) => {
   return {
@@ -18,6 +17,9 @@ const mapStateToProps = (state, { location, history }) => {
 const mapDispatchToProps = dispatch => ({
   onSelectTag: id => {
     dispatch(selectTag(id));
+  },
+  onSetFilter: filter => {
+    dispatch(setFilter(filter));
   }
 });
 

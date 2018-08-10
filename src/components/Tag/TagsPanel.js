@@ -4,7 +4,7 @@ import React, { PureComponent } from "react";
 import _ from "lodash";
 import { Route, Link } from "react-router-dom";
 import type { Location, History } from "react-router";
-import TagItemContainer from "../containers/TagItemContainer";
+import TagItemContainer from "../../containers/TagItemContainer";
 import "./TagsPanel.css";
 
 type Props = {
@@ -33,7 +33,10 @@ class TagsPanel extends PureComponent<Props> {
     return (
       <div className="app-tags">
         {filterTags.map(filterTag => (
-          <ul className={`app-tags-group app-tags-group--${filterTag.tagGroup}`} key={filterTag.tagGroup}>
+          <ul
+            className={`app-tags-group app-tags-group--${filterTag.tagGroup}`}
+            key={filterTag.tagGroup}
+          >
             {filterTag.tags.map(item => (
               <TagItemContainer
                 key={item.id}

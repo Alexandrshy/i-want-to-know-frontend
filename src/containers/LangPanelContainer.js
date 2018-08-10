@@ -2,7 +2,7 @@
 
 import { connect } from "react-redux";
 
-import LangPanel from "../components/LangPanel";
+import LangPanel from "../components/LangPanel/LangPanel";
 import { setLocale } from "../actions";
 
 const mapStateToProps = state => {

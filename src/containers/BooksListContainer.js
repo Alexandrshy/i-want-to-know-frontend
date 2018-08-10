@@ -2,7 +2,7 @@
 
 import { connect } from "react-redux";
 
-import BooksList from "../components/BooksList";
+import BooksList from "../components/Book/BooksList";
 
 const mapStateToProps = (state, { location, history }) => {
   return {

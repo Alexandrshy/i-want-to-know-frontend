@@ -1,7 +1,7 @@
 // @flow
 
 import React from "react";
-import Contact from "../components/Contact";
+import Contact from "../components/Contact/Contact";
 
 const ContactPage = () => {
   return <Contact />;

@@ -3,8 +3,8 @@
 import React from "react";
 import _ from "lodash";
 import type { Location, History } from "react-router";
-import BooksItemContainer from "../containers/BookItemContainer";
-import parseQueryString from "../untils/parseQueryString";
+import BooksItemContainer from "../../containers/BookItemContainer";
+import parseQueryString from "../../untils/parseQueryString";
 import "./BooksList.css";
 
 type Props = {

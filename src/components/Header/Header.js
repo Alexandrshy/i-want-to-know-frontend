@@ -1,7 +1,7 @@
 // @flow
 
 import React from "react";
-import LangPanelContainer from "../containers/LangPanelContainer";
+import LangPanelContainer from "../../containers/LangPanelContainer";
 import { FormattedMessage } from "react-intl";
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 import "./Header.css";
