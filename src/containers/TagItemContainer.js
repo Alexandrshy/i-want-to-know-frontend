@@ -10,13 +10,14 @@ const mapStateToProps = (state, { location, history }) => {
     location,
     history,
     lang: state.locale.lang,
-    tags: state.tags
+    tags: state.tags,
+    filterID: state.filterID
   };
 };
 
 const mapDispatchToProps = dispatch => ({
-  onSelectTag: id => {
-    dispatch(selectTag(id));
+  onSelectTag: (id, value) => {
+    dispatch(selectTag(id, value));
   },
   onSetFilter: filter => {
     dispatch(setFilter(filter));

@@ -1,19 +1,47 @@
 // @flow
 
 import React from "react";
-import LinkBack from "../Link/LinkBack";
-import LinkMain from "../Link/LinkMain";
+import LinkMainContainer from "../../containers/LinkMainContainer";
 import { FormattedMessage } from "react-intl";
+import type { History, Match } from "react-router";
 import "./Book.css";
 
-const Book = ({ location, history }) => {
+type Props = {
+  lang: string,
+  books: Array<{
+    id: string,
+    tagGroup: string,
+    descRU: string,
+    descEN: string,
+    titleRU: string,
+    titleEN: string,
+    language: string
+  }>,
+  history: History,
+  match: Match
+};
+
+const Book = ({ lang, books, history, match }: Props) => {
+  const book = books.filter(item => {
+    return item.id === match.params.book;
+  })[0];
   return (
     <div className="app-book">
-      <LinkBack history={history} location={location} />
-      <LinkMain />
+      <LinkMainContainer history={history} />
       <h1 className="app-book-title">
-        <p>123 456 789</p>
+        {lang === "ru" ? book.titleRU : book.titleEN}
       </h1>
+      {lang === "ru" ? (
+        <div
+          className="app-book-desk"
+          dangerouslySetInnerHTML={{ __html: book.descRU }}
+        />
+      ) : (
+        <div
+          className="app-book-desk"
+          dangerouslySetInnerHTML={{ __html: book.descEN }}
+        />
+      )}
     </div>
   );
 };

@@ -1,7 +1,6 @@
 //@flow
 
 import React from "react";
-import type { Location, History } from "react-router";
 import { Link } from "react-router-dom";
 import "./BookItem.css";
 
@@ -30,15 +29,16 @@ type Props = {
     desc: string,
     tag: Array<string>,
     picture: string
-  },
-  location: Location,
-  history: History
+  }
 };
 
-const BooksList = ({ lang, tags, item, location, history }: Props) => {
+const BooksList = ({ lang, tags, item }: Props) => {
   return (
     <li className="app-book-item">
-      <Link className="app-book-link" to={`/book/${item.id}`}>
+      <Link
+        className="app-book-link"
+        to={{ pathname: `/book/${item.id}`, state: { id: item.id } }}
+      >
         <div className="app-book-item-img-wrapper">
           <img src={`${item.picture}`} className="app-book-item-img" />
         </div>

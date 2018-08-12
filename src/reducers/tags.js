@@ -10,7 +10,7 @@ type State = Array<{
   language: string,
   tagSelected: boolean
 }>;
-type Action = { type: "SELECT_TAG", id: number };
+type Action = { type: "SELECT_TAG", id: number, value: boolean };
 
 function tags(state: State = [], action: Action): State {
   switch (action.type) {
@@ -21,7 +21,7 @@ function tags(state: State = [], action: Action): State {
         }
 
         return Object.assign({}, tag, {
-          tagSelected: !tag.tagSelected
+          tagSelected: action.value
         });
       });
       return tag;

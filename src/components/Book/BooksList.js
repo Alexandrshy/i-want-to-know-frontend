@@ -44,12 +44,7 @@ const BooksList = ({ books, location, history }: Props) => {
   return (
     <ul className="app-books-list">
       {filteredBooks.map(item => (
-        <BooksItemContainer
-          key={item.id}
-          item={item}
-          location={location}
-          history={history}
-        />
+        <BooksItemContainer key={item.id} item={item} />
       ))}
     </ul>
   );

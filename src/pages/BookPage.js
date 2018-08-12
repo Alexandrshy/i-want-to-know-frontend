@@ -24,8 +24,8 @@ type Props = {
   }>
 };
 
-const BookPage = ({ books, location, history }: Props) => {
-  return <BookContainer location={location} history={history} />;
+const BookPage = ({ books, history, location, match }: Props) => {
+  return <BookContainer history={history} location={location} match={match} />;
 };
 
 export default BookPage;

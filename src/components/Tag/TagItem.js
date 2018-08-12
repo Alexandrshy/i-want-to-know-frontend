@@ -1,6 +1,6 @@
 // @flow
 
-import React, { PureComponent } from "react";
+import React from "react";
 import { Route, Link } from "react-router-dom";
 import type { Location, History } from "react-router";
 import parseQueryString from "../../untils/parseQueryString";
@@ -9,21 +9,20 @@ import joinURL from "../../untils/joinURL";
 import "./TagItem.css";
 
 type Props = {
+  filterID: Array<string>,
   lang: string,
   tags: Array<{
     id: string,
     tagGroup: string,
     titleRU: string,
     titleEN: string,
-    language: string,
-    tagSelected: boolean
+    language: string
   }>,
   item: {
     id: number,
     titleRU: string,
     titleEN: string,
-    tagGroup: string,
-    tagSelected: boolean
+    tagGroup: string
   },
   onSelectTag: Function,
   onSetFilter: Function,
@@ -31,66 +30,49 @@ type Props = {
   history: History
 };
 
-class TagItem extends PureComponent<Props> {
-  constructor(props: Props) {
-    super(props);
-  }
+const TagItem = ({
+  item,
+  filterID,
+  lang,
+  location,
+  history,
+  onSelectTag,
+  onSetFilter
+}: Props) => {
+  const { titleRU, titleEN, id, tagGroup } = item;
+  const tagSelected = filterID.indexOf(id) > -1;
+  return (
+    <li className={`app-tag-item${tagSelected === true ? " is-active" : ""}`}>
+      <label className="app-tag-label">
+        {lang === "ru" ? titleRU : titleEN}
+        <input
+          className="app-tag-input"
+          name="1"
+          type="checkbox"
+          checked={tagSelected}
+          value={`${id}`}
+          data-group={`${tagGroup}`}
+          onChange={e => {
+            const tagGroup = e.target.getAttribute("data-group");
+            const tagID = e.target.value;
 
-  componentDidMount() {
-    const objURL = parseQueryString(this.props.location.search);
+            const stringURL = joinURL(
+              changeQueryObject(
+                parseQueryString(location.search),
+                tagGroup,
+                tagID
+              )
+            );
 
-    const tagsWithStatus = this.props.tags.map(tag => {
-      const tagProp = objURL[tag.tagGroup];
-      if (tagProp && tagProp.indexOf(String(tag.id)) > -1) {
-        this.props.onSelectTag(tag.id);
-      }
-
-      return tag;
-    });
-  }
-
-  render() {
-    const { tagSelected, titleRU, titleEN, id, tagGroup } = this.props.item;
-    const {
-      lang,
-      location,
-      item,
-      history,
-      onSelectTag,
-      onSetFilter
-    } = this.props;
-    return (
-      <li className={`app-tag-item${tagSelected === true ? " is-active" : ""}`}>
-        <label className="app-tag-label">
-          {lang === "ru" ? titleRU : titleEN}
-          <input
-            className="app-tag-input"
-            name="1"
-            type="checkbox"
-            checked={tagSelected}
-            value={`${id}`}
-            data-group={`${tagGroup}`}
-            onChange={e => {
-              const tagGroup = e.target.getAttribute("data-group");
-              const tagID = e.target.value;
-              const stringURL = joinURL(
-                changeQueryObject(
-                  parseQueryString(location.search),
-                  tagGroup,
-                  tagID
-                )
-              );
-
-              history.push(stringURL);
-              onSelectTag(item.id);
-              onSetFilter(stringURL);
-            }}
-          />
-          <span className="app-tag-delete" />
-        </label>
-      </li>
-    );
-  }
-}
+            history.push(stringURL);
+            onSelectTag(item.id, e.target.checked);
+            onSetFilter(stringURL);
+          }}
+        />
+        <span className="app-tag-delete" />
+      </label>
+    </li>
+  );
+};
 
 export default TagItem;

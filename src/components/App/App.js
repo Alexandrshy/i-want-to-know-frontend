@@ -31,6 +31,12 @@ class App extends PureComponent<Props> {
     this.props.onSetFilter(this.props.location.search);
   }
 
+  componentDidUpdate() {
+    if (this.props.location.pathname === "/") {
+      this.props.onSetFilter(this.props.location.search);
+    }
+  }
+
   render() {
     const { lang } = this.props;
     return (
