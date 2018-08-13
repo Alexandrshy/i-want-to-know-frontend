@@ -10,3 +10,41 @@
   max-width: 700px;
   margin: 0 auto 90px;
 }
+
+.app-book-photo-wrapper {
+  margin-bottom: 50px;
+}
+
+.app-book-desk p {
+  margin-bottom: 20px;
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+.app-book-desk ol,
+.app-book-desk ul {
+  margin-top: 35px;
+  margin-bottom: 45px;
+}
+
+.app-book-desk ol {
+  list-style: decimal;
+}
+
+.app-book-desk ul {
+  list-style: circle;
+}
+
+.app-book-desk ol li,
+.app-book-desk ul li {
+  margin-left: 30px;
+  padding-left: 20px;
+  margin-bottom: 20px;
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+.app-book-desk ol li:last-child,
+.app-book-desk ul li:last-child {
+  margin-bottom: 0;
+}

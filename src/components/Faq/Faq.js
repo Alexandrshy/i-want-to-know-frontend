@@ -1,14 +1,19 @@
 // @flow
 
 import React from "react";
-import LinkMain from "../Link/LinkMain";
+import LinkMainContainer from "../../containers/LinkMainContainer";
 import { FormattedMessage } from "react-intl";
+import type { History } from "react-router";
 import "./Faq.css";
 
-const Faq = () => {
+type Props = {
+  history: History
+};
+
+const Faq = ({ history }: Props) => {
   return (
     <div className="app-faq">
-      <LinkMain />
+      <LinkMainContainer history={history} />
       <h1 className="app-faq-title">
         <FormattedMessage id="app-footer-link-2" />
       </h1>

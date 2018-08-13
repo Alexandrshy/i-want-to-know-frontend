@@ -1,12 +1,13 @@
 // @flow
 
 import React from "react";
-import type { Location, History } from "react-router";
+import type { Location, History, Match } from "react-router";
 import BookContainer from "../containers/BookContainer";
 
 type Props = {
   location: Location,
   history: History,
+  match: Match,
   books: Array<{
     id: number,
     titleRU: string,

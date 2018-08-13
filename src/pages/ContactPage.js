@@ -2,9 +2,14 @@
 
 import React from "react";
 import Contact from "../components/Contact/Contact";
+import type { History } from "react-router";
 
-const ContactPage = () => {
-  return <Contact />;
+type Props = {
+  history: History
+};
+
+const ContactPage = ({ history }: Props) => {
+  return <Contact history={history} />;
 };
 
 export default ContactPage;

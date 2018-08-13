@@ -24,6 +24,7 @@ class LinkMain extends PureComponent<Props> {
   }
 
   render() {
+    console.log("this.props", this.props.history);
     return (
       <div className="app-main-wrapper">
         <span
