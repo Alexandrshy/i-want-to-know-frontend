@@ -11,8 +11,50 @@
   margin: 0 auto 90px;
 }
 
+.app-book-text h3 {
+  margin-top: 50px;
+  margin-bottom: 0;
+}
+
 .app-book-photo-wrapper {
+  display: flex;
   margin-bottom: 50px;
+}
+
+.app-book-photo {
+  width: 310px;
+  padding-right: 50px;
+}
+
+.app-book-photo img {
+  display: block;
+  width: 100%;
+}
+
+.app-book-inform {
+  width: calc(100% - 300px);
+}
+
+.app-book-inform-item {
+  margin-bottom: 20px;
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+.app-book-inform-item:last-child {
+  margin-bottom: 0;
+}
+
+.app-book-inform-tag {
+  display: inline;
+}
+
+.app-book-inform-tag span::after {
+  content: ", ";
+}
+
+.app-book-inform-tag span:last-child::after {
+  display: none;
 }
 
 .app-book-desk p {
@@ -47,4 +89,20 @@
 .app-book-desk ol li:last-child,
 .app-book-desk ul li:last-child {
   margin-bottom: 0;
+}
+
+.app-book-link-list {
+  display: inline;
+}
+
+.app-book-link-item {
+  display: inline;
+}
+
+.app-book-link-item::after {
+  content: ", ";
+}
+
+.app-book-link-item:last-child::after {
+  display: none;
 }

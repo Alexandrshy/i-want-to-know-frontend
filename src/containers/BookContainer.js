@@ -8,6 +8,7 @@ const mapStateToProps = (state, { match, history }) => {
   return {
     lang: state.locale.lang,
     books: state.books,
+    tags: state.tags,
     match,
     history
   };

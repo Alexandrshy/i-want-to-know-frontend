@@ -9,7 +9,15 @@ export default {
     "app-footer-link-2": "FAQ",
     "app-footer-link-3": "Contact",
     "app-page-not-found-title": "Page not found",
-    "app-link-main": "Back"
+    "app-link-main": "Back",
+    "app-book-links": "Links",
+    "app-book-authors": "Authors",
+    "app-book-publisher": "Publisher",
+    "app-book-number-pages": "Number of pages",
+    "app-book-pages": "pages",
+    "app-book-language": "Language",
+    "app-book-tags": "Tags",
+    "app-take-book-title": "Take this book in"
   },
   ru: {
     "app-title": "Библиотека Фронтенд-разработчика",
@@ -19,6 +27,14 @@ export default {
     "app-footer-link-2": "Вопрос-Ответ",
     "app-footer-link-3": "Контакты",
     "app-page-not-found-title": "Страница не найдена",
-    "app-link-main": "Назад"
+    "app-link-main": "Назад",
+    "app-book-links": "Ссылки",
+    "app-book-authors": "Авторы",
+    "app-book-publisher": "Опубликовано",
+    "app-book-number-pages": "Количество страниц",
+    "app-book-pages": "страниц",
+    "app-book-language": "Язык",
+    "app-book-tags": "Теги",
+    "app-take-book-title": "Возьмите эту книгу в"
   }
 };

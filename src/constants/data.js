@@ -13,10 +13,14 @@ const data = {
       titleEN: "Angular 5: From Theory To Practice",
       authorsRU: "Asim Hussain",
       authorsEN: "Asim Hussain",
-      linkRU:
-        "https://www.amazon.com/Angular-Practice-applications-tomorrow-framework-ebook/dp/B01N9S0CZN",
-      linkEN:
-        "https://www.amazon.com/Angular-Practice-applications-tomorrow-framework-ebook/dp/B01N9S0CZN",
+      linkRU: {
+        Amazon:
+          "https://www.amazon.com/Angular-Practice-applications-tomorrow-framework-ebook/dp/B01N9S0CZN"
+      },
+      linkEN: {
+        Amazon:
+          "https://www.amazon.com/Angular-Practice-applications-tomorrow-framework-ebook/dp/B01N9S0CZN"
+      },
       length: 846,
       lang: "English",
       date: "14.01.2017",
@@ -35,10 +39,14 @@ const data = {
       titleEN: "Angular 5: From Theory To Practice:",
       authorsRU: "Asim Hussain",
       authorsEN: "Asim Hussain",
-      linkRU:
-        "https://www.amazon.com/Angular-Practice-applications-tomorrow-framework-ebook/dp/B01N9S0CZN",
-      linkEN:
-        "https://www.amazon.com/Angular-Practice-applications-tomorrow-framework-ebook/dp/B01N9S0CZN",
+      linkRU: {
+        Amazon:
+          "https://www.amazon.com/Angular-Practice-applications-tomorrow-framework-ebook/dp/B01N9S0CZN"
+      },
+      linkEN: {
+        Amazon:
+          "https://www.amazon.com/Angular-Practice-applications-tomorrow-framework-ebook/dp/B01N9S0CZN"
+      },
       length: 846,
       lang: "English",
       date: "14.01.2017",
@@ -55,10 +63,14 @@ const data = {
       titleEN: "Angular 5: From Theory To Practice:",
       authorsRU: "Asim Hussain",
       authorsEN: "Asim Hussain",
-      linkRU:
-        "https://www.amazon.com/Angular-Practice-applications-tomorrow-framework-ebook/dp/B01N9S0CZN",
-      linkEN:
-        "https://www.amazon.com/Angular-Practice-applications-tomorrow-framework-ebook/dp/B01N9S0CZN",
+      linkRU: {
+        Amazon:
+          "https://www.amazon.com/Angular-Practice-applications-tomorrow-framework-ebook/dp/B01N9S0CZN"
+      },
+      linkEN: {
+        Amazon:
+          "https://www.amazon.com/Angular-Practice-applications-tomorrow-framework-ebook/dp/B01N9S0CZN"
+      },
       length: 846,
       lang: "English",
       date: "14.01.2017",
@@ -75,10 +87,14 @@ const data = {
       titleEN: "Angular 5: From Theory To Practice:",
       authorsRU: "Asim Hussain",
       authorsEN: "Asim Hussain",
-      linkRU:
-        "https://www.amazon.com/Angular-Practice-applications-tomorrow-framework-ebook/dp/B01N9S0CZN",
-      linkEN:
-        "https://www.amazon.com/Angular-Practice-applications-tomorrow-framework-ebook/dp/B01N9S0CZN",
+      linkRU: {
+        Amazon:
+          "https://www.amazon.com/Angular-Practice-applications-tomorrow-framework-ebook/dp/B01N9S0CZN"
+      },
+      linkEN: {
+        Amazon:
+          "https://www.amazon.com/Angular-Practice-applications-tomorrow-framework-ebook/dp/B01N9S0CZN"
+      },
       length: 846,
       lang: "English",
       date: "14.01.2017",
@@ -95,10 +111,14 @@ const data = {
       titleEN: "Angular 5: From Theory To Practice:",
       authorsRU: "Asim Hussain",
       authorsEN: "Asim Hussain",
-      linkRU:
-        "https://www.amazon.com/Angular-Practice-applications-tomorrow-framework-ebook/dp/B01N9S0CZN",
-      linkEN:
-        "https://www.amazon.com/Angular-Practice-applications-tomorrow-framework-ebook/dp/B01N9S0CZN",
+      linkRU: {
+        Amazon:
+          "https://www.amazon.com/Angular-Practice-applications-tomorrow-framework-ebook/dp/B01N9S0CZN"
+      },
+      linkEN: {
+        Amazon:
+          "https://www.amazon.com/Angular-Practice-applications-tomorrow-framework-ebook/dp/B01N9S0CZN"
+      },
       length: 846,
       lang: "English",
       date: "14.01.2017",
