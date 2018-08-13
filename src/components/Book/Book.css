@@ -3,6 +3,7 @@
   padding: 45px 0 75px;
   font-size: 34px;
   font-weight: 700;
+  line-height: 1.5;
   text-align: center;
 }
 
@@ -54,6 +55,14 @@
 }
 
 .app-book-inform-tag span:last-child::after {
+  display: none;
+}
+
+.app-book-inform-lang::after {
+  content: ", ";
+}
+
+.app-book-inform-lang:last-child::after {
   display: none;
 }
 

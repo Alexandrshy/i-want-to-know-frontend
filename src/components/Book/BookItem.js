@@ -28,7 +28,8 @@ type Props = {
     free: boolean,
     desc: string,
     tag: Array<string>,
-    picture: string
+    pictureRU: string,
+    pictureEN: string
   }
 };
 
@@ -40,7 +41,11 @@ const BooksList = ({ lang, tags, item }: Props) => {
         to={{ pathname: `/book/${item.id}`, state: { id: item.id } }}
       >
         <div className="app-book-item-img-wrapper">
-          <img src={`${item.picture}`} className="app-book-item-img" />
+          {lang === "ru" ? (
+            <img src={`${item.pictureRU}`} className="app-book-item-img" />
+          ) : (
+            <img src={`${item.pictureEN}`} className="app-book-item-img" />
+          )}
         </div>
         <p className="app-book-item-name">
           {lang === "ru" ? item.titleRU : item.titleEN}

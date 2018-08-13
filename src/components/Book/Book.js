@@ -23,13 +23,15 @@ type Props = {
     titleRU: string,
     titleEN: string,
     language: string,
-    picture: string,
+    pictureRU: string,
+    pictureEN: string,
     authorsRU: string,
     authorsEN: string,
     tag: Array<string>,
-    length: number,
+    lengthRU: number,
+    lengthEN: number,
     date: string,
-    lang: string,
+    lang: Array<string>,
     linkEN: {},
     linkRU: {}
   }>,
@@ -50,7 +52,11 @@ const Book = ({ lang, books, tags, history, match }: Props) => {
       <div className="app-book-text">
         <div className="app-book-photo-wrapper">
           <div className="app-book-photo">
-            <img src={book.picture} />
+            {lang === "ru" ? (
+              <img src={`${book.pictureRU}`} />
+            ) : (
+              <img src={`${book.pictureEN}`} />
+            )}
           </div>
           <div className="app-book-inform">
             <ul className="app-book-inform-list">
@@ -92,13 +98,21 @@ const Book = ({ lang, books, tags, history, match }: Props) => {
                 <b>
                   <FormattedMessage id="app-book-publisher" />:{" "}
                 </b>
-                {book.length} <FormattedMessage id="app-book-pages" />
+                {lang === "ru" ? book.lengthRU : book.lengthEN}{" "}
+                <FormattedMessage id="app-book-pages" />
               </li>
               <li className="app-book-inform-item">
                 <b>
                   <FormattedMessage id="app-book-language" />:{" "}
                 </b>
-                {book.lang}
+                {book.lang.map(itemLang => (
+                  <span
+                    key={`lang-${itemLang}`}
+                    className="app-book-inform-lang"
+                  >
+                    {itemLang}
+                  </span>
+                ))}
               </li>
               <li className="app-book-inform-item">
                 <b>
