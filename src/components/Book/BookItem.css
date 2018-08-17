@@ -32,9 +32,10 @@
 }
 
 .app-book-item-name {
-  margin-bottom: 10px;
+  margin-bottom: 15px;
   font-size: 20px;
   font-weight: 700;
+  line-height: 1.5;
 }
 
 .app-book-item-authors {

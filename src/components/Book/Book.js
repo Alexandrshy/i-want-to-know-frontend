@@ -144,13 +144,21 @@ const Book = ({ lang, books, tags, history, match }: Props) => {
         )}
         <h3>
           <FormattedMessage id="app-take-book-title" />{" "}
-          {Object.keys(book.linkEN).map(function(prop, index) {
-            return (
-              <li key={prop} className="app-book-link-item">
-                <a href={book.linkEN[prop]}>{prop}</a>
-              </li>
-            );
-          })}.
+          {lang === "ru"
+            ? Object.keys(book.linkRU).map(function(prop, index) {
+                return (
+                  <li key={prop} className="app-book-link-item">
+                    <a href={book.linkRU[prop]}>{prop}</a>
+                  </li>
+                );
+              })
+            : Object.keys(book.linkEN).map(function(prop, index) {
+                return (
+                  <li key={prop} className="app-book-link-item">
+                    <a href={book.linkEN[prop]}>{prop}</a>
+                  </li>
+                );
+              })}.
         </h3>
       </div>
     </div>
