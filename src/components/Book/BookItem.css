@@ -10,7 +10,7 @@
   height: auto;
   padding-bottom: 130%;
   margin-bottom: 20px;
-  /* background-color: #111; */
+  background-color: #111;
   overflow: hidden;
 }
 
@@ -43,4 +43,47 @@
   font-style: italic;
   font-size: 14px;
   color: #999;
+}
+
+@media (max-width: 1320px) {
+  .app-book-item {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
+  .app-book-item-img-wrapper {
+    margin-bottom: 15px;
+  }
+
+  .app-book-item-name {
+    margin-bottom: 10px;
+    font-size: 18px;
+    line-height: 1.4;
+  }
+}
+
+@media (max-width: 1000px) {
+  .app-book-item {
+    width: 33.333%;
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+
+  .app-book-item-name {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 700px) {
+  .app-books-list {
+    padding: 0 20px;
+  }
+
+  .app-book-item {
+    width: 100%;
+    max-width: 320px;
+    margin: auto;
+    padding-left: 0;
+    padding-right: 0;
+  }
 }

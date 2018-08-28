@@ -12,3 +12,20 @@
 .app-tags-group:last-child {
   margin-bottom: 0;
 }
+
+@media (max-width: 1000px) {
+  .app-tags {
+    margin-bottom: 40px;
+  }
+
+  .app-tags-group {
+    padding: 5px;
+    margin: 0 0 5px;
+  }
+}
+
+@media (max-width: 700px) {
+  .app-tags {
+    margin-bottom: 20px;
+  }
+}

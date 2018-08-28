@@ -31,3 +31,10 @@
   height: 0;
   visibility: hidden;
 }
+
+@media (max-width: 1000px) {
+  .app-tag-label {
+    padding: 5px 12px;
+    font-size: 14px;
+  }
+}

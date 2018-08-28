@@ -5,6 +5,7 @@ import LangPanelContainer from "../../containers/LangPanelContainer";
 import { FormattedMessage } from "react-intl";
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 import "./Header.css";
+// import logo from "../../picture/test-logo.png";
 
 const Header = () => {
   return (
@@ -12,11 +13,14 @@ const Header = () => {
       <div className="app-header-container">
         <ul className="app-header-list-link">
           <li className="app-header-item-link">
-            <a className="app-header-link" href="javascript:void(0);">
+            <Link className="app-header-link" to="/form">
               <FormattedMessage id="app-link-add-book" />
-            </a>
+            </Link>
           </li>
         </ul>
+        {/* <Link className="app-header-logo" to="/form">
+          <img src={logo} alt="logo" />
+        </Link> */}
         <LangPanelContainer />
       </div>
     </header>

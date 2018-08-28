@@ -21,3 +21,34 @@
 .app-about-text p:last-child {
   margin-bottom: 0;
 }
+
+@media (max-width: 1320px) {
+  .app-about-title {
+    padding: 35px 0 60px;
+    font-size: 28px;
+  }
+  .app-about-text {
+    margin-bottom: 60px;
+  }
+}
+@media (max-width: 1000px) {
+  .app-about-title {
+    padding: 25px 0 30px;
+    font-size: 26px;
+  }
+  .app-about-text {
+    margin-bottom: 45px;
+  }
+  .app-about-text p {
+    font-size: 16px;
+    line-height: 1.4;
+  }
+}
+@media (max-width: 700px) {
+  .app-about-title {
+    font-size: 24px;
+  }
+  .app-about-text p {
+    margin-bottom: 15px;
+  }
+}

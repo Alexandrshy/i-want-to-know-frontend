@@ -8,6 +8,7 @@ export default {
     "app-footer-link-1": "About",
     "app-footer-link-2": "FAQ",
     "app-footer-link-3": "Contact",
+    "app-footer-link-4": "Add book",
     "app-page-not-found-title": "Page not found",
     "app-link-main": "Back",
     "app-book-links": "Links",
@@ -17,7 +18,11 @@ export default {
     "app-book-pages": "pages",
     "app-book-language": "Language",
     "app-book-tags": "Tags",
-    "app-take-book-title": "Take this book in"
+    "app-take-book-title": "Take this book in",
+    "app-form-label-name": "Name",
+    "app-form-label-email": "E-mail or Telegram",
+    "app-form-label-message": "Message",
+    "app-form-button-send": "Send"
   },
   ru: {
     "app-title": "Библиотека Фронтенд-разработчика",
@@ -26,6 +31,7 @@ export default {
     "app-footer-link-1": "О проекте",
     "app-footer-link-2": "Вопрос-Ответ",
     "app-footer-link-3": "Контакты",
+    "app-footer-link-4": "Добавить книгу",
     "app-page-not-found-title": "Страница не найдена",
     "app-link-main": "Назад",
     "app-book-links": "Ссылки",
@@ -35,6 +41,10 @@ export default {
     "app-book-pages": "страниц",
     "app-book-language": "Язык",
     "app-book-tags": "Теги",
-    "app-take-book-title": "Возьмите эту книгу в"
+    "app-take-book-title": "Возьмите эту книгу в",
+    "app-form-label-name": "Имя",
+    "app-form-label-email": "E-mail или Telegram",
+    "app-form-label-message": "Сообщение",
+    "app-form-button-send": "Отправить"
   }
 };

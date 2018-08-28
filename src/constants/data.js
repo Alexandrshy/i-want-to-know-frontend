@@ -9,35 +9,402 @@ const data = {
   books: [
     {
       id: "1",
-      titleRU: "Angular 5: From Theory To Practice",
-      titleEN: "Angular 5: From Theory To Practice",
-      authorsRU: "Asim Hussain",
-      authorsEN: "Asim Hussain",
+      titleRU: "JavaScript: сильные стороны",
+      titleEN: "JavaScript: The Good Parts",
+      authorsRU: "Дуглас Крокфорд",
+      authorsEN: "Douglas Crockford",
       linkRU: {
-        Amazon:
-          "https://www.amazon.com/Angular-Practice-applications-tomorrow-framework-ebook/dp/B01N9S0CZN"
+        OZON: "https://www.ozon.ru/context/detail/id/8144634/",
+        Питер:
+          "https://www.piter.com/collection/all/product/javascript-silnye-storony-2"
       },
       linkEN: {
         Amazon:
-          "https://www.amazon.com/Angular-Practice-applications-tomorrow-framework-ebook/dp/B01N9S0CZN"
+          "https://www.amazon.com/JavaScript-Good-Parts-Douglas-Crockford/dp/0596517742/",
+        "O'Reilly": "http://shop.oreilly.com/product/9780596517748.do"
       },
-      lengthRU: 846,
-      lengthEN: 846,
-      lang: ["English"],
-      date: "2017",
+      lengthRU: "176",
+      lengthEN: "176",
+      lang: ["English", "Русский"],
+      date: "2008",
       free: false,
       descRU:
-        "<p>After reading this book, you are going to be able to:</p><ul><li>Understand the latest features of ES6 JavaScript and TypeScript.</li><li>Build an Angular 2 application from scratch using TypeScript and the Angular command line interface.</li><li>Write code using the paradigm of reactive programming with RxJS and Observables.</li><li>Know how to Unit Test Angular using Jasmine, Karma and the Angular Test Bed</li></ul><p>The first chapter in the course is a quickstart where you dive straight into writing your first Angular application. We use the web editor plunker so you can get started writing code ASAP.</p><p>In this quickstart you'll get a 50,000 foot view of the major features of Angular.</p><p>Then chapter by chapter we go much deeper into each of these features. I'll cover the theory for that feature, using plunker as much as possible so you can try out the code yourself in a browser. Then you'll practice what you've learnt with either an online quiz or a set of flash cards.</p>",
+        "<p>Любой язык программирования имеет свои сильные и слабые стороны, однако язык JavaScript в большей степени состоит из последних, так как был разработан в спешке и практически не отлаживался. В этой книге среди множества самых ужасных JavaScript-конструкций выделены наиболее надежные, понятные и удобные в сопровождении — то подмножество языка, которое позволяет создавать по-настоящему расширяемый и эффективный код.</p><p>Автор — уважаемый среди разработчиков эксперт в области JavaScript — выделяет массу интересных идей, которые делают JavaScript прекрасным объектно-ориентированным языком программирования. Эта книга откроет вам красивый, элегантный, простой и выразительный язык программирования, позволяющий создавать эффективный код независимо от того, управляете вы библиотеками объектов или просто пытаетесь заставить Ajax работать быстрее. Если вы разрабатываете сайты или приложения для Интернета, эта книга вам просто необходима.</p>",
       descEN:
-        "<p>After reading this book, you are going to be able to:</p><ul><li>Understand the latest features of ES6 JavaScript and TypeScript.</li><li>Build an Angular 2 application from scratch using TypeScript and the Angular command line interface.</li><li>Write code using the paradigm of reactive programming with RxJS and Observables.</li><li>Know how to Unit Test Angular using Jasmine, Karma and the Angular Test Bed</li></ul><p>The first chapter in the course is a quickstart where you dive straight into writing your first Angular application. We use the web editor plunker so you can get started writing code ASAP.</p><p>In this quickstart you'll get a 50,000 foot view of the major features of Angular.</p><p>Then chapter by chapter we go much deeper into each of these features. I'll cover the theory for that feature, using plunker as much as possible so you can try out the code yourself in a browser. Then you'll practice what you've learnt with either an online quiz or a set of flash cards.</p>",
-      tag: ["2", "3", "12", "19"],
+        "<p>Most programming languages contain good and bad parts, but JavaScript has more than its share of the bad, having been developed and released in a hurry before it could be refined. This authoritative book scrapes away these bad features to reveal a subset of JavaScript that's more reliable, readable, and maintainable than the language as a whole—a subset you can use to create truly extensible and efficient code.</p><p>Considered the JavaScript expert by many people in the development community, author Douglas Crockford identifies the abundance of good ideas that make JavaScript an outstanding object-oriented programming language-ideas such as functions, loose typing, dynamic objects, and an expressive object literal notation. Unfortunately, these good ideas are mixed in with bad and downright awful ideas, like a programming model based on global variables.</p><p>When Java applets failed, JavaScript became the language of the Web by default, making its popularity almost completely independent of its qualities as a programming language. In JavaScript: The Good Parts, Crockford finally digs through the steaming pile of good intentions and blunders to give you a detailed look at all the genuinely elegant parts of JavaScript, including:</p><ul><li>Syntax</li><li>Objects</li><li>Functions</li><li>Inheritance</li><li>Arrays</li><li>Regular expressions</li><li>Methods</li><li>Style</li><li>Beautiful features</li></ul><p>The real beauty? As you move ahead with the subset of JavaScript that this book presents, you'll also sidestep the need to unlearn all the bad parts. Of course, if you want to find out more about the bad parts and how to use them badly, simply consult any other JavaScript book.</p><p>With JavaScript: The Good Parts, you'll discover a beautiful, elegant, lightweight and highly expressive language that lets you create effective code, whether you're managing object libraries or just trying to get Ajax to run fast. If you develop sites or applications for the Web, this book is an absolute must.</p>",
+      tag: ["1", "2", "8", "18"],
       pictureRU:
-        "https://images-na.ssl-images-amazon.com/images/I/51SRFX--KdL._SX260_.jpg",
-      pictureEN:
-        "https://images-na.ssl-images-amazon.com/images/I/51SRFX--KdL._SX260_.jpg"
+        "https://static12.insales.ru/images/products/1/3750/25513638/49600594.jpg",
+      pictureEN: "https://covers.oreillystatic.com/images/9780596517748/lrg.jpg"
     },
     {
       id: "2",
+      titleRU: "JavaScript. Подробное руководство",
+      titleEN: "JavaScript: The Definitive Guide",
+      authorsRU: "Дэвид Флэнаган",
+      authorsEN: "David Flanagan",
+      linkRU: {
+        OZON: "https://www.ozon.ru/context/detail/id/19677670/"
+      },
+      linkEN: {
+        Amazon:
+          "https://www.amazon.com/JavaScript-Definitive-Guide-Activate-Guides/dp/0596805527/",
+        "O'Reilly": "http://shop.oreilly.com/product/9780596805531.do"
+      },
+      lengthRU: "1080",
+      lengthEN: "1096",
+      lang: ["English", "Русский"],
+      date: "2011",
+      free: false,
+      descRU:
+        '<p>Шестое издание бестселлера "JavaScript. Подробное руководство" полностью пересмотрено и дополнено сведениями о JavaScript в соответствии с современным положением дел в разработке приложений для Web 2.0. Эта книга - одновременно и руководство программиста с большим числом практических примеров, и полноценный справочник по базовому языку JavaScript и клиентским прикладным интерфейсам, предоставляемым веб-браузерами. Издание охватывает стандарты ECMAScript 5 и HTML5. Многие главы переписаны заново, другие дополнены новой информацией, появились и новые главы с описанием библиотеки jQuery и поддержки JavaScript на стороне сервера. </p><p>Часть I знакомит с основами JavaScript. В части II описывается среда разработки сценариев, предоставляемая веб-броузерами. Основное внимание уделяется разработке сценариев с применением методики ненавязчивого JavaScript и модели DOM. Часть III - обширный справочник по базовому языку JavaScript, включающий описания всех классов, объектов, конструкторов, методов, функций, свойств и констант, определенных в JavaScript 1.8, V8 3.0 и ECMAScript 5. Часть IV - справочник по клиентскому JavaScript. Здесь описываются API веб-броузеров, стандарт DOM API Level 3 и недавно вошедшие в стандарт HTML5 технологии WebSockets и Web Workers, объекты localStorage и sessionStorage, а также теги</p>',
+      descEN:
+        "<p>Since 1996, JavaScript: The Definitive Guide has been the bible for JavaScript programmers—a programmer's guide and comprehensive reference to the core language and to the client-side JavaScript APIs defined by web browsers.</p><p>The 6th edition covers HTML5 and ECMAScript 5. Many chapters have been completely rewritten to bring them in line with today's best web development practices. New chapters in this edition document jQuery and server side JavaScript. It's recommended for experienced programmers who want to learn the programming language of the Web, and for current JavaScript programmers who want to master it.</p>",
+      tag: ["1", "2", "8", "16", "18"],
+      pictureRU: "https://ozon-st.cdn.ngenix.net/multimedia/1005767303.jpg",
+      pictureEN: "https://covers.oreillystatic.com/images/9780596805531/lrg.jpg"
+    },
+    {
+      id: "3",
+      titleRU: "JavaScript. Шаблоны",
+      titleEN: "JavaScript Patterns",
+      authorsRU: "	Стоян Стефано",
+      authorsEN: "Stoyan Stefanov",
+      linkRU: {
+        OZON: "https://www.ozon.ru/context/detail/id/141734022/"
+      },
+      linkEN: {
+        Amazon:
+          "https://www.amazon.com/JavaScript-Patterns-Better-Applications-Coding/dp/0596806752/",
+        "O'Reilly": "http://shop.oreilly.com/product/9780596806767.do"
+      },
+      lengthRU: "272",
+      lengthEN: "236",
+      lang: ["English", "Русский"],
+      date: "2010",
+      free: false,
+      descRU:
+        "<p>Разработчики серверных, клиентских или настольных приложений на JavaScript нередко сталкиваются с проблемами, связанными с объектами, функциями, наследованием и другими особенностями этого языка. Какие же приемы разработки приложений на JavaScript являются наиболее удачными? Данная книга дает ответ на этот вопрос, предлагая большое количество различных шаблонов программирования на JavaScript, таких как «единственный объект» (singleton), «фабрика» (factory), «декоратор» (decorator) и другие. Можно сказать, что они являются не только методами решения наиболее типичных задач разработки ПО, но и заготовками решений для целых категорий таких задач.Использование шаблонов при программировании на языке JavaScript имеет свои особенности. Некоторые из них, разработанные с позиций языков со строгим контролем типов, таких как C++ и Java, не могут непосредственно применяться в языках с динамической типизацией, таких как JavaScript. Для таких шаблонов в языке JavaScript имеются более простые альтернативы.</p><p>Написанная экспертом по языку JavaScript Стояном Стефановым – ведущим специалистом компании Yahoo! и создателем инструмента оптимизации производительности веб-страниц YSlow 2.0, – книга включает практические советы по реализации каждого из рассматриваемых шаблонов с примерами программного кода. Автор также приводит антишаблоны – приемы программирования, которых следует по возможности избегать.</p>",
+      descEN:
+        "<p>What's the best approach for developing an application with JavaScript? This book helps you answer that question with numerous JavaScript coding patterns and best practices. If you're an experienced developer looking to solve problems related to objects, functions, inheritance, and other language-specific categories, the abstractions and code templates in this guide are ideal—whether you're using JavaScript to write a client-side, server-side, or desktop application.</p><p>Written by JavaScript expert Stoyan Stefanov—Senior Yahoo! Technical and architect of YSlow 2.0, the web page performance optimization tool—JavaScript Patterns includes practical advice for implementing each pattern discussed, along with several hands-on examples. You'll also learn about anti-patterns: common programming approaches that cause more problems than they solve.</p><ul><li>Explore useful habits for writing high-quality JavaScript code, such as avoiding globals, using single var declarations, and more</li><li>Learn why literal notation patterns are simpler alternatives to constructor functions</li><li>Discover different ways to define a function in JavaScript</li><li>Create objects that go beyond the basic patterns of using object literals and constructor functions</li><li>Learn the options available for code reuse and inheritance in JavaScript</li><li>Study sample JavaScript approaches to common design patterns such as Singleton, Factory, Decorator, and more</li><li>Examine patterns that apply specifically to the client-side browser environment</li></ul>",
+      tag: ["1", "2", "8", "23", "19"],
+      pictureRU: "https://ozon-st.cdn.ngenix.net/multimedia/1019770221.jpg",
+      pictureEN: "https://ozon-st.cdn.ngenix.net/multimedia/1019770221.jpg"
+    },
+    {
+      id: "4",
+      titleRU: "Выразительный Javascript",
+      titleEN: "Eloquent JavaScript",
+      authorsRU: "Марейн Хавербек",
+      authorsEN: "Marijn Haverbeke",
+      linkRU: {
+        Сайт: "https://karmazzin.gitbooks.io/eloquentjavascript_ru/content/"
+      },
+      linkEN: {
+        Site: "http://eloquentjavascript.net/",
+        Amazon:
+          "https://www.amazon.com/Eloquent-JavaScript-3rd-Introduction-Programming/dp/1593279507/"
+      },
+      lengthRU: "472",
+      lengthEN: "472",
+      lang: ["English", "Русский"],
+      date: "2018",
+      free: true,
+      descRU:
+        "<p>JavaScript lies at the heart of almost every modern web application, from social apps to the newest browser-based games. Though simple for beginners to pick up and play with, JavaScript is a flexible, complex language that you can use to build full-scale applications.</p><p>Author Marijn Haverbeke immerses you in example code from the start, while exercises and full-chapter projects give you hands-on experience with writing your own programs. As you build projects such as an artificial life simulation, a simple programming language, and a paint program, you’ll learn:</p><ul><li>The essential elements of programming, including syntax, control, and data</li><li>How to organize and clarify your code with object-oriented and functional programming techniques</li><li>How to script the browser and make basic web applications</li><li>How to use the DOM effectively to interact with browsers</li><li>How to harness Node.js to build servers and utilities</li></ul>",
+      descEN:
+        "<p>JavaScript lies at the heart of almost every modern web application, from social apps to the newest browser-based games. Though simple for beginners to pick up and play with, JavaScript is a flexible, complex language that you can use to build full-scale applications.</p><p>Author Marijn Haverbeke immerses you in example code from the start, while exercises and full-chapter projects give you hands-on experience with writing your own programs. As you build projects such as an artificial life simulation, a simple programming language, and a paint program, you’ll learn:</p><ul><li>The essential elements of programming, including syntax, control, and data</li><li>How to organize and clarify your code with object-oriented and functional programming techniques</li><li>How to script the browser and make basic web applications</li><li>How to use the DOM effectively to interact with browsers</li><li>How to harness Node.js to build servers and utilities</li></ul>",
+      tag: ["1", "2", "8", "21", "19"],
+      pictureRU: "http://eloquentjavascript.net/img/cover.jpg",
+      pictureEN: "http://eloquentjavascript.net/img/cover.jpg"
+    },
+    {
+      id: "5",
+      titleRU: "Секреты JavaScript ниндзя",
+      titleEN: "Secrets of the JavaScript Ninja",
+      authorsRU: "Джон Резиг, Беэр Бибо",
+      authorsEN: "y John Resig, Bear Bibeault, Josip Maras",
+      linkRU: {
+        OZON: "https://www.ozon.ru/context/detail/id/22421421/"
+      },
+      linkEN: {
+        Amazon:
+          "https://www.amazon.com/Secrets-JavaScript-Ninja-John-Resig/dp/1617292850/"
+      },
+      lengthRU: "416",
+      lengthEN: "464",
+      lang: ["English", "Русский"],
+      date: "2016",
+      free: false,
+      descRU:
+        "<p>Книга Секреты JavaScript ниндзя раскрывает секреты мастерства разработки веб-приложений на JavaScript (соавтор книги, Джон Резиг - создатель библиотеки JQuery). Начиная с пояснения таких основных понятий, как функции, объекты, замыкания, прототипы, регулярные выражения и таймеры, авторы постепенно проводят читателя по пути обучения от ученика до мастера, раскрывая немало секретов и специальных приемов программирования на конкретных примерах кода JavaScript. В книге Секреты JavaScript ниндзя уделяется немало внимания вопросам написания кросс-браузерного кода и преодолению связанных с этим типичных затруднений, что может принести немалую пользу всем, кто занимается разработкой веб-приложений. К разработке программного обеспечения далеко не всегда удается приступить в лоб. Иногда приходится прибегать к обходным приемам, чтобы незаметно подойти к ней с тыла. И для этого необходимо овладеть полным арсеналом инструментальных средств и знать немало секретных приемов. По существу, нужно стать настоящим мастером своего дела. Книга Секреты JavaScript ниндзя поможет вам, читатель, пройти нелегкий путь посвящения в тайны программирования на JavaScript. В начале книги такие основные понятия, как взаимосвязи между функциями, объектами и замыканиями, разъясняются с точки зрения мастерского овладения ими. По ходу чтения книги вы пройдете все стадии обучения от ученика до мастера, усваивая специальные приемы, неизвестные особенности и средства программирования на JavaScript, чтобы успешно пользоваться ими в повседневной практике. Проработав материал книги Секреты JavaScript ниндзя, вы будете готовы к разработке блестящих веб-приложений на JavaScript, а возможно, и к написанию собственных библиотек и интегрированных сред. Основные темы книги Секреты JavaScript ниндзя</p><li>Функции, объекты, замыкания, регулярные выражения и прочее</li><li>Трезвый взгляд на приложения и библиотеки</li><li>Современные методы разработки веб-приложений на JavaScript</li><li>Пути преодоления препятствий кросс-браузерного характера в процессе разработки веб-приложений.</li>",
+      descEN:
+        "<p><b>About the Technology</b></p><p>JavaScript is rapidly becoming a universal language for every type of application, whether on the web, on the desktop, in the cloud, or on mobile devices. When you become a JavaScript pro, you have a powerful skill set that’s usable across all these domains.</p><p><b>About the Book</b></p><p>Secrets of the JavaScript Ninja, Second Edition uses practical examples to clearly illustrate each core concept and technique. This completely revised edition shows you how to master key JavaScript concepts such as functions, closures, objects, prototypes, and promises. It covers APIs such as the DOM, events, and timers. You’ll discover best practice techniques such as testing, and cross-browser development, all taught from the perspective of skilled JavaScript practitioners.</p><p><b>What’s Inside</b></p><ul><li>Writing more effective code with functions, objects, and closures</li><li>Learning to avoid JavaScript application pitfalls</li><li>Using regular expressions to write succinct text-processing code</li><li>Managing asynchronous code with promises</li><li>Fully revised to cover concepts from ES6 and ES7</li></ul>",
+      tag: ["1", "2", "8", "19"],
+      pictureRU: "https://ozon-st.cdn.ngenix.net/multimedia/1007123068.jpg",
+      pictureEN:
+        "https://images-na.ssl-images-amazon.com/images/I/51sxvZlbH5L._SX383_BO1,204,203,200_.jpg"
+    },
+    {
+      id: "6",
+      titleRU: "Learning JavaScript Design Patterns",
+      titleEN: "Learning JavaScript Design Patterns",
+      authorsRU: "Эдди Османи",
+      authorsEN: "Addy Osmani",
+      linkRU: {
+        Amazon:
+          "https://www.amazon.com/Learning-JavaScript-Design-Patterns-Developers/dp/1449331815/",
+        "O'Reilly": "http://shop.oreilly.com/product/0636920025832.do"
+      },
+      linkEN: {
+        Amazon:
+          "https://www.amazon.com/Learning-JavaScript-Design-Patterns-Developers/dp/1449331815/",
+        "O'Reilly": "http://shop.oreilly.com/product/0636920025832.do"
+      },
+      lengthRU: "254",
+      lengthEN: "254",
+      lang: ["English"],
+      date: "2012",
+      free: false,
+      descRU:
+        "<p>With Learning JavaScript Design Patterns, you’ll learn how to write beautiful, structured, and maintainable JavaScript by applying classical and modern design patterns to the language. If you want to keep your code efficient, more manageable, and up-to-date with the latest best practices, this book is for you.</p><p>Explore many popular design patterns, including Modules, Observers, Facades, and Mediators. Learn how modern architectural patterns—such as MVC, MVP, and MVVM—are useful from the perspective of a modern web application developer. This book also walks experienced JavaScript developers through modern module formats, how to namespace code effectively, and other essential topics.</p><ul><li>Learn the structure of design patterns and how they are written</li><li>Understand different pattern categories, including creational, structural, and behavioral</li><li>Walk through more than 20 classical and modern design patterns in JavaScript</li><li>Use several options for writing modular code—including the Module pattern, Asyncronous Module Definition (AMD), and CommonJS</li><li>Discover design patterns implemented in the jQuery library</li><li>Learn popular design patterns for writing maintainable jQuery plug-ins</li></ul>",
+      descEN:
+        "<p>With Learning JavaScript Design Patterns, you’ll learn how to write beautiful, structured, and maintainable JavaScript by applying classical and modern design patterns to the language. If you want to keep your code efficient, more manageable, and up-to-date with the latest best practices, this book is for you.</p><p>Explore many popular design patterns, including Modules, Observers, Facades, and Mediators. Learn how modern architectural patterns—such as MVC, MVP, and MVVM—are useful from the perspective of a modern web application developer. This book also walks experienced JavaScript developers through modern module formats, how to namespace code effectively, and other essential topics.</p><ul><li>Learn the structure of design patterns and how they are written</li><li>Understand different pattern categories, including creational, structural, and behavioral</li><li>Walk through more than 20 classical and modern design patterns in JavaScript</li><li>Use several options for writing modular code—including the Module pattern, Asyncronous Module Definition (AMD), and CommonJS</li><li>Discover design patterns implemented in the jQuery library</li><li>Learn popular design patterns for writing maintainable jQuery plug-ins</li></ul>",
+      tag: ["2", "8", "16", "23", "19"],
+      pictureRU:
+        "https://covers.oreillystatic.com/images/0636920025832/lrg.jpg",
+      pictureEN: "https://covers.oreillystatic.com/images/0636920025832/lrg.jpg"
+    },
+    {
+      id: "7",
+      titleRU: "Speaking JavaScript",
+      titleEN: "Speaking JavaScript",
+      authorsRU: "Аксель Раушмайер",
+      authorsEN: "Axel Rauschmayer",
+      linkRU: {
+        Amazon:
+          "https://www.amazon.com/Speaking-JavaScript-Depth-Guide-Programmers/dp/1449365035/",
+        "O'Reilly": "http://shop.oreilly.com/product/0636920029564.do"
+      },
+      linkEN: {
+        Amazon:
+          "https://www.amazon.com/Speaking-JavaScript-Depth-Guide-Programmers/dp/1449365035/",
+        "O'Reilly": "http://shop.oreilly.com/product/0636920029564.do"
+      },
+      lengthRU: "460",
+      lengthEN: "460",
+      lang: ["English"],
+      date: "2014",
+      free: false,
+      descRU:
+        "<p>Like it or not, JavaScript is everywhere these days—from browser to server to mobile—and now you, too, need to learn the language or dive deeper than you have. This concise book guides you into and through JavaScript, written by a veteran programmer who once found himself in the same position.</p><p>Speaking JavaScript helps you approach the language with four standalone sections. First, a quick-start guide teaches you just enough of the language to help you be productive right away. More experienced JavaScript programmers will find a complete and easy-to-read reference that covers each language feature in depth. Complete contents include:</p><ul><li>JavaScript quick start: Familiar with object-oriented programming? This part helps you learn JavaScript quickly and properly.</li><li>JavaScript in depth: Learn details of ECMAScript 5, from syntax, variables, functions, and object-oriented programming to regular expressions and JSON with lots of examples. Pick a topic and jump in.</li><li>Background: Understand JavaScript’s history and its relationship with other programming languages.</li><li>Tips, tools, and libraries: Survey existing style guides, best practices, advanced techniques, module systems, package managers, build tools, and learning resources.</li></ul>",
+      descEN:
+        "<p>Like it or not, JavaScript is everywhere these days—from browser to server to mobile—and now you, too, need to learn the language or dive deeper than you have. This concise book guides you into and through JavaScript, written by a veteran programmer who once found himself in the same position.</p><p>Speaking JavaScript helps you approach the language with four standalone sections. First, a quick-start guide teaches you just enough of the language to help you be productive right away. More experienced JavaScript programmers will find a complete and easy-to-read reference that covers each language feature in depth. Complete contents include:</p><ul><li>JavaScript quick start: Familiar with object-oriented programming? This part helps you learn JavaScript quickly and properly.</li><li>JavaScript in depth: Learn details of ECMAScript 5, from syntax, variables, functions, and object-oriented programming to regular expressions and JSON with lots of examples. Pick a topic and jump in.</li><li>Background: Understand JavaScript’s history and its relationship with other programming languages.</li><li>Tips, tools, and libraries: Survey existing style guides, best practices, advanced techniques, module systems, package managers, build tools, and learning resources.</li></ul>",
+      tag: ["2", "8", "18"],
+      pictureRU:
+        "https://covers.oreillystatic.com/images/0636920029564/lrg.jpg",
+      pictureEN: "https://covers.oreillystatic.com/images/0636920029564/lrg.jpg"
+    },
+    {
+      id: "8",
+      titleRU: "You Don't Know JS: Up & Going",
+      titleEN: "You Don't Know JS: Up & Going",
+      authorsRU: "Кайл Симпсон",
+      authorsEN: "Kyle Simpson",
+      linkRU: {
+        Amazon: "https://www.amazon.com/You-Dont-Know-JS-Going/dp/1491924462/",
+        "O'Reilly": "http://shop.oreilly.com/product/0636920039303.do",
+        GitHub:
+          "https://github.com/getify/You-Dont-Know-JS/blob/master/up%20&%20going/README.md#you-dont-know-js-up--going"
+      },
+      linkEN: {
+        Amazon: "https://www.amazon.com/You-Dont-Know-JS-Going/dp/1491924462/",
+        "O'Reilly": "http://shop.oreilly.com/product/0636920039303.do",
+        GitHub:
+          "https://github.com/getify/You-Dont-Know-JS/blob/master/up%20&%20going/README.md#you-dont-know-js-up--going"
+      },
+      lengthRU: "88",
+      lengthEN: "88",
+      lang: ["English"],
+      date: "2015",
+      free: false,
+      descRU:
+        '<p>It’s easy to learn parts of JavaScript, but much harder to learn it completely—or even sufficiently—whether you’re new to the language or have used it for years. With the "You Don’t Know JS" book series, you’ll get a more complete understanding of JavaScript, including trickier parts of the language that many experienced JavaScript programmers simply avoid.</p><p>The series’ first book, Up & Going, provides the necessary background for those of you with limited programming experience. By learning the basic building blocks of programming, as well as JavaScript’s core mechanisms, you’ll be prepared to dive into the other, more in-depth books in the series—and be well on your way toward true JavaScript.</p><p>With this book you will:</p><ul><li>Learn the essential programming building blocks, including operators, types, variables, conditionals, loops, and functions</li><li>Become familiar with JavaScript\'s core mechanisms such as values, function closures, this, and prototypes</li><li>Get an overview of other books in the series—and learn why it’s important to understand all parts of JavaScript</li></ul>',
+      descEN:
+        '<p>It’s easy to learn parts of JavaScript, but much harder to learn it completely—or even sufficiently—whether you’re new to the language or have used it for years. With the "You Don’t Know JS" book series, you’ll get a more complete understanding of JavaScript, including trickier parts of the language that many experienced JavaScript programmers simply avoid.</p><p>The series’ first book, Up & Going, provides the necessary background for those of you with limited programming experience. By learning the basic building blocks of programming, as well as JavaScript’s core mechanisms, you’ll be prepared to dive into the other, more in-depth books in the series—and be well on your way toward true JavaScript.</p><p>With this book you will:</p><ul><li>Learn the essential programming building blocks, including operators, types, variables, conditionals, loops, and functions</li><li>Become familiar with JavaScript\'s core mechanisms such as values, function closures, this, and prototypes</li><li>Get an overview of other books in the series—and learn why it’s important to understand all parts of JavaScript</li></ul>',
+      tag: ["2", "8", "18"],
+      pictureRU:
+        "https://covers.oreillystatic.com/images/0636920039303/lrg.jpg",
+      pictureEN: "https://covers.oreillystatic.com/images/0636920039303/lrg.jpg"
+    },
+    {
+      id: "9",
+      titleRU: "You Don't Know JS: Scope & Closures",
+      titleEN: "You Don't Know JS: Scope & Closures",
+      authorsRU: "Кайл Симпсон",
+      authorsEN: "Kyle Simpson",
+      linkRU: {
+        Amazon:
+          "https://www.amazon.com/You-Dont-Know-JS-Closures/dp/1449335586/",
+        "O'Reilly": "http://shop.oreilly.com/product/0636920026327.do",
+        GitHub:
+          "https://github.com/getify/You-Dont-Know-JS/blob/master/scope%20&%20closures/README.md#you-dont-know-js-scope--closures"
+      },
+      linkEN: {
+        Amazon:
+          "https://www.amazon.com/You-Dont-Know-JS-Closures/dp/1449335586/",
+        "O'Reilly": "http://shop.oreilly.com/product/0636920026327.do",
+        GitHub:
+          "https://github.com/getify/You-Dont-Know-JS/blob/master/scope%20&%20closures/README.md#you-dont-know-js-scope--closures"
+      },
+      lengthRU: "98",
+      lengthEN: "98",
+      lang: ["English"],
+      date: "2014",
+      free: false,
+      descRU:
+        '<p>No matter how much experience you have with JavaScript, odds are you don’t fully understand the language. This concise yet in-depth guide takes you inside scope and closures, two core concepts you need to know to become a more efficient and effective JavaScript programmer. You’ll learn how and why they work, and how an understanding of closures can be a powerful part of your development skillset.</p><p>Like other books in the "You Don’t Know JS" series, Scope and Closures dives into trickier parts of the language that many JavaScript programmers simply avoid. Armed with this knowledge, you can achieve true JavaScript mastery.</p><ul><li>Learn about scope, a set of rules to help JavaScript engines locate variables in your code</li><li>Go deeper into nested scope, a series of containers for variables and functions</li><li>Explore function- and block-based scope, “hoisting”, and the patterns and benefits of scope-based hiding</li><li>Discover how to use closures for synchronous and asynchronous tasks, including the creation of JavaScript libraries</li></ul>',
+      descEN:
+        '<p>No matter how much experience you have with JavaScript, odds are you don’t fully understand the language. This concise yet in-depth guide takes you inside scope and closures, two core concepts you need to know to become a more efficient and effective JavaScript programmer. You’ll learn how and why they work, and how an understanding of closures can be a powerful part of your development skillset.</p><p>Like other books in the "You Don’t Know JS" series, Scope and Closures dives into trickier parts of the language that many JavaScript programmers simply avoid. Armed with this knowledge, you can achieve true JavaScript mastery.</p><ul><li>Learn about scope, a set of rules to help JavaScript engines locate variables in your code</li><li>Go deeper into nested scope, a series of containers for variables and functions</li><li>Explore function- and block-based scope, “hoisting”, and the patterns and benefits of scope-based hiding</li><li>Discover how to use closures for synchronous and asynchronous tasks, including the creation of JavaScript libraries</li></ul>',
+      tag: ["2", "8", "18"],
+      pictureRU:
+        "https://covers.oreillystatic.com/images/0636920026327/lrg.jpg",
+      pictureEN: "https://covers.oreillystatic.com/images/0636920026327/lrg.jpg"
+    },
+    {
+      id: "10",
+      titleRU: "You Don't Know JS: this & Object Prototypes",
+      titleEN: "You Don't Know JS: this & Object Prototypes",
+      authorsRU: "Кайл Симпсон",
+      authorsEN: "Kyle Simpson",
+      linkRU: {
+        Amazon:
+          "https://www.amazon.com/You-Dont-Know-JS-Prototypes/dp/1491904151/",
+        "O'Reilly": "http://shop.oreilly.com/product/0636920033738.do",
+        GitHub:
+          "https://github.com/getify/You-Dont-Know-JS/blob/master/this%20&%20object%20prototypes/README.md#you-dont-know-js-this--object-prototypes"
+      },
+      linkEN: {
+        Amazon:
+          "https://www.amazon.com/You-Dont-Know-JS-Prototypes/dp/1491904151/",
+        "O'Reilly": "http://shop.oreilly.com/product/0636920033738.do",
+        GitHub:
+          "https://github.com/getify/You-Dont-Know-JS/blob/master/this%20&%20object%20prototypes/README.md#you-dont-know-js-this--object-prototypes"
+      },
+      lengthRU: "156",
+      lengthEN: "156",
+      lang: ["English"],
+      date: "2014",
+      free: false,
+      descRU:
+        "<p>No matter how much experience you have with JavaScript, odds are you don’t fully understand the language. This concise, in-depth guide takes you inside JavaScript’s this structure and object prototypes. You’ll learn how they work and why they’re integral to behavior delegation—a design pattern in which objects are linked, rather than cloned.</p><p>Like other books in the “You Don’t Know JS” series, this and Object Prototypes dives into trickier parts of the language that many JavaScript programmers simply avoid. Armed with this knowledge, you can become a true JavaScript master.</p><p>With this book you will:</p><ul><li>Explore how the this binding points to objects based on how the function is called</li><li>Look into the nature of JS objects and why you’d need to point to them</li><li>Learn how developers use the mixin pattern to fake classes in JS</li><li>Examine how JS’s prototype mechanism forms links between objects</li><li>Learn how to move from class/inheritance design to behavior delegation</li><li>Understand how the OLOO (objects-linked-to-other-objects) coding style naturally implements behavior delegation</li></ul>",
+      descEN:
+        "<p>No matter how much experience you have with JavaScript, odds are you don’t fully understand the language. This concise, in-depth guide takes you inside JavaScript’s this structure and object prototypes. You’ll learn how they work and why they’re integral to behavior delegation—a design pattern in which objects are linked, rather than cloned.</p><p>Like other books in the “You Don’t Know JS” series, this and Object Prototypes dives into trickier parts of the language that many JavaScript programmers simply avoid. Armed with this knowledge, you can become a true JavaScript master.</p><p>With this book you will:</p><ul><li>Explore how the this binding points to objects based on how the function is called</li><li>Look into the nature of JS objects and why you’d need to point to them</li><li>Learn how developers use the mixin pattern to fake classes in JS</li><li>Examine how JS’s prototype mechanism forms links between objects</li><li>Learn how to move from class/inheritance design to behavior delegation</li><li>Understand how the OLOO (objects-linked-to-other-objects) coding style naturally implements behavior delegation</li></ul>",
+      tag: ["2", "8", "19"],
+      pictureRU:
+        "https://covers.oreillystatic.com/images/0636920033738/lrg.jpg",
+      pictureEN: "https://covers.oreillystatic.com/images/0636920033738/lrg.jpg"
+    },
+    {
+      id: "11",
+      titleRU: "You Don't Know JS: Types & Grammar",
+      titleEN: "You Don't Know JS: Types & Grammar",
+      authorsRU: "Кайл Симпсон",
+      authorsEN: "Kyle Simpson",
+      linkRU: {
+        Amazon:
+          "https://www.amazon.com/You-Dont-Know-JS-Grammar/dp/1491904194/",
+        "O'Reilly": "http://shop.oreilly.com/product/0636920033745.do",
+        GitHub:
+          "https://github.com/getify/You-Dont-Know-JS/blob/master/types%20&%20grammar/README.md#you-dont-know-js-types--grammar"
+      },
+      linkEN: {
+        Amazon:
+          "https://www.amazon.com/You-Dont-Know-JS-Grammar/dp/1491904194/",
+        "O'Reilly": "http://shop.oreilly.com/product/0636920033745.do",
+        GitHub:
+          "https://github.com/getify/You-Dont-Know-JS/blob/master/types%20&%20grammar/README.md#you-dont-know-js-types--grammar"
+      },
+      lengthRU: "148",
+      lengthEN: "148",
+      lang: ["English"],
+      date: "2015",
+      free: false,
+      descRU:
+        '<p>No matter how much experience you have with JavaScript, odds are you don’t fully understand the language. As part of the "You Don’t Know JS" series, this compact guide explores JavaScript types in greater depth than previous treatments by looking at type coercion problems, demonstrating why types work, and showing you how to take advantage of these features.</p><p>Like other books in this series, You Don’t Know JS: Types & Grammar dives into trickier parts of the language that many JavaScript programmers simply avoid or assume don’t exist (like types). Armed with this knowledge, you can achieve true JavaScript mastery.</p><p>With this book you will:</p><ul><li>Get acquainted with JavaScript’s seven types: null, undefined, boolean, number, string, object, and symbol</li><li>Understand why JavaSript’s unique array, string, and number characteristics may delight or confound you</li><li>Learn how natives provide object wrappers around primitive values</li><li>Dive into the coercion controversy—and learn why this feature is useful in many cases</li><li>Explore various nuances in JavaScript syntax, involving statements, expressions, and other features</li></ul>',
+      descEN:
+        '<p>No matter how much experience you have with JavaScript, odds are you don’t fully understand the language. As part of the "You Don’t Know JS" series, this compact guide explores JavaScript types in greater depth than previous treatments by looking at type coercion problems, demonstrating why types work, and showing you how to take advantage of these features.</p><p>Like other books in this series, You Don’t Know JS: Types & Grammar dives into trickier parts of the language that many JavaScript programmers simply avoid or assume don’t exist (like types). Armed with this knowledge, you can achieve true JavaScript mastery.</p><p>With this book you will:</p><ul><li>Get acquainted with JavaScript’s seven types: null, undefined, boolean, number, string, object, and symbol</li><li>Understand why JavaSript’s unique array, string, and number characteristics may delight or confound you</li><li>Learn how natives provide object wrappers around primitive values</li><li>Dive into the coercion controversy—and learn why this feature is useful in many cases</li><li>Explore various nuances in JavaScript syntax, involving statements, expressions, and other features</li></ul>',
+      tag: ["2", "8", "18"],
+      pictureRU:
+        "https://covers.oreillystatic.com/images/0636920033745/lrg.jpg",
+      pictureEN: "https://covers.oreillystatic.com/images/0636920033745/lrg.jpg"
+    },
+    {
+      id: "12",
+      titleRU: "You Don't Know JS: Async & Performance",
+      titleEN: "You Don't Know JS: Async & Performance",
+      authorsRU: "Кайл Симпсон",
+      authorsEN: "Kyle Simpson",
+      linkRU: {
+        Amazon:
+          "https://www.amazon.com/You-Dont-Know-JS-Performance/dp/1491904224/",
+        "O'Reilly": "http://shop.oreilly.com/product/0636920033752.do",
+        GitHub:
+          "https://github.com/getify/You-Dont-Know-JS/blob/master/async%20&%20performance/README.md#you-dont-know-js-async--performance"
+      },
+      linkEN: {
+        Amazon:
+          "https://www.amazon.com/You-Dont-Know-JS-Performance/dp/1491904224/",
+        "O'Reilly": "http://shop.oreilly.com/product/0636920033752.do",
+        GitHub:
+          "https://github.com/getify/You-Dont-Know-JS/blob/master/async%20&%20performance/README.md#you-dont-know-js-async--performance"
+      },
+      lengthRU: "247",
+      lengthEN: "247",
+      lang: ["English"],
+      date: "2015",
+      free: false,
+      descRU:
+        '<p>No matter how much experience you have with JavaScript, odds are you don’t fully understand the language. As part of the "You Don’t Know JS" series, this concise yet in-depth guide focuses on new asynchronous features and performance techniques—including Promises, generators, and Web Workers—that let you create sophisticated single-page web applications and escape callback hell in the process.</p><p>Like other books in this series, You Don’t Know JS: Async & Performance dives into trickier parts of the language that many JavaScript programmers simply avoid. Armed with this knowledge, you can become a true JavaScript master.</p><p>With this book you will:</p><ul><li>Explore old and new JavaScript methods for handling asynchronous programming</li><li>Understand how callbacks let third parties control your program’s execution</li><li>Address the "inversion of control" issue with JavaScript Promises</li><li>Use generators to express async flow in a sequential, synchronous-looking fashion</li><li>Tackle program-level performance with Web Workers, SIMD, and asm.js</li><li>Learn valuable resources and techniques for benchmarking and tuning your expressions and statements</li></ul>',
+      descEN:
+        '<p>No matter how much experience you have with JavaScript, odds are you don’t fully understand the language. As part of the "You Don’t Know JS" series, this concise yet in-depth guide focuses on new asynchronous features and performance techniques—including Promises, generators, and Web Workers—that let you create sophisticated single-page web applications and escape callback hell in the process.</p><p>Like other books in this series, You Don’t Know JS: Async & Performance dives into trickier parts of the language that many JavaScript programmers simply avoid. Armed with this knowledge, you can become a true JavaScript master.</p><p>With this book you will:</p><ul><li>Explore old and new JavaScript methods for handling asynchronous programming</li><li>Understand how callbacks let third parties control your program’s execution</li><li>Address the "inversion of control" issue with JavaScript Promises</li><li>Use generators to express async flow in a sequential, synchronous-looking fashion</li><li>Tackle program-level performance with Web Workers, SIMD, and asm.js</li><li>Learn valuable resources and techniques for benchmarking and tuning your expressions and statements</li></ul>',
+      tag: ["2", "8", "19"],
+      pictureRU:
+        "https://covers.oreillystatic.com/images/0636920033752/lrg.jpg",
+      pictureEN: "https://covers.oreillystatic.com/images/0636920033752/lrg.jpg"
+    },
+    {
+      id: "13",
+      titleRU: "ES6 и не только",
+      titleEN: "You Don't Know JS: ES6 & Beyond",
+      authorsRU: "Кайл Симпсон",
+      authorsEN: "Kyle Simpson",
+      linkRU: {
+        OZON: "https://www.ozon.ru/context/detail/id/137473815/",
+        Питер: "https://www.piter.com/collection/all/product/es6-i-ne-tolko"
+      },
+      linkEN: {
+        Amazon: "https://www.amazon.com/You-Dont-Know-JS-Beyond/dp/1491904240/",
+        "O'Reilly": "http://shop.oreilly.com/product/0636920033769.do",
+        GitHub:
+          "https://github.com/getify/You-Dont-Know-JS/blob/master/es6%20&%20beyond/README.md#you-dont-know-js-es6--beyond"
+      },
+      lengthRU: "336",
+      lengthEN: "260",
+      lang: ["English", "Русский"],
+      date: "2015",
+      free: false,
+      descRU:
+        "<p>Даже если у вас уже есть опыт работы с JavaScript, скорее всего, язык вы в полной мере не знаете. Особое внимание в этой книге уделяется новым функциям, появившимся в Ecmascript 6 (ES6) - последней версии стандарта JavaScript. ES6 повествует о тонкостях языка, малознакомых большинству работающих на JavaScript программистов. Вооружившись этими знаниями, вы достигните подлинного мастерства; выучите новый синтаксис; научитесь корректно использовать итераторы, генераторы, модули и классы; сможете более эффективно работы с данными; познакомитесь с новыми API, например, Array, Object, Math, Number и String; расширите функционал программ с помощью мета-программирования.</p>",
+      descEN:
+        '<p>No matter how much experience you have with JavaScript, odds are you don’t fully understand the language. As part of the "You Don’t Know JS" series, this compact guide focuses on new features available in ECMAScript 6 (ES6), the latest version of the standard upon which JavaScript is built.</p><p>Like other books in this series, You Don’t Know JS: ES6 & Beyond dives into trickier parts of the language that many JavaScript programmers either avoid or know nothing about. Armed with this knowledge, you can achieve true JavaScript mastery.</p><p>With this book, you will:</p><ul><li>Learn new ES6 syntax that eases the pain points of common programming idioms</li><li>Organize code with iterators, generators, modules, and classes</li><li>Express async flow control with Promises combined with generators</li><li>Use collections to work more efficiently with data in structured ways</li><li>Leverage new API helpers, including Array, Object, Math, Number, and String</li><li>Extend your program’s capabilities through meta programming</li><li>Preview features likely coming to JS beyond ES6</li></ul>',
+      tag: ["2", "8", "20"],
+      pictureRU:
+        "https://static-eu.insales.ru/images/products/1/6997/84843349/49602445.jpg",
+      pictureEN: "https://covers.oreillystatic.com/images/0636920033769/lrg.jpg"
+    },
+    {
+      id: "14",
       titleRU:
         "Создаем динамические веб-сайты с помощью PHP, MySQL, JavaScript, CSS и HTML5",
       titleEN: "Learning PHP, MySQL & JavaScript: With jQuery, CSS & HTML5",
@@ -65,7 +432,7 @@ const data = {
         "https://images-na.ssl-images-amazon.com/images/I/51aUTzDIxxL._SX379_BO1,204,203,200_.jpg"
     },
     {
-      id: "3",
+      id: "15",
       titleRU: "HTML5. Рецепты программирования",
       titleEN: "HTML5 Cookbook",
       authorsRU: "Christopher Schmitt, Kyle Simpson",
@@ -95,7 +462,7 @@ const data = {
       pictureEN: "https://covers.oreillystatic.com/images/0636920016038/lrg.jpg"
     },
     {
-      id: "4",
+      id: "16",
       titleRU: "Веб-разработка. Исчерпывающее руководство",
       titleEN: "Creating a Website: The Missing Manual ",
       authorsRU: "Matthew MacDonald",
@@ -124,7 +491,7 @@ const data = {
       pictureEN: "https://covers.oreillystatic.com/images/0636920036364/lrg.jpg"
     },
     {
-      id: "5",
+      id: "17",
       titleRU: "HTML5 для веб-дизайнеров",
       titleEN: "HTML5 FOR WEB DESIGNERS",
       authorsRU: "Jeremy Keith, Rachel Andrew",
@@ -152,7 +519,7 @@ const data = {
         "https://cdn.shopify.com/s/files/1/0051/7692/products/ABA-cover-1_566e3825-31ab-4d44-8b80-342df1bc5a4d_100x@3x.png?v=1463456059"
     },
     {
-      id: "6",
+      id: "18",
       titleRU: "Изучаем HTML5. Библиотека специалиста",
       titleEN: "Introducing HTML5",
       authorsRU: "Bruce Lawson, Remy Sharp",
@@ -182,7 +549,7 @@ const data = {
         "https://images-na.ssl-images-amazon.com/images/I/41Mb80aByoL._SX387_BO1,204,203,200_.jpg"
     },
     {
-      id: "7",
+      id: "19",
       titleRU: "HTML5. Карманный справочник",
       titleEN: "HTML5 Pocket Reference",
       authorsRU: "Jennifer Niederst Robbins",
@@ -210,7 +577,7 @@ const data = {
         "https://d188rgcu4zozwl.cloudfront.net/content/B00FM0OC84/resources/1791241043"
     },
     {
-      id: "8",
+      id: "20",
       titleRU: "HTML5 Canvas",
       titleEN: "HTML5 Canvas",
       authorsRU: "Steve Fulton, Jeff Fulton",
@@ -239,7 +606,7 @@ const data = {
         "https://d188rgcu4zozwl.cloudfront.net/content/B00CBM1WG6/resources/170992404"
     },
     {
-      id: "9",
+      id: "21",
       titleRU: "Секреты CSS. Идеальные решения ежедневных задач",
       titleEN: "CSS Secrets: Better Solutions to Everyday Web Design Problems",
       authorsRU: "Lea Verou",
@@ -269,7 +636,7 @@ const data = {
         "https://d188rgcu4zozwl.cloudfront.net/content/B0131MQ1NS/resources/269387856"
     },
     {
-      id: "10",
+      id: "22",
       titleRU: "CSS3 для веб-дизайнеров",
       titleEN: "CSS3 FOR WEB DESIGNERS",
       authorsRU: "Дэн Сидерхолм",
@@ -296,7 +663,7 @@ const data = {
         "https://images-na.ssl-images-amazon.com/images/I/41%2Bl78I%2BvqL.jpg"
     },
     {
-      id: "11",
+      id: "23",
       titleRU: "Новая большая книга CSS",
       titleEN: "CSS: The Missing Manual",
       authorsRU: "Дэвид Сойер Макфарланд",
@@ -326,7 +693,7 @@ const data = {
         "https://d1b14unh5d6w7g.cloudfront.net/1491918055.01.S001.LXXXXXXX.jpg?Expires=1534537125&Signature=GJcn843j12fOTSxkZG7x/KQPaewFFWWe8Uf5+t4UMpttT083U2HqZoeLoSpYQ6C+4BzXHjMTIZG1gp6jDtfeqfffIrKtDmP4d/CWI+JlUgC4Nh+02ruVKsUM4syzVMIaDHfsHfp3REKahmRG0DzSqYPbnzBBnrKFXUllH6Zg6Qw=&Key-Pair-Id=APKAIUO27P366FGALUMQ"
     },
     {
-      id: "12",
+      id: "24",
       titleRU: "CSS. Карманный справочник",
       titleEN: "CSS Pocket Reference",
       authorsRU: "Эрик А. Мейер",
@@ -354,7 +721,7 @@ const data = {
         "https://d1b14unh5d6w7g.cloudfront.net/1492033391.01.S001.LXXXXXXX.jpg?Expires=1534537897&Signature=YUB5i/HWywm/XvwVxV5e82gCw6umZPi4ClYZ/qmun5nWfrUH48q1UGsTRMwfy7BBj0sL7l/qp7k11ul2HgBjeB3rVyepUTqyPFIlQ4/Fc3PM1tjXRPEivzbJmEh4hUSl6UwVAKyHt+FiWUkO5wJYINrOegA/ioQs3laCL2SfzN0=&Key-Pair-Id=APKAIUO27P366FGALUMQ"
     },
     {
-      id: "13",
+      id: "25",
       titleRU: "Flexbox in CSS",
       titleEN: "Flexbox in CSS",
       authorsRU: "Эстель Вейль",
@@ -384,7 +751,7 @@ const data = {
       pictureEN: "https://covers.oreillystatic.com/images/0636920066682/lrg.jpg"
     },
     {
-      id: "14",
+      id: "26",
       titleRU: "CSS: The Definitive Guide: Visual Presentation for the Web",
       titleEN: "CSS: The Definitive Guide: Visual Presentation for the Web",
       authorsRU: "Эрик Мейер, Эстель Вейль",
@@ -414,212 +781,7 @@ const data = {
       pictureEN: "https://covers.oreillystatic.com/images/0636920012726/lrg.jpg"
     },
     {
-      id: "15",
-      titleRU: "Using SVG with CSS3 and HTML5",
-      titleEN: "Using SVG with CSS3 and HTML5",
-      authorsRU: "Курт Кэгл, Амелия Беллами-Ройдс, Дадли Стори",
-      authorsEN: "Kurt Cagle, Amelia Bellamy-Royds, Dudley Storey",
-      linkRU: {
-        Amazon:
-          "https://www.amazon.com/Using-SVG-CSS3-HTML5-Graphics/dp/1491921978/",
-        "O'Reilly": "http://shop.oreilly.com/product/0636920037972.do"
-      },
-      linkEN: {
-        Amazon:
-          "https://www.amazon.com/Using-SVG-CSS3-HTML5-Graphics/dp/1491921978/",
-        "O'Reilly": "http://shop.oreilly.com/product/0636920037972.do"
-      },
-      lengthRU: "844",
-      lengthEN: "844",
-      lang: ["English"],
-      date: "2017",
-      free: false,
-      descRU:
-        "<p>Using Scalable Vector Graphics (SVG) for illustrations only scratches the surface of this format’s potential on the web. With this practical guide, you’ll learn how to use SVG not only for illustrations but also as graphical documents that you can integrate into complex HTML5 web pages, and style with custom CSS. Web developers will discover ways to adapt designs by adding data based graphics, dynamic styles, interaction, or animation.</p><p>Divided into five parts, this book includes:</p><ul><li>SVG on the web: Understand how SVG works with HTML, CSS, and JavaScript to define graphics</li><li>Drawing with markup: Learn the vector language of x and y coordinates that let SVG create basic and custom shapes</li><li>Putting graphics in their place: Use the coordinate system to draw SVG shapes and text at different scales and positions</li><li>Artistic touches: Explore how color is used, how strokes are created and manipulated, and how graphical effects like filters, clipping, and masking are applied</li><li>SVG as an application: Make your graphic more accessible to humans and computers, and learn how to make it interactive or animated</li></ul>",
-      descEN:
-        "<p>Using Scalable Vector Graphics (SVG) for illustrations only scratches the surface of this format’s potential on the web. With this practical guide, you’ll learn how to use SVG not only for illustrations but also as graphical documents that you can integrate into complex HTML5 web pages, and style with custom CSS. Web developers will discover ways to adapt designs by adding data based graphics, dynamic styles, interaction, or animation.</p><p>Divided into five parts, this book includes:</p><ul><li>SVG on the web: Understand how SVG works with HTML, CSS, and JavaScript to define graphics</li><li>Drawing with markup: Learn the vector language of x and y coordinates that let SVG create basic and custom shapes</li><li>Putting graphics in their place: Use the coordinate system to draw SVG shapes and text at different scales and positions</li><li>Artistic touches: Explore how color is used, how strokes are created and manipulated, and how graphical effects like filters, clipping, and masking are applied</li><li>SVG as an application: Make your graphic more accessible to humans and computers, and learn how to make it interactive or animated</li></ul>",
-      tag: ["2", "24", "29", "20"],
-      pictureRU:
-        "https://covers.oreillystatic.com/images/0636920037972/lrg.jpg",
-      pictureEN: "https://covers.oreillystatic.com/images/0636920037972/lrg.jpg"
-    },
-    {
-      id: "16",
-      titleRU: "SVG Animations",
-      titleEN: "SVG Animations",
-      authorsRU: "Сара Дреснер",
-      authorsEN: "Sarah Drasner",
-      linkRU: {
-        Amazon:
-          "https://www.amazon.com/SVG-Animations-Implementations-Responsive-Animation/dp/1491939702/",
-        "O'Reilly": "http://shop.oreilly.com/product/0636920045335.do"
-      },
-      linkEN: {
-        Amazon:
-          "https://www.amazon.com/SVG-Animations-Implementations-Responsive-Animation/dp/1491939702/",
-        "O'Reilly": "http://shop.oreilly.com/product/0636920045335.do"
-      },
-      lengthRU: "246",
-      lengthEN: "246",
-      lang: ["English"],
-      date: "2017",
-      free: false,
-      descRU:
-        "<p>SVG is extremely powerful, with its reduced HTTP requests and crispness on any display. It becomes increasingly more interesting as you explore its capabilities for responsive animation and performance boons. When you animate SVG, you must be aware of normal image traits like composition, color, implementation, and optimization. But when you animate, it increases the complexity of each of these factors exponentially.</p><p>This practical book takes a deep dive into how you can to solve these problems with stability, performance, and creativity in mind.</p><ul><li>Learn how to make SVG cross-browser compatible, backwards compatible, optimized, and responsive</li><li>Plan and debug animation</li><li>Make a complex animation responsive, as many sites are responsive</li><li>Profile each animation technique in terms of performance so that you know what you're getting in to with each library or native technology</li></ul>",
-      descEN:
-        "<p>SVG is extremely powerful, with its reduced HTTP requests and crispness on any display. It becomes increasingly more interesting as you explore its capabilities for responsive animation and performance boons. When you animate SVG, you must be aware of normal image traits like composition, color, implementation, and optimization. But when you animate, it increases the complexity of each of these factors exponentially.</p><p>This practical book takes a deep dive into how you can to solve these problems with stability, performance, and creativity in mind.</p><ul><li>Learn how to make SVG cross-browser compatible, backwards compatible, optimized, and responsive</li><li>Plan and debug animation</li><li>Make a complex animation responsive, as many sites are responsive</li><li>Profile each animation technique in terms of performance so that you know what you're getting in to with each library or native technology</li></ul>",
-      tag: ["2", "5", "29", "20"],
-      pictureRU:
-        "https://covers.oreillystatic.com/images/0636920045335/lrg.jpg",
-      pictureEN: "https://covers.oreillystatic.com/images/0636920045335/lrg.jpg"
-    },
-    {
-      id: "17",
-      titleRU: "SVG Essentials",
-      titleEN: "SVG Essentials",
-      authorsRU: "Дж. Айзенберг, Амелия Беллами-Ройдс",
-      authorsEN: "J. Eisenberg, Amelia Bellamy-Royds",
-      linkRU: {
-        Amazon:
-          "https://www.amazon.com/SVG-Essentials-Producing-Scalable-Graphics/dp/1449374352/",
-        "O'Reilly": "http://shop.oreilly.com/product/0636920032335.do"
-      },
-      linkEN: {
-        Amazon:
-          "https://www.amazon.com/SVG-Essentials-Producing-Scalable-Graphics/dp/1449374352/",
-        "O'Reilly": "http://shop.oreilly.com/product/0636920032335.do"
-      },
-      lengthRU: "360",
-      lengthEN: "360",
-      lang: ["English"],
-      date: "2014",
-      free: false,
-      descRU:
-        "<p>Learn the essentials of Scalable Vector Graphics, the mark-up language used by most vector drawing programs and interactive web graphics tools. SVG Essentials takes you through SVG’s capabilities, beginning with simple line drawings and moving through complicated features such as filters, transformations, gradients, and patterns.</p><p>This thoroughly updated edition includes expanded coverage of animation, interactive graphics, and scripting SVG. Interactive examples online make it easy for you to experiment with SVG features in your web browser. Geared toward experienced designers, this book also includes appendices that explain basic concepts such as XML markup and CSS styling, so even if you have no web design experience, you can start learning SVG.</p><ul><li>Create and style graphics to match your web design in a way that looks great when printed or displayed on high-resolution screens</li><li>Make your charts and decorative headings accessible to search engines and assistive technologies</li><li>Add artistic effects to your graphics, text, and photographs using SVG masks, filters, and transformations</li><li>Animate graphics with SVG markup, or add interactivity with CSS and JavaScript</li><li>Create SVG from existing vector data or XML data, using programming languages and XSLT</li></ul>",
-      descEN:
-        "<p>Learn the essentials of Scalable Vector Graphics, the mark-up language used by most vector drawing programs and interactive web graphics tools. SVG Essentials takes you through SVG’s capabilities, beginning with simple line drawings and moving through complicated features such as filters, transformations, gradients, and patterns.</p><p>This thoroughly updated edition includes expanded coverage of animation, interactive graphics, and scripting SVG. Interactive examples online make it easy for you to experiment with SVG features in your web browser. Geared toward experienced designers, this book also includes appendices that explain basic concepts such as XML markup and CSS styling, so even if you have no web design experience, you can start learning SVG.</p><ul><li>Create and style graphics to match your web design in a way that looks great when printed or displayed on high-resolution screens</li><li>Make your charts and decorative headings accessible to search engines and assistive technologies</li><li>Add artistic effects to your graphics, text, and photographs using SVG masks, filters, and transformations</li><li>Animate graphics with SVG markup, or add interactivity with CSS and JavaScript</li><li>Create SVG from existing vector data or XML data, using programming languages and XSLT</li></ul>",
-      tag: ["2", "24", "20", "29"],
-      pictureRU:
-        "https://covers.oreillystatic.com/images/0636920032335/lrg.jpg",
-      pictureEN: "https://covers.oreillystatic.com/images/0636920032335/lrg.jpg"
-    },
-    {
-      id: "18",
-      titleRU: "Programming 3D Applications with HTML5 and WebGL",
-      titleEN: "Programming 3D Applications with HTML5 and WebGL",
-      authorsRU: "Тони Паризи",
-      authorsEN: "Tony Parisi",
-      linkRU: {
-        Amazon:
-          "https://www.amazon.com/Programming-Applications-HTML5-WebGL-Visualization/dp/1449362966/",
-        "O'Reilly": "http://shop.oreilly.com/product/0636920029205.do"
-      },
-      linkEN: {
-        Amazon:
-          "https://www.amazon.com/Programming-Applications-HTML5-WebGL-Visualization/dp/1449362966/",
-        "O'Reilly": "http://shop.oreilly.com/product/0636920029205.do"
-      },
-      lengthRU: "404",
-      lengthEN: "404",
-      lang: ["English"],
-      date: "2014",
-      free: false,
-      descRU:
-        "<p>Create high-performance, visually stunning 3D applications for the Web, using HTML5 and related technologies such as CSS3 and WebGL—the emerging web graphics standard. With this book, you’ll learn how to use the tools, frameworks, and libraries for building 3D models and animations, mind-blowing visual effects, and advanced user interaction in both desktop and mobile browsers.</p><p>In two parts—Foundations and Application Development Techniques—author Tony Parisi provides a thorough grounding in theory and practice for designing everything from a simple 3D product viewer to immersive games and interactive training systems. Ideal for developers with Javascript and HTML experience.</p><ul><li>Explore HTML5 APIs and related technologies for creating 3D web graphics, including WebGL, Canvas, and CSS</li><li>Work with the popular JavaScript 3D rendering and animation libraries Three.js and Tween.js</li><li>Delve into the 3D content creation pipeline, and the modeling and animation tools for creating killer 3D content</li><li>Look into several game engines and frameworks for building 3D applications, including the author’s Vizi framework</li><li>Create 3D environments with multiple objects and complex interaction, using examples and supporting code</li><li>Examine the issues involved in building WebGL-based 3D applications for mobile browsers</li></ul>",
-      descEN:
-        "<p>Create high-performance, visually stunning 3D applications for the Web, using HTML5 and related technologies such as CSS3 and WebGL—the emerging web graphics standard. With this book, you’ll learn how to use the tools, frameworks, and libraries for building 3D models and animations, mind-blowing visual effects, and advanced user interaction in both desktop and mobile browsers.</p><p>In two parts—Foundations and Application Development Techniques—author Tony Parisi provides a thorough grounding in theory and practice for designing everything from a simple 3D product viewer to immersive games and interactive training systems. Ideal for developers with Javascript and HTML experience.</p><ul><li>Explore HTML5 APIs and related technologies for creating 3D web graphics, including WebGL, Canvas, and CSS</li><li>Work with the popular JavaScript 3D rendering and animation libraries Three.js and Tween.js</li><li>Delve into the 3D content creation pipeline, and the modeling and animation tools for creating killer 3D content</li><li>Look into several game engines and frameworks for building 3D applications, including the author’s Vizi framework</li><li>Create 3D environments with multiple objects and complex interaction, using examples and supporting code</li><li>Examine the issues involved in building WebGL-based 3D applications for mobile browsers</li></ul>",
-      tag: ["2", "7", "8", "22", "25", "29", "20"],
-      pictureRU:
-        "https://covers.oreillystatic.com/images/0636920029205/lrg.jpg",
-      pictureEN: "https://covers.oreillystatic.com/images/0636920029205/lrg.jpg"
-    },
-    {
-      id: "19",
-      titleRU: "WebGL. Программирование трехмерной графики",
-      titleEN:
-        "WebGL Programming Guide: Interactive 3D Graphics Programming with WebGL",
-      authorsRU: "Коичи Мацуда, Роджер Ли",
-      authorsEN: "Kouichi Matsuda, Rodger Lea",
-      linkRU: {
-        OZON: "https://www.ozon.ru/context/detail/id/31239396/"
-      },
-      linkEN: {
-        Amazon:
-          "https://www.amazon.com/WebGL-Programming-Guide-Interactive-Graphics/dp/0321902920/"
-      },
-      lengthRU: "494",
-      lengthEN: "552",
-      lang: ["English", "Русский"],
-      date: "2013",
-      free: false,
-      descRU:
-        "<p>WebGL является новой веб-технологией, позволяющей использовать в браузере преимущества аппаратного ускорения трехмерной графики без установки дополнительного программного обеспечения. WebGL основана на спецификации OpenGL и привносит новые концепции программирования трехмерной графики в веб- разработку. Снабженная большим количеством примеров, книга показывает, что овладеть технологией WebGL совсем несложно, несмотря на то, что она выглядит незнакомой и инородной. Каждая глава описывает один из важнейших аспектов программирования трехмерной графики и представляет разные варианты их реализации. Отдельные разделы, описывающие эксперименты с примерами программ, позволят читателю исследовать изучаемые концепции на практике.</p><p>Издание предназначено для программистов, желающих научиться использовать в своих веб-проектах 3D- графику.</p>",
-      descEN:
-        "<p>Using WebGL®, you can create sophisticated interactive 3D graphics inside web browsers, without plug-ins. WebGL makes it possible to build a new generation of 3D web games, user interfaces, and information visualization solutions that will run on any standard web browser, and on PCs, smartphones, tablets, game consoles, or other devices. WebGL Programming Guide will help you get started quickly with interactive WebGL 3D programming, even if you have no prior knowledge of HTML5, JavaScript, 3D graphics, mathematics, or OpenGL.</p><p>You’ll learn step-by-step, through realistic examples, building your skills as you move from simple to complex solutions for building visually appealing web pages and 3D applications with WebGL. Media, 3D graphics, and WebGL pioneers Dr. Kouichi Matsuda and Dr. Rodger Lea offer easy-to-understand tutorials on key aspects of WebGL, plus 100 downloadable sample programs, each demonstrating a specific WebGL topic.</p><p>You’ll move from basic techniques such as rendering, animating, and texturing triangles, all the way to advanced techniques such as fogging, shadowing, shader switching, and displaying 3D models generated by Blender or other authoring tools. This book won’t just teach you WebGL best practices, it will give you a library of code to jumpstart your own projects.</p><p>Coverage includes:</p><ul><li>WebGL’s origin, core concepts, features, advantages, and integration with other web standards</li><li>How <canvas> and basic WebGL functions work together to deliver 3D graphics</li><li>Shader development with OpenGL ES Shading Language (GLSL ES)</li><li>3D scene drawing: representing user views, controlling space volume, clipping, object creation, and perspective</li><li>Achieving greater realism through lighting and hierarchical objects</li><li>Advanced techniques: object manipulation, heads-up displays, alpha blending, shader switching, and more</li><li>Valuable reference appendixes covering key issues ranging from coordinate systems to matrices and shader loading to web browser settings</li></ul>",
-      tag: ["1", "2", "22", "25", "19", "29"],
-      pictureRU: "https://ozon-st.cdn.ngenix.net/multimedia/1011543755.jpg",
-      pictureEN:
-        "https://images-na.ssl-images-amazon.com/images/I/51bly7TR9rL._SX382_BO1,204,203,200_.jpg"
-    },
-    {
-      id: "20",
-      titleRU: "Professional Git",
-      titleEN: "Professional Git",
-      authorsRU: "Брент Ластер",
-      authorsEN: "Brent Laster",
-      linkRU: {
-        Amazon:
-          "https://www.amazon.com/Professional-Git-Brent-Laster/dp/111928497X/"
-      },
-      linkEN: {
-        Amazon:
-          "https://www.amazon.com/Professional-Git-Brent-Laster/dp/111928497X/"
-      },
-      lengthRU: "480",
-      lengthEN: "480",
-      lang: ["English"],
-      date: "2016",
-      free: false,
-      descRU:
-        "<p>Professional Git takes a professional approach to learning this massively popular software development tool, and provides an up-to-date guide for new users. More than just a development manual, this book helps you get into the Git mindset—extensive discussion of corollaries to traditional systems as well as considerations unique to Git help you draw upon existing skills while looking out—and planning for—the differences. Connected labs and exercises are interspersed at key points to reinforce important concepts and deepen your understanding, and a focus on the practical goes beyond technical tutorials to help you integrate the Git model into your real-world workflow.</p><p>Git greatly simplifies the software development cycle, enabling users to create, use, and switch between versions as easily as you switch between files. This book shows you how to harness that power and flexibility to streamline your development cycle.</p><ul><li>Understand the basic Git model and overall workflow</li><li>Learn the Git versions of common source management concepts and commands</li><li>Track changes, work with branches, and take advantage of Git's full functionality</li><li>Avoid trip-ups and missteps common to new users</li></ul><p>Git works with the most popular software development tools and is used by almost all of the major technology companies. More than 40 percent of software developers use it as their primary source control tool, and that number continues to grow; the ability to work effectively with Git is rapidly approaching must-have status, and Professional Git is the comprehensive guide you need to get up to speed quickly.</p>",
-      descEN:
-        "<p>Professional Git takes a professional approach to learning this massively popular software development tool, and provides an up-to-date guide for new users. More than just a development manual, this book helps you get into the Git mindset—extensive discussion of corollaries to traditional systems as well as considerations unique to Git help you draw upon existing skills while looking out—and planning for—the differences. Connected labs and exercises are interspersed at key points to reinforce important concepts and deepen your understanding, and a focus on the practical goes beyond technical tutorials to help you integrate the Git model into your real-world workflow.</p><p>Git greatly simplifies the software development cycle, enabling users to create, use, and switch between versions as easily as you switch between files. This book shows you how to harness that power and flexibility to streamline your development cycle.</p><ul><li>Understand the basic Git model and overall workflow</li><li>Learn the Git versions of common source management concepts and commands</li><li>Track changes, work with branches, and take advantage of Git's full functionality</li><li>Avoid trip-ups and missteps common to new users</li></ul><p>Git works with the most popular software development tools and is used by almost all of the major technology companies. More than 40 percent of software developers use it as their primary source control tool, and that number continues to grow; the ability to work effectively with Git is rapidly approaching must-have status, and Professional Git is the comprehensive guide you need to get up to speed quickly.</p>",
-      tag: ["2", "6"],
-      pictureRU:
-        "https://images-na.ssl-images-amazon.com/images/I/51FArnMyTXL._SX396_BO1,204,203,200_.jpg",
-      pictureEN:
-        "https://images-na.ssl-images-amazon.com/images/I/51FArnMyTXL._SX396_BO1,204,203,200_.jpg"
-    },
-    {
-      id: "21",
-      titleRU: "Git для профессионального программиста",
-      titleEN: "",
-      authorsRU: "Скотт Чакон, Бен Штрауб",
-      authorsEN: "Scott Chacon, Ben Straub",
-      linkRU: {
-        OZON: "https://www.ozon.ru/context/detail/id/33575056/",
-        Питер:
-          "https://www.piter.com/collection/all/product/git-dlya-professionalnogo-programmista"
-      },
-      linkEN: {
-        Amazon: "https://www.amazon.com/Pro-Git-Scott-Chacon/dp/1484200772/"
-      },
-      lengthRU: "496",
-      lengthEN: "456",
-      lang: ["English", "Русский"],
-      date: "2014",
-      free: false,
-      descRU:
-        "<p>Эта книга представляет собой обновленное руководство по использованию Git в современных условиях. С тех пор как проект Git - распределенная система управления версиями - был создан Линусом Торвальдсом, прошло много лет, и система Git превратилась в доминирующую систему контроля версий, как для коммерческих целей, так и для проектов с открытым исходным кодом. Эффективный и хорошо реализованный контроль версий необходим для любого успешного веб-проекта. Постепенно эту систему приняли на вооружение практически все сообщества разработчиков ПО с открытым исходным кодом. Появление огромного числа графических интерфейсов для всех платформ и поддержка IDE позволили внедрить Git в операционные системы семейства Windows. Второе издание книги было обновлено для Git-версии 2.0 и уделяет большое внимание GitHub.</p>",
-      descEN:
-        "<p>Pro Git (Second Edition) is your fully-updated guide to Git and its usage in the modern world. Git has come a long way since it was first developed by Linus Torvalds for Linux kernel development. It has taken the open source world by storm since its inception in 2005, and this book teaches you how to use it like a pro.</p><p>Effective and well-implemented version control is a necessity for successful web projects, whether large or small. With this book you’ll learn how to master the world of distributed version workflow, use the distributed features of Git to the full, and extend Git to meet your every need.</p><p>Written by Git pros Scott Chacon and Ben Straub, Pro Git (Second Edition) builds on the hugely successful first edition, and is now fully updated for Git version 2.0, as well as including an indispensable chapter on GitHub. It’s the best book for all your Git needs.</p>",
-      tag: ["1", "2", "6"],
-      pictureRU: "https://ozon-st.cdn.ngenix.net/multimedia/1013148712.jpg",
-      pictureEN:
-        "https://images-na.ssl-images-amazon.com/images/I/512fSpHGOmL._SX403_BO1,204,203,200_.jpg"
-    },
-    {
-      id: "22",
+      id: "27",
       titleRU: "Изучаем Node. Переходим на сторону сервера",
       titleEN: "Learning Node: Moving to the Server-Side",
       authorsRU: "Шелли Пауэрс",
@@ -650,7 +812,7 @@ const data = {
         "https://images-na.ssl-images-amazon.com/images/I/51kMsrX%2BxJL._SX382_BO1,204,203,200_.jpg"
     },
     {
-      id: "23",
+      id: "28",
       titleRU: "Шаблоны проектирования Node.JS",
       titleEN: "Node.js Design Patterns",
       authorsRU: "Марио Каскиаро, Лучано Маммино",
@@ -677,7 +839,7 @@ const data = {
         "https://images-na.ssl-images-amazon.com/images/I/41OYZ2gUtXL._SX404_BO1,204,203,200_.jpg"
     },
     {
-      id: "24",
+      id: "29",
       titleRU: "Node.js в действии",
       titleEN: "Node.js in Action",
       authorsRU: "Майк Кантелон, Алекс Янг, Брэдли Мек",
@@ -707,7 +869,7 @@ const data = {
         "https://images-na.ssl-images-amazon.com/images/I/51miw4GCK5L._SX397_BO1,204,203,200_.jpg"
     },
     {
-      id: "25",
+      id: "30",
       titleRU: "Learning Node.js Development",
       titleEN: "Learning Node.js Development",
       authorsRU: "Эндрю Мид",
@@ -735,88 +897,64 @@ const data = {
         "https://images-na.ssl-images-amazon.com/images/I/41a1IjKICeL._SX404_BO1,204,203,200_.jpg"
     },
     {
-      id: "26",
-      titleRU: "TypeScript High Performance",
-      titleEN: "TypeScript High Performance",
-      authorsRU: "Ajinkya Kher",
-      authorsEN: "Ajinkya Kher",
+      id: "31",
+      titleRU: "Professional Git",
+      titleEN: "Professional Git",
+      authorsRU: "Брент Ластер",
+      authorsEN: "Brent Laster",
       linkRU: {
         Amazon:
-          "https://www.amazon.com/TypeScript-High-Performance-Ajinkya-Kher/dp/1785288644/"
+          "https://www.amazon.com/Professional-Git-Brent-Laster/dp/111928497X/"
       },
       linkEN: {
         Amazon:
-          "https://www.amazon.com/TypeScript-High-Performance-Ajinkya-Kher/dp/1785288644/"
+          "https://www.amazon.com/Professional-Git-Brent-Laster/dp/111928497X/"
       },
-      lengthRU: "230",
-      lengthEN: "230",
+      lengthRU: "480",
+      lengthEN: "480",
       lang: ["English"],
-      date: "2017",
-      free: false,
-      descRU: "",
-      descEN:
-        "<p><b>Key Features</b></p><ul><li>Efficiently use Data Structures, Language Constructs, & Handle Asynchrony</li><li>Monitor the performance, Code Quality, & Resource Optimizations</li><li>Build & Deploy Strategies for Large Scale TypeScript Projects</li></ul><p><b>Book Description</b></p><p>In a world where a tiny decrease in frames per second impacts customer engagement greatly, writing highly scalable code is more of a necessity than a luxury. Using TypeScript you get type checking during development. This gives you the power to write optimized code quickly. This book is also a solid tool to those who're curious to understand the impact of performance in production, and it is of the greatest aid to the proactive developers who like to be cognizant of and avoid the classic pitfalls while coding.</p><p>The book will starts with explaining the efficient implementation of basic data Structures, data types, and flow control. You will then learn efficient use of advanced language constructs and asynchronous programming. Further, you'll learn different configurations available with TSLint to improve code quality and performance. Next, we'll introduce you to the concepts of profiling and then we deep dive into profiling JS with several tools such as firebug, chrome, fiddler. Finally, you'll learn techniques to build and deploy real world large scale TypeScript applications.</p><p><b>What you will learn</b></p><ul><li>Learn about the critical rendering path, and the performance metrics involved along the same</li><li>Explore the detailed inner intricacies of a web browser</li><li>Build a large scale front end applications and learn the thought process behind architecting such an effort</li><li>Understand the challenges of scalability and how TypeScript renders itself</li></ul>",
-      tag: ["2", "12"],
-      pictureRU:
-        "https://d188rgcu4zozwl.cloudfront.net/content/B071VVFD4D/resources/749616172",
-      pictureEN:
-        "https://d188rgcu4zozwl.cloudfront.net/content/B071VVFD4D/resources/749616172"
-    },
-    {
-      id: "27",
-      titleRU: "jQuery в действии",
-      titleEN: "jQuery in Action",
-      authorsRU: "Беэр Бибо, Иегуда Кац, Аурелио де Роза",
-      authorsEN: "Bear Bibeault, Yehuda Katz, Aurelio De Rosa",
-      linkRU: {
-        OZON: "https://www.ozon.ru/context/detail/id/141523573/"
-      },
-      linkEN: {
-        Amazon:
-          "https://www.amazon.com/jQuery-Action-Bear-Bibeault/dp/1617292079/"
-      },
-      lengthRU: "528",
-      lengthEN: "504",
-      lang: ["English", "Русский"],
-      date: "2015",
+      date: "2016",
       free: false,
       descRU:
-        '<p>Третье издание книги "jQuery в действии" - это динамичное и исчерпывающее руководство по библиотеке jQuery. В книге рассматриваются задачи, с которыми приходится сталкиваться при реализации практически любого веб-проекта. Книга ориентирована на читателей, обладающих минимальным опытом JavaScript, содержит новые примеры и упражнения, а также глубоко и практично раскрывает темы, связанные с этой библиотекой. Вы узнаете, как делать обход HTML-документов, обрабатывать события, создавать анимацию, писать плагины, и даже освоите модульное тестирование кода. Уникальные лабораторные работы помогают закрепить каждую концепцию на реальных примерах кода. В книгу добавлено несколько новых глав, из которых вы узнаете, как работать с новейшими фреймворками и одностраничными приложениями.</p>',
+        "<p>Professional Git takes a professional approach to learning this massively popular software development tool, and provides an up-to-date guide for new users. More than just a development manual, this book helps you get into the Git mindset—extensive discussion of corollaries to traditional systems as well as considerations unique to Git help you draw upon existing skills while looking out—and planning for—the differences. Connected labs and exercises are interspersed at key points to reinforce important concepts and deepen your understanding, and a focus on the practical goes beyond technical tutorials to help you integrate the Git model into your real-world workflow.</p><p>Git greatly simplifies the software development cycle, enabling users to create, use, and switch between versions as easily as you switch between files. This book shows you how to harness that power and flexibility to streamline your development cycle.</p><ul><li>Understand the basic Git model and overall workflow</li><li>Learn the Git versions of common source management concepts and commands</li><li>Track changes, work with branches, and take advantage of Git's full functionality</li><li>Avoid trip-ups and missteps common to new users</li></ul><p>Git works with the most popular software development tools and is used by almost all of the major technology companies. More than 40 percent of software developers use it as their primary source control tool, and that number continues to grow; the ability to work effectively with Git is rapidly approaching must-have status, and Professional Git is the comprehensive guide you need to get up to speed quickly.</p>",
       descEN:
-        "<p>jQuery in Action, Third Edition, is a fast-paced and complete guide to jQuery, focused on the tasks you'll face in nearly any web dev project. Written for readers with minimal JavaScript experience, this revised edition adds new examples and exercises, along with the deep and practical coverage you expect from an In Action book. You'll learn how to traverse HTML documents, handle events, perform animations, write plugins, and even unit test your code. The unique lab pages anchor each concept with real-world code. Several new chapters teach you how to interact with other tools and frameworks to build modern single-page web applications.</p><p>Purchase of the print book includes a free eBook in PDF, Kindle, and ePub formats from Manning Publications.</p><p><b>About the Technology</b></p><p>Thanks to jQuery, no one remembers the bad old days when programmers manually managed browser inconsistencies, CSS selectors support, and DOM navigation, and when every animation was a frustrating exercise in raw JavaScript. The elegant, intuitive jQuery library beautifully manages these concerns, and jQuery 3 adds even more features to make your life as a web developer smooth and productive.</p><p><b>About the Book</b></p><p>jQuery in Action, Third Edition, is a fast-paced guide to jQuery, focused on the tasks you'll face in nearly any web dev project. In it, you'll learn how to traverse the DOM, handle events, perform animations, write jQuery plugins, perform Ajax requests, and even unit test your code. Its unique Lab Pages anchor each concept in real-world code. This expanded Third Edition adds new chapters that teach you how to interact with other tools and frameworks and build modern single-page web applications.</p><ul><li>Updated for jQuery 3</li><li>DOM manipulation and event handling</li><li>Animations and effects</li><li>Advanced topics including Unit Testing and Promises</li><li>Practical examples and labs</li></ul>",
-      tag: ["1", "2", "16", "18"],
-      pictureRU: "https://ozon-st.cdn.ngenix.net/multimedia/1019609580.jpg",
+        "<p>Professional Git takes a professional approach to learning this massively popular software development tool, and provides an up-to-date guide for new users. More than just a development manual, this book helps you get into the Git mindset—extensive discussion of corollaries to traditional systems as well as considerations unique to Git help you draw upon existing skills while looking out—and planning for—the differences. Connected labs and exercises are interspersed at key points to reinforce important concepts and deepen your understanding, and a focus on the practical goes beyond technical tutorials to help you integrate the Git model into your real-world workflow.</p><p>Git greatly simplifies the software development cycle, enabling users to create, use, and switch between versions as easily as you switch between files. This book shows you how to harness that power and flexibility to streamline your development cycle.</p><ul><li>Understand the basic Git model and overall workflow</li><li>Learn the Git versions of common source management concepts and commands</li><li>Track changes, work with branches, and take advantage of Git's full functionality</li><li>Avoid trip-ups and missteps common to new users</li></ul><p>Git works with the most popular software development tools and is used by almost all of the major technology companies. More than 40 percent of software developers use it as their primary source control tool, and that number continues to grow; the ability to work effectively with Git is rapidly approaching must-have status, and Professional Git is the comprehensive guide you need to get up to speed quickly.</p>",
+      tag: ["2", "6"],
+      pictureRU:
+        "https://images-na.ssl-images-amazon.com/images/I/51FArnMyTXL._SX396_BO1,204,203,200_.jpg",
       pictureEN:
-        "https://images-na.ssl-images-amazon.com/images/I/51yeevyIBuL._SX396_BO1,204,203,200_.jpg"
+        "https://images-na.ssl-images-amazon.com/images/I/51FArnMyTXL._SX396_BO1,204,203,200_.jpg"
     },
     {
-      id: "28",
-      titleRU: "JavaScript и jQuery. Исчерпывающее руководство",
-      titleEN: "JavaScript & jQuery: The Missing Manual",
-      authorsRU: "Дэвид Сойер Макфарланд",
-      authorsEN: "David Sawyer McFarland",
+      id: "32",
+      titleRU: "Git для профессионального программиста",
+      titleEN: "",
+      authorsRU: "Скотт Чакон, Бен Штрауб",
+      authorsEN: "Scott Chacon, Ben Straub",
       linkRU: {
-        OZON: "https://www.ozon.ru/context/detail/id/33835343/"
+        OZON: "https://www.ozon.ru/context/detail/id/33575056/",
+        Питер:
+          "https://www.piter.com/collection/all/product/git-dlya-professionalnogo-programmista"
       },
       linkEN: {
-        Amazon:
-          "https://www.amazon.com/JavaScript-jQuery-David-Sawyer-McFarland/dp/1491947071/"
+        Amazon: "https://www.amazon.com/Pro-Git-Scott-Chacon/dp/1484200772/"
       },
-      lengthRU: "880",
-      lengthEN: "686",
+      lengthRU: "496",
+      lengthEN: "456",
       lang: ["English", "Русский"],
       date: "2014",
       free: false,
       descRU:
-        "<p>Язык программирования JavaScript позволяет усовершенствовать ваши веб-страницы с помощью анимации, интерактивных элементов и визуальных эффектов, но его не так просто изучить и освоить. Новое, обновленное и расширенное издание уже ставшей классикой книги доступно объясняет основы языка JavaScript и показывает, как можно экономить время и силы с помощью библиотеки jQuery, содержащей готовые фрагменты кода JavaScript, и новейшего плагина jQuery UI. Прочитав эту книгу вы сможете:</p><ul><li>Сделать свои страницы интерактивными. Используйте библиотеку jQuery для создания интерактивных элементов, реагирующих на действия посетителя.</li><li>Освоить новейший плагин jQuery UI. Улучшайте интерфейс, используя панели с вкладками, диалоговые окна, панели для выбора дат и другие виджеты.</li><li>Создавать удобные формы. Собирайте данные посетителей, помогайте покупателям осуществлять покупки и позволяйте участникам оставлять комментарии.</li><li>Применять технологию Ajax. Организуйте обмен данными между веб-страницами и веб-сервером без необходимости перезагрузки страниц. </li><li>Углубить свои знания. Используйте редактор ThemeRoller для настройки виджетов. Избегайте типичных ошибок, свойственных начинающим программистам. </li></ul><p>Дэвид МакФарланд — президент компании McFarland Media, около 20 лет занимается созданием сайтов и их управлением. Он преподавал в Калифорнийском университете в Беркли и в Портлендском государственном университете. Дэвид написал более 15 книг компьютерной тематике, в том числе по CSS и JavaScript.</p>",
+        "<p>Эта книга представляет собой обновленное руководство по использованию Git в современных условиях. С тех пор как проект Git - распределенная система управления версиями - был создан Линусом Торвальдсом, прошло много лет, и система Git превратилась в доминирующую систему контроля версий, как для коммерческих целей, так и для проектов с открытым исходным кодом. Эффективный и хорошо реализованный контроль версий необходим для любого успешного веб-проекта. Постепенно эту систему приняли на вооружение практически все сообщества разработчиков ПО с открытым исходным кодом. Появление огромного числа графических интерфейсов для всех платформ и поддержка IDE позволили внедрить Git в операционные системы семейства Windows. Второе издание книги было обновлено для Git-версии 2.0 и уделяет большое внимание GitHub.</p>",
       descEN:
-        "<p>JavaScript lets you supercharge your HTML with animation, interactivity, and visual effects—but many web designers find the language hard to learn. This easy-to-read guide not only covers JavaScript basics, but also shows you how to save time and effort with the jQuery and jQuery UI libraries of prewritten JavaScript code. You’ll build web pages that feel and act like desktop programs—with little or no programming.</p><p>The important stuff you need to know:</p><ul><li>Pull back the curtain on JavaScript. Learn how to build a basic program with this language.</li><li>Get up to speed on jQuery. Quickly assemble JavaScript programs that work well on multiple web browsers.</li><li>Transform your user interface. Learn jQuery UI, the JavaScript library for interface features like design themes and controls.</li><li>Make your pages interactive. Create JavaScript events that react to visitor actions.</li><li>Use animations and effects. Build drop-down navigation menus, pop-ups, automated slideshows, and more.</li><li>Collect data with web forms. Create easy-to-use forms that ensure more accurate visitor responses.</li><li>Practice with living examples. Get step-by-step tutorials for web projects you can build yourself.</li></ul>",
-      tag: ["1", "2", "16", "20"],
-      pictureRU: "https://ozon-st.cdn.ngenix.net/multimedia/1016412966.jpg",
-      pictureEN: "https://covers.oreillystatic.com/images/0636920032663/lrg.jpg"
+        "<p>Pro Git (Second Edition) is your fully-updated guide to Git and its usage in the modern world. Git has come a long way since it was first developed by Linus Torvalds for Linux kernel development. It has taken the open source world by storm since its inception in 2005, and this book teaches you how to use it like a pro.</p><p>Effective and well-implemented version control is a necessity for successful web projects, whether large or small. With this book you’ll learn how to master the world of distributed version workflow, use the distributed features of Git to the full, and extend Git to meet your every need.</p><p>Written by Git pros Scott Chacon and Ben Straub, Pro Git (Second Edition) builds on the hugely successful first edition, and is now fully updated for Git version 2.0, as well as including an indispensable chapter on GitHub. It’s the best book for all your Git needs.</p>",
+      tag: ["1", "2", "6"],
+      pictureRU: "https://ozon-st.cdn.ngenix.net/multimedia/1013148712.jpg",
+      pictureEN:
+        "https://images-na.ssl-images-amazon.com/images/I/512fSpHGOmL._SX403_BO1,204,203,200_.jpg"
     },
     {
-      id: "29",
+      id: "33",
       titleRU: "Angular in Action",
       titleEN: "Angular in Action",
       authorsRU: "Джереми Вилкен",
@@ -845,7 +983,7 @@ const data = {
         "https://images-na.ssl-images-amazon.com/images/I/51Rb%2BtbNffL._SX397_BO1,204,203,200_.jpg"
     },
     {
-      id: "30",
+      id: "34",
       titleRU: "Angular: Up and Running",
       titleEN: "Angular: Up and Running",
       authorsRU: "Shyam Seshadri",
@@ -874,7 +1012,36 @@ const data = {
         "https://d1b14unh5d6w7g.cloudfront.net/1491999837.01.S001.LXXXXXXX.jpg?Expires=1534707743&Signature=CXNzMLqVXdowlTk8ImQ8QoeShG+x5W8MlI2KCPO/Vs50T+1QRkGmBl3hGKSM21tSFMZyjNWwNLon1QEWvDiwwgHkZGj/c/1qwyvyQ218hIs3SYCeUPVbyRNSiQCtVUdpyRINywxqilpLr1VLJHH9ZUgAURyeY7iELJMHyC5YTfc=&Key-Pair-Id=APKAIUO27P366FGALUMQ"
     },
     {
-      id: "31",
+      id: "35",
+      titleRU: "Angular 5: From Theory To Practice",
+      titleEN: "Angular 5: From Theory To Practice",
+      authorsRU: "Asim Hussain",
+      authorsEN: "Asim Hussain",
+      linkRU: {
+        Amazon:
+          "https://www.amazon.com/Angular-Practice-applications-tomorrow-framework-ebook/dp/B01N9S0CZN"
+      },
+      linkEN: {
+        Amazon:
+          "https://www.amazon.com/Angular-Practice-applications-tomorrow-framework-ebook/dp/B01N9S0CZN"
+      },
+      lengthRU: 846,
+      lengthEN: 846,
+      lang: ["English"],
+      date: "2017",
+      free: false,
+      descRU:
+        "<p>After reading this book, you are going to be able to:</p><ul><li>Understand the latest features of ES6 JavaScript and TypeScript.</li><li>Build an Angular 2 application from scratch using TypeScript and the Angular command line interface.</li><li>Write code using the paradigm of reactive programming with RxJS and Observables.</li><li>Know how to Unit Test Angular using Jasmine, Karma and the Angular Test Bed</li></ul><p>The first chapter in the course is a quickstart where you dive straight into writing your first Angular application. We use the web editor plunker so you can get started writing code ASAP.</p><p>In this quickstart you'll get a 50,000 foot view of the major features of Angular.</p><p>Then chapter by chapter we go much deeper into each of these features. I'll cover the theory for that feature, using plunker as much as possible so you can try out the code yourself in a browser. Then you'll practice what you've learnt with either an online quiz or a set of flash cards.</p>",
+      descEN:
+        "<p>After reading this book, you are going to be able to:</p><ul><li>Understand the latest features of ES6 JavaScript and TypeScript.</li><li>Build an Angular 2 application from scratch using TypeScript and the Angular command line interface.</li><li>Write code using the paradigm of reactive programming with RxJS and Observables.</li><li>Know how to Unit Test Angular using Jasmine, Karma and the Angular Test Bed</li></ul><p>The first chapter in the course is a quickstart where you dive straight into writing your first Angular application. We use the web editor plunker so you can get started writing code ASAP.</p><p>In this quickstart you'll get a 50,000 foot view of the major features of Angular.</p><p>Then chapter by chapter we go much deeper into each of these features. I'll cover the theory for that feature, using plunker as much as possible so you can try out the code yourself in a browser. Then you'll practice what you've learnt with either an online quiz or a set of flash cards.</p>",
+      tag: ["2", "3", "12", "19"],
+      pictureRU:
+        "https://images-na.ssl-images-amazon.com/images/I/51SRFX--KdL._SX260_.jpg",
+      pictureEN:
+        "https://images-na.ssl-images-amazon.com/images/I/51SRFX--KdL._SX260_.jpg"
+    },
+    {
+      id: "36",
       titleRU: "Beginning Angular with Typescript",
       titleEN: "Beginning Angular with Typescript",
       authorsRU: "Greg Lim",
@@ -903,36 +1070,7 @@ const data = {
         "https://images-na.ssl-images-amazon.com/images/I/51diVUdF7nL._SX404_BO1,204,203,200_.jpg"
     },
     {
-      id: "32",
-      titleRU: "React Native Cookbook: Bringing the Web to Native Platforms",
-      titleEN: "React Native Cookbook: Bringing the Web to Native Platforms",
-      authorsRU: "Джонатан Лебенсолд",
-      authorsEN: "Jonathan Lebensold",
-      linkRU: {
-        Amazon:
-          "https://www.amazon.com/React-Native-Cookbook-Bringing-Platforms/dp/1491993847/",
-        "O'Reilly": "http://shop.oreilly.com/product/0636920090144.do"
-      },
-      linkEN: {
-        Amazon:
-          "https://www.amazon.com/React-Native-Cookbook-Bringing-Platforms/dp/1491993847/",
-        "O'Reilly": "http://shop.oreilly.com/product/0636920090144.do"
-      },
-      lengthRU: "176",
-      lengthEN: "176",
-      lang: ["English"],
-      date: "2018",
-      free: false,
-      descRU:
-        "<p>Tackling an app development project on multiple platforms is usually an arduous task, but with React Native, you can build cross-platform mobile apps that look and behave just like native apps built with Swift or Java. If you’re familiar with JavaScript, the recipes in this cookbook will help you understand the React Native ecosystem, deal with design and hardware issues, take on the deployment process, and write maintainable code.</p><p>How do you organize a project? Or design an app that can access a device’s camera? Based on author Jonathan Lebensold’s personal journey through the app development process, the recipes in this cookbook will not only provide you with quick answers, they can also inspire you to come up with your own solutions.</p><ul><li>Examine the software tools you’ll use to build a React Native app</li><li>Leverage components and JavaScript libraries in the React ecosystem</li><li>Design cross-platform apps that balance UX, platform conventions, and technical complexity</li><li>Get common use cases and advice for taking advantage of device hardware</li><li>Automate app publishing, share your iOS App with beta testers, and configure app settings</li><li>Learn strategies for ensuring your code is well factored, easily maintained, and correct</li></ul>",
-      descEN:
-        "<p>Tackling an app development project on multiple platforms is usually an arduous task, but with React Native, you can build cross-platform mobile apps that look and behave just like native apps built with Swift or Java. If you’re familiar with JavaScript, the recipes in this cookbook will help you understand the React Native ecosystem, deal with design and hardware issues, take on the deployment process, and write maintainable code.</p><p>How do you organize a project? Or design an app that can access a device’s camera? Based on author Jonathan Lebensold’s personal journey through the app development process, the recipes in this cookbook will not only provide you with quick answers, they can also inspire you to come up with your own solutions.</p><ul><li>Examine the software tools you’ll use to build a React Native app</li><li>Leverage components and JavaScript libraries in the React ecosystem</li><li>Design cross-platform apps that balance UX, platform conventions, and technical complexity</li><li>Get common use cases and advice for taking advantage of device hardware</li><li>Automate app publishing, share your iOS App with beta testers, and configure app settings</li><li>Learn strategies for ensuring your code is well factored, easily maintained, and correct</li></ul>",
-      tag: ["2", "8", "10", "21", "23", "19"],
-      pictureRU: "https://ozon-st.cdn.ngenix.net/multimedia/1023245292.jpg",
-      pictureEN: "https://ozon-st.cdn.ngenix.net/multimedia/1023245292.jpg"
-    },
-    {
-      id: "33",
+      id: "37",
       titleRU: "React и Redux. Функциональная веб-разработка",
       titleEN:
         "Learning React: Functional Web Development with React and Redux",
@@ -962,7 +1100,7 @@ const data = {
       pictureEN: "https://covers.oreillystatic.com/images/0636920049579/lrg.jpg"
     },
     {
-      id: "34",
+      id: "38",
       titleRU: "The Road to learn React",
       titleEN: "The Road to learn React",
       authorsRU: "Робин Виерух",
@@ -991,7 +1129,7 @@ const data = {
         "https://images-na.ssl-images-amazon.com/images/I/41hnPBXBfKL._SX384_BO1,204,203,200_.jpg"
     },
     {
-      id: "35",
+      id: "39",
       titleRU: "Redux in Action",
       titleEN: "Redux in Action",
       authorsRU: "Марк Гарро, Уилл Фаурот",
@@ -1020,7 +1158,7 @@ const data = {
         "https://d1b14unh5d6w7g.cloudfront.net/1617294977.01.S001.LXXXXXXX.jpg?Expires=1534711089&Signature=ftlxdnLlrXbqW81f6DYCmwyYwlBYJgAhQXLLLnKDPEq6QXfeGjvzYRgkb/GBkD4kWsu3KfijWVGJZZbXdB9dmeYjW9zsfw4HgOVaiV8bEbo2XWcw0cVliwsQW89wonGCMzhgiSFTQ9uWXFpqinRyAhc5hQsXQEvmJ124NywNnZY=&Key-Pair-Id=APKAIUO27P366FGALUMQ"
     },
     {
-      id: "36",
+      id: "40",
       titleRU: "React Design Patterns and Best Practices",
       titleEN: "React Design Patterns and Best Practices",
       authorsRU: "Мишель Бертоли",
@@ -1049,7 +1187,353 @@ const data = {
         "https://images-na.ssl-images-amazon.com/images/I/51VF6WMLNmL._SX404_BO1,204,203,200_.jpg"
     },
     {
-      id: "37",
+      id: "41",
+      titleRU: "React Native Cookbook: Bringing the Web to Native Platforms",
+      titleEN: "React Native Cookbook: Bringing the Web to Native Platforms",
+      authorsRU: "Джонатан Лебенсолд",
+      authorsEN: "Jonathan Lebensold",
+      linkRU: {
+        Amazon:
+          "https://www.amazon.com/React-Native-Cookbook-Bringing-Platforms/dp/1491993847/",
+        "O'Reilly": "http://shop.oreilly.com/product/0636920090144.do"
+      },
+      linkEN: {
+        Amazon:
+          "https://www.amazon.com/React-Native-Cookbook-Bringing-Platforms/dp/1491993847/",
+        "O'Reilly": "http://shop.oreilly.com/product/0636920090144.do"
+      },
+      lengthRU: "176",
+      lengthEN: "176",
+      lang: ["English"],
+      date: "2018",
+      free: false,
+      descRU:
+        "<p>Tackling an app development project on multiple platforms is usually an arduous task, but with React Native, you can build cross-platform mobile apps that look and behave just like native apps built with Swift or Java. If you’re familiar with JavaScript, the recipes in this cookbook will help you understand the React Native ecosystem, deal with design and hardware issues, take on the deployment process, and write maintainable code.</p><p>How do you organize a project? Or design an app that can access a device’s camera? Based on author Jonathan Lebensold’s personal journey through the app development process, the recipes in this cookbook will not only provide you with quick answers, they can also inspire you to come up with your own solutions.</p><ul><li>Examine the software tools you’ll use to build a React Native app</li><li>Leverage components and JavaScript libraries in the React ecosystem</li><li>Design cross-platform apps that balance UX, platform conventions, and technical complexity</li><li>Get common use cases and advice for taking advantage of device hardware</li><li>Automate app publishing, share your iOS App with beta testers, and configure app settings</li><li>Learn strategies for ensuring your code is well factored, easily maintained, and correct</li></ul>",
+      descEN:
+        "<p>Tackling an app development project on multiple platforms is usually an arduous task, but with React Native, you can build cross-platform mobile apps that look and behave just like native apps built with Swift or Java. If you’re familiar with JavaScript, the recipes in this cookbook will help you understand the React Native ecosystem, deal with design and hardware issues, take on the deployment process, and write maintainable code.</p><p>How do you organize a project? Or design an app that can access a device’s camera? Based on author Jonathan Lebensold’s personal journey through the app development process, the recipes in this cookbook will not only provide you with quick answers, they can also inspire you to come up with your own solutions.</p><ul><li>Examine the software tools you’ll use to build a React Native app</li><li>Leverage components and JavaScript libraries in the React ecosystem</li><li>Design cross-platform apps that balance UX, platform conventions, and technical complexity</li><li>Get common use cases and advice for taking advantage of device hardware</li><li>Automate app publishing, share your iOS App with beta testers, and configure app settings</li><li>Learn strategies for ensuring your code is well factored, easily maintained, and correct</li></ul>",
+      tag: ["2", "8", "10", "21", "23", "19"],
+      pictureRU: "https://ozon-st.cdn.ngenix.net/multimedia/1023245292.jpg",
+      pictureEN: "https://ozon-st.cdn.ngenix.net/multimedia/1023245292.jpg"
+    },
+    {
+      id: "42",
+      titleRU: "Learning Vue.js 2",
+      titleEN: "Learning Vue.js 2",
+      authorsRU: "Ольга Филипова",
+      authorsEN: "Olga Filipova",
+      linkRU: {
+        Amazon:
+          "https://www.amazon.com/Learning-Vue-js-amazing-reactive-applications/dp/1786469944/"
+      },
+      linkEN: {
+        Amazon:
+          "https://www.amazon.com/Learning-Vue-js-amazing-reactive-applications/dp/1786469944/"
+      },
+      lengthRU: "334",
+      lengthEN: "",
+      lang: ["English"],
+      date: "2016",
+      free: false,
+      descRU:
+        "<p><b>Who This Book Is For</b></p><p>This book is perfect for novice web developer seeking to learn new technologies or frameworks and also for webdev gurus eager to enrich their experience. Whatever your level of expertise, this book is a great introduction to the wonderful world of reactive web apps.</p><p><b>What You Will Learn</b></p><ul><li>Build a fully functioning reactive web application in Vue.js from scratch.</li><li>The importance of the MVVM architecture and how Vue.js compares with other frameworks such as Angular.js and React.js.</li><li>How to bring reactivity to an existing static application using Vue.js.</li><li>How to use plugins to enrich your applications.</li><li>How to develop customized plugins to meet your needs.</li><li>How to use Vuex to manage global application's state.</li></ul><p><b>In Detail</b></p><p>Vue.js is one of the latest new frameworks to have piqued the interest of web developers due to its reactivity, reusable components, and ease of use.</p><p>This book shows developers how to leverage its features to build high-performing, reactive web interfaces with Vue.js. From the initial structuring to full deployment, this book provides step-by-step guidance to developing an interactive web interface from scratch with Vue.js.</p><p>You will start by building a simple application in Vue.js which will let you observe its features in action. Delving into more complex concepts, you will learn about reactive data binding, reusable components, plugins, filters, and state management with Vuex. This book will also teach you how to bring reactivity to an existing static application using Vue.js. By the time you finish this book you will have built, tested, and deployed a complete reactive application in Vue.js from scratch.</p>",
+      descEN:
+        "<p><b>Who This Book Is For</b></p><p>This book is perfect for novice web developer seeking to learn new technologies or frameworks and also for webdev gurus eager to enrich their experience. Whatever your level of expertise, this book is a great introduction to the wonderful world of reactive web apps.</p><p><b>What You Will Learn</b></p><ul><li>Build a fully functioning reactive web application in Vue.js from scratch.</li><li>The importance of the MVVM architecture and how Vue.js compares with other frameworks such as Angular.js and React.js.</li><li>How to bring reactivity to an existing static application using Vue.js.</li><li>How to use plugins to enrich your applications.</li><li>How to develop customized plugins to meet your needs.</li><li>How to use Vuex to manage global application's state.</li></ul><p><b>In Detail</b></p><p>Vue.js is one of the latest new frameworks to have piqued the interest of web developers due to its reactivity, reusable components, and ease of use.</p><p>This book shows developers how to leverage its features to build high-performing, reactive web interfaces with Vue.js. From the initial structuring to full deployment, this book provides step-by-step guidance to developing an interactive web interface from scratch with Vue.js.</p><p>You will start by building a simple application in Vue.js which will let you observe its features in action. Delving into more complex concepts, you will learn about reactive data binding, reusable components, plugins, filters, and state management with Vuex. This book will also teach you how to bring reactivity to an existing static application using Vue.js. By the time you finish this book you will have built, tested, and deployed a complete reactive application in Vue.js from scratch.</p>",
+      tag: ["2", "14", "21", "18"],
+      pictureRU:
+        "https://images-na.ssl-images-amazon.com/images/I/51sB7Mu3EEL._SX404_BO1,204,203,200_.jpg",
+      pictureEN:
+        "https://images-na.ssl-images-amazon.com/images/I/51sB7Mu3EEL._SX404_BO1,204,203,200_.jpg"
+    },
+    {
+      id: "43",
+      titleRU: "Vue.js 2 Cookbook",
+      titleEN: "Vue.js 2 Cookbook",
+      authorsRU: "Андреа Пассалья",
+      authorsEN: "Andrea Passaglia",
+      linkRU: {
+        Amazon:
+          "https://www.amazon.com/Vue-js-Cookbook-modern-interactive-applications-ebook/dp/B01N6VAO4P/"
+      },
+      linkEN: {
+        Amazon:
+          "https://www.amazon.com/Vue-js-Cookbook-modern-interactive-applications-ebook/dp/B01N6VAO4P/"
+      },
+      lengthRU: "444",
+      lengthEN: "444",
+      lang: ["English"],
+      date: "2017",
+      free: false,
+      descRU:
+        "<p>Vue.js is an open source JavaScript library for building modern, interactive web applications. With a rapidly growing community and a strong ecosystem, Vue.js makes developing complex single page applications a breeze. Its component-based approach, intuitive API, blazing fast core, and compact size make Vue.js a great solution to craft your next front-end application.</p><p>From basic to advanced recipes, this book arms you with practical solutions to common tasks when building an application using Vue. We start off by exploring the fundamentals of Vue.js: its reactivity system, data-binding syntax, and component-based architecture through practical examples.</p><p>After that, we delve into integrating Webpack and Babel to enhance your development workflow using single file components. Finally, we take an in-depth look at Vuex for state management and Vue Router to route in your single page applications, and integrate a variety of technologies ranging from Node.js to Electron, and Socket.io to Firebase and HorizonDB.</p><p>This book will provide you with the best practices as determined by the Vue.js community.</p><p>What you will learn</p><ul><li>Understand the fundamentals of Vue.js through numerous practical examples</li><li>Piece together complex web interfaces using the Vue.js component system</li><li>Use Webpack and Babel to enhance your development workflow</li><li>Manage your application's state using Vuex and see how to structure your projects according to best practices</li><li>Seamlessly implement routing in your single page applications using Vue Router</li><li>Find out how to use Vue.js with a variety of technologies such as Node.js, Electron, Socket.io, Firebase, and HorizonDB by building complete applications</li></ul>",
+      descEN:
+        "<p>Vue.js is an open source JavaScript library for building modern, interactive web applications. With a rapidly growing community and a strong ecosystem, Vue.js makes developing complex single page applications a breeze. Its component-based approach, intuitive API, blazing fast core, and compact size make Vue.js a great solution to craft your next front-end application.</p><p>From basic to advanced recipes, this book arms you with practical solutions to common tasks when building an application using Vue. We start off by exploring the fundamentals of Vue.js: its reactivity system, data-binding syntax, and component-based architecture through practical examples.</p><p>After that, we delve into integrating Webpack and Babel to enhance your development workflow using single file components. Finally, we take an in-depth look at Vuex for state management and Vue Router to route in your single page applications, and integrate a variety of technologies ranging from Node.js to Electron, and Socket.io to Firebase and HorizonDB.</p><p>This book will provide you with the best practices as determined by the Vue.js community.</p><p>What you will learn</p><ul><li>Understand the fundamentals of Vue.js through numerous practical examples</li><li>Piece together complex web interfaces using the Vue.js component system</li><li>Use Webpack and Babel to enhance your development workflow</li><li>Manage your application's state using Vuex and see how to structure your projects according to best practices</li><li>Seamlessly implement routing in your single page applications using Vue Router</li><li>Find out how to use Vue.js with a variety of technologies such as Node.js, Electron, Socket.io, Firebase, and HorizonDB by building complete applications</li></ul>",
+      tag: ["2", "14", "4", "15", "21", "18"],
+      pictureRU:
+        "https://d188rgcu4zozwl.cloudfront.net/content/B01N6VAO4P/resources/172616807",
+      pictureEN:
+        "https://d188rgcu4zozwl.cloudfront.net/content/B01N6VAO4P/resources/172616807"
+    },
+    {
+      id: "44",
+      titleRU: "Vue.js: Up and Running",
+      titleEN: "Vue.js: Up and Running",
+      authorsRU: "Каллум Макрей",
+      authorsEN: "Callum Macrae",
+      linkRU: {
+        Amazon:
+          "https://www.amazon.com/Vue-js-Running-Building-Accessible-Performant/dp/1491997249/",
+        "O'Reilly": "http://shop.oreilly.com/product/0636920103455.do"
+      },
+      linkEN: {
+        Amazon:
+          "https://www.amazon.com/Vue-js-Running-Building-Accessible-Performant/dp/1491997249/",
+        "O'Reilly": "http://shop.oreilly.com/product/0636920103455.do"
+      },
+      lengthRU: "174",
+      lengthEN: "174",
+      lang: ["English"],
+      date: "2018",
+      free: false,
+      descRU:
+        "<p>Get a brisk introduction to building fast, interactive single-page web applications with Vue.js, the popular JavaScript framework that organizes and simplifies web development. With this practical guide, you’ll quickly move from basics to custom components and advanced features—including JSX, the JavaScript syntax extension.</p><p>Author Callum Macrae shows you how to use the most useful libraries in the Vue ecosystem, such as vue-router for routing, vuex for state management, and vue-test-utils for testing. If you’re a frontend developer familiar with JavaScript, HTML, and CSS, this book will show you how to develop a fully featured web application using Vue.</p><ul><li>Learn Vue.js basics, including its use of templates to display data on a page</li><li>Set up Vue projects from scratch, or use vue-cli to set up from a template</li><li>Create a maintainable codebase by splitting code into self-contained components</li><li>Discover how Vue.js works with CSS to style your websites and applications</li><li>Use render functions and JSX, rather than templates, to determine what Vue displays</li><li>Control how code is executed and displayed with vue-router</li><li>Manage state in one centralized place with the Vuex library</li><li>Write unit tests to ensure your Vue components don’t break in the future</li></ul>",
+      descEN:
+        "<p>Get a brisk introduction to building fast, interactive single-page web applications with Vue.js, the popular JavaScript framework that organizes and simplifies web development. With this practical guide, you’ll quickly move from basics to custom components and advanced features—including JSX, the JavaScript syntax extension.</p><p>Author Callum Macrae shows you how to use the most useful libraries in the Vue ecosystem, such as vue-router for routing, vuex for state management, and vue-test-utils for testing. If you’re a frontend developer familiar with JavaScript, HTML, and CSS, this book will show you how to develop a fully featured web application using Vue.</p><ul><li>Learn Vue.js basics, including its use of templates to display data on a page</li><li>Set up Vue projects from scratch, or use vue-cli to set up from a template</li><li>Create a maintainable codebase by splitting code into self-contained components</li><li>Discover how Vue.js works with CSS to style your websites and applications</li><li>Use render functions and JSX, rather than templates, to determine what Vue displays</li><li>Control how code is executed and displayed with vue-router</li><li>Manage state in one centralized place with the Vuex library</li><li>Write unit tests to ensure your Vue components don’t break in the future</li></ul>",
+      tag: ["2", "14", "21", "27", "19"],
+      pictureRU:
+        "https://covers.oreillystatic.com/images/0636920103455/lrg.jpg",
+      pictureEN: "https://covers.oreillystatic.com/images/0636920103455/lrg.jpg"
+    },
+    {
+      id: "45",
+      titleRU: "jQuery в действии",
+      titleEN: "jQuery in Action",
+      authorsRU: "Беэр Бибо, Иегуда Кац, Аурелио де Роза",
+      authorsEN: "Bear Bibeault, Yehuda Katz, Aurelio De Rosa",
+      linkRU: {
+        OZON: "https://www.ozon.ru/context/detail/id/141523573/"
+      },
+      linkEN: {
+        Amazon:
+          "https://www.amazon.com/jQuery-Action-Bear-Bibeault/dp/1617292079/"
+      },
+      lengthRU: "528",
+      lengthEN: "504",
+      lang: ["English", "Русский"],
+      date: "2015",
+      free: false,
+      descRU:
+        '<p>Третье издание книги "jQuery в действии" - это динамичное и исчерпывающее руководство по библиотеке jQuery. В книге рассматриваются задачи, с которыми приходится сталкиваться при реализации практически любого веб-проекта. Книга ориентирована на читателей, обладающих минимальным опытом JavaScript, содержит новые примеры и упражнения, а также глубоко и практично раскрывает темы, связанные с этой библиотекой. Вы узнаете, как делать обход HTML-документов, обрабатывать события, создавать анимацию, писать плагины, и даже освоите модульное тестирование кода. Уникальные лабораторные работы помогают закрепить каждую концепцию на реальных примерах кода. В книгу добавлено несколько новых глав, из которых вы узнаете, как работать с новейшими фреймворками и одностраничными приложениями.</p>',
+      descEN:
+        "<p>jQuery in Action, Third Edition, is a fast-paced and complete guide to jQuery, focused on the tasks you'll face in nearly any web dev project. Written for readers with minimal JavaScript experience, this revised edition adds new examples and exercises, along with the deep and practical coverage you expect from an In Action book. You'll learn how to traverse HTML documents, handle events, perform animations, write plugins, and even unit test your code. The unique lab pages anchor each concept with real-world code. Several new chapters teach you how to interact with other tools and frameworks to build modern single-page web applications.</p><p>Purchase of the print book includes a free eBook in PDF, Kindle, and ePub formats from Manning Publications.</p><p><b>About the Technology</b></p><p>Thanks to jQuery, no one remembers the bad old days when programmers manually managed browser inconsistencies, CSS selectors support, and DOM navigation, and when every animation was a frustrating exercise in raw JavaScript. The elegant, intuitive jQuery library beautifully manages these concerns, and jQuery 3 adds even more features to make your life as a web developer smooth and productive.</p><p><b>About the Book</b></p><p>jQuery in Action, Third Edition, is a fast-paced guide to jQuery, focused on the tasks you'll face in nearly any web dev project. In it, you'll learn how to traverse the DOM, handle events, perform animations, write jQuery plugins, perform Ajax requests, and even unit test your code. Its unique Lab Pages anchor each concept in real-world code. This expanded Third Edition adds new chapters that teach you how to interact with other tools and frameworks and build modern single-page web applications.</p><ul><li>Updated for jQuery 3</li><li>DOM manipulation and event handling</li><li>Animations and effects</li><li>Advanced topics including Unit Testing and Promises</li><li>Practical examples and labs</li></ul>",
+      tag: ["1", "2", "16", "18"],
+      pictureRU: "https://ozon-st.cdn.ngenix.net/multimedia/1019609580.jpg",
+      pictureEN:
+        "https://images-na.ssl-images-amazon.com/images/I/51yeevyIBuL._SX396_BO1,204,203,200_.jpg"
+    },
+    {
+      id: "46",
+      titleRU: "JavaScript и jQuery. Исчерпывающее руководство",
+      titleEN: "JavaScript & jQuery: The Missing Manual",
+      authorsRU: "Дэвид Сойер Макфарланд",
+      authorsEN: "David Sawyer McFarland",
+      linkRU: {
+        OZON: "https://www.ozon.ru/context/detail/id/33835343/"
+      },
+      linkEN: {
+        Amazon:
+          "https://www.amazon.com/JavaScript-jQuery-David-Sawyer-McFarland/dp/1491947071/"
+      },
+      lengthRU: "880",
+      lengthEN: "686",
+      lang: ["English", "Русский"],
+      date: "2014",
+      free: false,
+      descRU:
+        "<p>Язык программирования JavaScript позволяет усовершенствовать ваши веб-страницы с помощью анимации, интерактивных элементов и визуальных эффектов, но его не так просто изучить и освоить. Новое, обновленное и расширенное издание уже ставшей классикой книги доступно объясняет основы языка JavaScript и показывает, как можно экономить время и силы с помощью библиотеки jQuery, содержащей готовые фрагменты кода JavaScript, и новейшего плагина jQuery UI. Прочитав эту книгу вы сможете:</p><ul><li>Сделать свои страницы интерактивными. Используйте библиотеку jQuery для создания интерактивных элементов, реагирующих на действия посетителя.</li><li>Освоить новейший плагин jQuery UI. Улучшайте интерфейс, используя панели с вкладками, диалоговые окна, панели для выбора дат и другие виджеты.</li><li>Создавать удобные формы. Собирайте данные посетителей, помогайте покупателям осуществлять покупки и позволяйте участникам оставлять комментарии.</li><li>Применять технологию Ajax. Организуйте обмен данными между веб-страницами и веб-сервером без необходимости перезагрузки страниц. </li><li>Углубить свои знания. Используйте редактор ThemeRoller для настройки виджетов. Избегайте типичных ошибок, свойственных начинающим программистам. </li></ul><p>Дэвид МакФарланд — президент компании McFarland Media, около 20 лет занимается созданием сайтов и их управлением. Он преподавал в Калифорнийском университете в Беркли и в Портлендском государственном университете. Дэвид написал более 15 книг компьютерной тематике, в том числе по CSS и JavaScript.</p>",
+      descEN:
+        "<p>JavaScript lets you supercharge your HTML with animation, interactivity, and visual effects—but many web designers find the language hard to learn. This easy-to-read guide not only covers JavaScript basics, but also shows you how to save time and effort with the jQuery and jQuery UI libraries of prewritten JavaScript code. You’ll build web pages that feel and act like desktop programs—with little or no programming.</p><p>The important stuff you need to know:</p><ul><li>Pull back the curtain on JavaScript. Learn how to build a basic program with this language.</li><li>Get up to speed on jQuery. Quickly assemble JavaScript programs that work well on multiple web browsers.</li><li>Transform your user interface. Learn jQuery UI, the JavaScript library for interface features like design themes and controls.</li><li>Make your pages interactive. Create JavaScript events that react to visitor actions.</li><li>Use animations and effects. Build drop-down navigation menus, pop-ups, automated slideshows, and more.</li><li>Collect data with web forms. Create easy-to-use forms that ensure more accurate visitor responses.</li><li>Practice with living examples. Get step-by-step tutorials for web projects you can build yourself.</li></ul>",
+      tag: ["1", "2", "16", "20"],
+      pictureRU: "https://ozon-st.cdn.ngenix.net/multimedia/1016412966.jpg",
+      pictureEN: "https://covers.oreillystatic.com/images/0636920032663/lrg.jpg"
+    },
+    {
+      id: "47",
+      titleRU: "TypeScript High Performance",
+      titleEN: "TypeScript High Performance",
+      authorsRU: "Ajinkya Kher",
+      authorsEN: "Ajinkya Kher",
+      linkRU: {
+        Amazon:
+          "https://www.amazon.com/TypeScript-High-Performance-Ajinkya-Kher/dp/1785288644/"
+      },
+      linkEN: {
+        Amazon:
+          "https://www.amazon.com/TypeScript-High-Performance-Ajinkya-Kher/dp/1785288644/"
+      },
+      lengthRU: "230",
+      lengthEN: "230",
+      lang: ["English"],
+      date: "2017",
+      free: false,
+      descRU: "",
+      descEN:
+        "<p><b>Key Features</b></p><ul><li>Efficiently use Data Structures, Language Constructs, & Handle Asynchrony</li><li>Monitor the performance, Code Quality, & Resource Optimizations</li><li>Build & Deploy Strategies for Large Scale TypeScript Projects</li></ul><p><b>Book Description</b></p><p>In a world where a tiny decrease in frames per second impacts customer engagement greatly, writing highly scalable code is more of a necessity than a luxury. Using TypeScript you get type checking during development. This gives you the power to write optimized code quickly. This book is also a solid tool to those who're curious to understand the impact of performance in production, and it is of the greatest aid to the proactive developers who like to be cognizant of and avoid the classic pitfalls while coding.</p><p>The book will starts with explaining the efficient implementation of basic data Structures, data types, and flow control. You will then learn efficient use of advanced language constructs and asynchronous programming. Further, you'll learn different configurations available with TSLint to improve code quality and performance. Next, we'll introduce you to the concepts of profiling and then we deep dive into profiling JS with several tools such as firebug, chrome, fiddler. Finally, you'll learn techniques to build and deploy real world large scale TypeScript applications.</p><p><b>What you will learn</b></p><ul><li>Learn about the critical rendering path, and the performance metrics involved along the same</li><li>Explore the detailed inner intricacies of a web browser</li><li>Build a large scale front end applications and learn the thought process behind architecting such an effort</li><li>Understand the challenges of scalability and how TypeScript renders itself</li></ul>",
+      tag: ["2", "12"],
+      pictureRU:
+        "https://d188rgcu4zozwl.cloudfront.net/content/B071VVFD4D/resources/749616172",
+      pictureEN:
+        "https://d188rgcu4zozwl.cloudfront.net/content/B071VVFD4D/resources/749616172"
+    },
+    {
+      id: "48",
+      titleRU: "Using SVG with CSS3 and HTML5",
+      titleEN: "Using SVG with CSS3 and HTML5",
+      authorsRU: "Курт Кэгл, Амелия Беллами-Ройдс, Дадли Стори",
+      authorsEN: "Kurt Cagle, Amelia Bellamy-Royds, Dudley Storey",
+      linkRU: {
+        Amazon:
+          "https://www.amazon.com/Using-SVG-CSS3-HTML5-Graphics/dp/1491921978/",
+        "O'Reilly": "http://shop.oreilly.com/product/0636920037972.do"
+      },
+      linkEN: {
+        Amazon:
+          "https://www.amazon.com/Using-SVG-CSS3-HTML5-Graphics/dp/1491921978/",
+        "O'Reilly": "http://shop.oreilly.com/product/0636920037972.do"
+      },
+      lengthRU: "844",
+      lengthEN: "844",
+      lang: ["English"],
+      date: "2017",
+      free: false,
+      descRU:
+        "<p>Using Scalable Vector Graphics (SVG) for illustrations only scratches the surface of this format’s potential on the web. With this practical guide, you’ll learn how to use SVG not only for illustrations but also as graphical documents that you can integrate into complex HTML5 web pages, and style with custom CSS. Web developers will discover ways to adapt designs by adding data based graphics, dynamic styles, interaction, or animation.</p><p>Divided into five parts, this book includes:</p><ul><li>SVG on the web: Understand how SVG works with HTML, CSS, and JavaScript to define graphics</li><li>Drawing with markup: Learn the vector language of x and y coordinates that let SVG create basic and custom shapes</li><li>Putting graphics in their place: Use the coordinate system to draw SVG shapes and text at different scales and positions</li><li>Artistic touches: Explore how color is used, how strokes are created and manipulated, and how graphical effects like filters, clipping, and masking are applied</li><li>SVG as an application: Make your graphic more accessible to humans and computers, and learn how to make it interactive or animated</li></ul>",
+      descEN:
+        "<p>Using Scalable Vector Graphics (SVG) for illustrations only scratches the surface of this format’s potential on the web. With this practical guide, you’ll learn how to use SVG not only for illustrations but also as graphical documents that you can integrate into complex HTML5 web pages, and style with custom CSS. Web developers will discover ways to adapt designs by adding data based graphics, dynamic styles, interaction, or animation.</p><p>Divided into five parts, this book includes:</p><ul><li>SVG on the web: Understand how SVG works with HTML, CSS, and JavaScript to define graphics</li><li>Drawing with markup: Learn the vector language of x and y coordinates that let SVG create basic and custom shapes</li><li>Putting graphics in their place: Use the coordinate system to draw SVG shapes and text at different scales and positions</li><li>Artistic touches: Explore how color is used, how strokes are created and manipulated, and how graphical effects like filters, clipping, and masking are applied</li><li>SVG as an application: Make your graphic more accessible to humans and computers, and learn how to make it interactive or animated</li></ul>",
+      tag: ["2", "24", "29", "20"],
+      pictureRU:
+        "https://covers.oreillystatic.com/images/0636920037972/lrg.jpg",
+      pictureEN: "https://covers.oreillystatic.com/images/0636920037972/lrg.jpg"
+    },
+    {
+      id: "49",
+      titleRU: "SVG Animations",
+      titleEN: "SVG Animations",
+      authorsRU: "Сара Дреснер",
+      authorsEN: "Sarah Drasner",
+      linkRU: {
+        Amazon:
+          "https://www.amazon.com/SVG-Animations-Implementations-Responsive-Animation/dp/1491939702/",
+        "O'Reilly": "http://shop.oreilly.com/product/0636920045335.do"
+      },
+      linkEN: {
+        Amazon:
+          "https://www.amazon.com/SVG-Animations-Implementations-Responsive-Animation/dp/1491939702/",
+        "O'Reilly": "http://shop.oreilly.com/product/0636920045335.do"
+      },
+      lengthRU: "246",
+      lengthEN: "246",
+      lang: ["English"],
+      date: "2017",
+      free: false,
+      descRU:
+        "<p>SVG is extremely powerful, with its reduced HTTP requests and crispness on any display. It becomes increasingly more interesting as you explore its capabilities for responsive animation and performance boons. When you animate SVG, you must be aware of normal image traits like composition, color, implementation, and optimization. But when you animate, it increases the complexity of each of these factors exponentially.</p><p>This practical book takes a deep dive into how you can to solve these problems with stability, performance, and creativity in mind.</p><ul><li>Learn how to make SVG cross-browser compatible, backwards compatible, optimized, and responsive</li><li>Plan and debug animation</li><li>Make a complex animation responsive, as many sites are responsive</li><li>Profile each animation technique in terms of performance so that you know what you're getting in to with each library or native technology</li></ul>",
+      descEN:
+        "<p>SVG is extremely powerful, with its reduced HTTP requests and crispness on any display. It becomes increasingly more interesting as you explore its capabilities for responsive animation and performance boons. When you animate SVG, you must be aware of normal image traits like composition, color, implementation, and optimization. But when you animate, it increases the complexity of each of these factors exponentially.</p><p>This practical book takes a deep dive into how you can to solve these problems with stability, performance, and creativity in mind.</p><ul><li>Learn how to make SVG cross-browser compatible, backwards compatible, optimized, and responsive</li><li>Plan and debug animation</li><li>Make a complex animation responsive, as many sites are responsive</li><li>Profile each animation technique in terms of performance so that you know what you're getting in to with each library or native technology</li></ul>",
+      tag: ["2", "5", "29", "20"],
+      pictureRU:
+        "https://covers.oreillystatic.com/images/0636920045335/lrg.jpg",
+      pictureEN: "https://covers.oreillystatic.com/images/0636920045335/lrg.jpg"
+    },
+    {
+      id: "50",
+      titleRU: "SVG Essentials",
+      titleEN: "SVG Essentials",
+      authorsRU: "Дж. Айзенберг, Амелия Беллами-Ройдс",
+      authorsEN: "J. Eisenberg, Amelia Bellamy-Royds",
+      linkRU: {
+        Amazon:
+          "https://www.amazon.com/SVG-Essentials-Producing-Scalable-Graphics/dp/1449374352/",
+        "O'Reilly": "http://shop.oreilly.com/product/0636920032335.do"
+      },
+      linkEN: {
+        Amazon:
+          "https://www.amazon.com/SVG-Essentials-Producing-Scalable-Graphics/dp/1449374352/",
+        "O'Reilly": "http://shop.oreilly.com/product/0636920032335.do"
+      },
+      lengthRU: "360",
+      lengthEN: "360",
+      lang: ["English"],
+      date: "2014",
+      free: false,
+      descRU:
+        "<p>Learn the essentials of Scalable Vector Graphics, the mark-up language used by most vector drawing programs and interactive web graphics tools. SVG Essentials takes you through SVG’s capabilities, beginning with simple line drawings and moving through complicated features such as filters, transformations, gradients, and patterns.</p><p>This thoroughly updated edition includes expanded coverage of animation, interactive graphics, and scripting SVG. Interactive examples online make it easy for you to experiment with SVG features in your web browser. Geared toward experienced designers, this book also includes appendices that explain basic concepts such as XML markup and CSS styling, so even if you have no web design experience, you can start learning SVG.</p><ul><li>Create and style graphics to match your web design in a way that looks great when printed or displayed on high-resolution screens</li><li>Make your charts and decorative headings accessible to search engines and assistive technologies</li><li>Add artistic effects to your graphics, text, and photographs using SVG masks, filters, and transformations</li><li>Animate graphics with SVG markup, or add interactivity with CSS and JavaScript</li><li>Create SVG from existing vector data or XML data, using programming languages and XSLT</li></ul>",
+      descEN:
+        "<p>Learn the essentials of Scalable Vector Graphics, the mark-up language used by most vector drawing programs and interactive web graphics tools. SVG Essentials takes you through SVG’s capabilities, beginning with simple line drawings and moving through complicated features such as filters, transformations, gradients, and patterns.</p><p>This thoroughly updated edition includes expanded coverage of animation, interactive graphics, and scripting SVG. Interactive examples online make it easy for you to experiment with SVG features in your web browser. Geared toward experienced designers, this book also includes appendices that explain basic concepts such as XML markup and CSS styling, so even if you have no web design experience, you can start learning SVG.</p><ul><li>Create and style graphics to match your web design in a way that looks great when printed or displayed on high-resolution screens</li><li>Make your charts and decorative headings accessible to search engines and assistive technologies</li><li>Add artistic effects to your graphics, text, and photographs using SVG masks, filters, and transformations</li><li>Animate graphics with SVG markup, or add interactivity with CSS and JavaScript</li><li>Create SVG from existing vector data or XML data, using programming languages and XSLT</li></ul>",
+      tag: ["2", "24", "20", "29"],
+      pictureRU:
+        "https://covers.oreillystatic.com/images/0636920032335/lrg.jpg",
+      pictureEN: "https://covers.oreillystatic.com/images/0636920032335/lrg.jpg"
+    },
+    {
+      id: "51",
+      titleRU: "Programming 3D Applications with HTML5 and WebGL",
+      titleEN: "Programming 3D Applications with HTML5 and WebGL",
+      authorsRU: "Тони Паризи",
+      authorsEN: "Tony Parisi",
+      linkRU: {
+        Amazon:
+          "https://www.amazon.com/Programming-Applications-HTML5-WebGL-Visualization/dp/1449362966/",
+        "O'Reilly": "http://shop.oreilly.com/product/0636920029205.do"
+      },
+      linkEN: {
+        Amazon:
+          "https://www.amazon.com/Programming-Applications-HTML5-WebGL-Visualization/dp/1449362966/",
+        "O'Reilly": "http://shop.oreilly.com/product/0636920029205.do"
+      },
+      lengthRU: "404",
+      lengthEN: "404",
+      lang: ["English"],
+      date: "2014",
+      free: false,
+      descRU:
+        "<p>Create high-performance, visually stunning 3D applications for the Web, using HTML5 and related technologies such as CSS3 and WebGL—the emerging web graphics standard. With this book, you’ll learn how to use the tools, frameworks, and libraries for building 3D models and animations, mind-blowing visual effects, and advanced user interaction in both desktop and mobile browsers.</p><p>In two parts—Foundations and Application Development Techniques—author Tony Parisi provides a thorough grounding in theory and practice for designing everything from a simple 3D product viewer to immersive games and interactive training systems. Ideal for developers with Javascript and HTML experience.</p><ul><li>Explore HTML5 APIs and related technologies for creating 3D web graphics, including WebGL, Canvas, and CSS</li><li>Work with the popular JavaScript 3D rendering and animation libraries Three.js and Tween.js</li><li>Delve into the 3D content creation pipeline, and the modeling and animation tools for creating killer 3D content</li><li>Look into several game engines and frameworks for building 3D applications, including the author’s Vizi framework</li><li>Create 3D environments with multiple objects and complex interaction, using examples and supporting code</li><li>Examine the issues involved in building WebGL-based 3D applications for mobile browsers</li></ul>",
+      descEN:
+        "<p>Create high-performance, visually stunning 3D applications for the Web, using HTML5 and related technologies such as CSS3 and WebGL—the emerging web graphics standard. With this book, you’ll learn how to use the tools, frameworks, and libraries for building 3D models and animations, mind-blowing visual effects, and advanced user interaction in both desktop and mobile browsers.</p><p>In two parts—Foundations and Application Development Techniques—author Tony Parisi provides a thorough grounding in theory and practice for designing everything from a simple 3D product viewer to immersive games and interactive training systems. Ideal for developers with Javascript and HTML experience.</p><ul><li>Explore HTML5 APIs and related technologies for creating 3D web graphics, including WebGL, Canvas, and CSS</li><li>Work with the popular JavaScript 3D rendering and animation libraries Three.js and Tween.js</li><li>Delve into the 3D content creation pipeline, and the modeling and animation tools for creating killer 3D content</li><li>Look into several game engines and frameworks for building 3D applications, including the author’s Vizi framework</li><li>Create 3D environments with multiple objects and complex interaction, using examples and supporting code</li><li>Examine the issues involved in building WebGL-based 3D applications for mobile browsers</li></ul>",
+      tag: ["2", "7", "8", "22", "25", "29", "20"],
+      pictureRU:
+        "https://covers.oreillystatic.com/images/0636920029205/lrg.jpg",
+      pictureEN: "https://covers.oreillystatic.com/images/0636920029205/lrg.jpg"
+    },
+    {
+      id: "52",
+      titleRU: "WebGL. Программирование трехмерной графики",
+      titleEN:
+        "WebGL Programming Guide: Interactive 3D Graphics Programming with WebGL",
+      authorsRU: "Коичи Мацуда, Роджер Ли",
+      authorsEN: "Kouichi Matsuda, Rodger Lea",
+      linkRU: {
+        OZON: "https://www.ozon.ru/context/detail/id/31239396/"
+      },
+      linkEN: {
+        Amazon:
+          "https://www.amazon.com/WebGL-Programming-Guide-Interactive-Graphics/dp/0321902920/"
+      },
+      lengthRU: "494",
+      lengthEN: "552",
+      lang: ["English", "Русский"],
+      date: "2013",
+      free: false,
+      descRU:
+        "<p>WebGL является новой веб-технологией, позволяющей использовать в браузере преимущества аппаратного ускорения трехмерной графики без установки дополнительного программного обеспечения. WebGL основана на спецификации OpenGL и привносит новые концепции программирования трехмерной графики в веб- разработку. Снабженная большим количеством примеров, книга показывает, что овладеть технологией WebGL совсем несложно, несмотря на то, что она выглядит незнакомой и инородной. Каждая глава описывает один из важнейших аспектов программирования трехмерной графики и представляет разные варианты их реализации. Отдельные разделы, описывающие эксперименты с примерами программ, позволят читателю исследовать изучаемые концепции на практике.</p><p>Издание предназначено для программистов, желающих научиться использовать в своих веб-проектах 3D- графику.</p>",
+      descEN:
+        "<p>Using WebGL®, you can create sophisticated interactive 3D graphics inside web browsers, without plug-ins. WebGL makes it possible to build a new generation of 3D web games, user interfaces, and information visualization solutions that will run on any standard web browser, and on PCs, smartphones, tablets, game consoles, or other devices. WebGL Programming Guide will help you get started quickly with interactive WebGL 3D programming, even if you have no prior knowledge of HTML5, JavaScript, 3D graphics, mathematics, or OpenGL.</p><p>You’ll learn step-by-step, through realistic examples, building your skills as you move from simple to complex solutions for building visually appealing web pages and 3D applications with WebGL. Media, 3D graphics, and WebGL pioneers Dr. Kouichi Matsuda and Dr. Rodger Lea offer easy-to-understand tutorials on key aspects of WebGL, plus 100 downloadable sample programs, each demonstrating a specific WebGL topic.</p><p>You’ll move from basic techniques such as rendering, animating, and texturing triangles, all the way to advanced techniques such as fogging, shadowing, shader switching, and displaying 3D models generated by Blender or other authoring tools. This book won’t just teach you WebGL best practices, it will give you a library of code to jumpstart your own projects.</p><p>Coverage includes:</p><ul><li>WebGL’s origin, core concepts, features, advantages, and integration with other web standards</li><li>How <canvas> and basic WebGL functions work together to deliver 3D graphics</li><li>Shader development with OpenGL ES Shading Language (GLSL ES)</li><li>3D scene drawing: representing user views, controlling space volume, clipping, object creation, and perspective</li><li>Achieving greater realism through lighting and hierarchical objects</li><li>Advanced techniques: object manipulation, heads-up displays, alpha blending, shader switching, and more</li><li>Valuable reference appendixes covering key issues ranging from coordinate systems to matrices and shader loading to web browser settings</li></ul>",
+      tag: ["1", "2", "22", "25", "19", "29"],
+      pictureRU: "https://ozon-st.cdn.ngenix.net/multimedia/1011543755.jpg",
+      pictureEN:
+        "https://images-na.ssl-images-amazon.com/images/I/51bly7TR9rL._SX382_BO1,204,203,200_.jpg"
+    },
+    {
+      id: "53",
       titleRU: "Responsive Web Design with HTML5 and CSS3",
       titleEN: "Responsive Web Design with HTML5 and CSS3",
       authorsRU: "Бен Фрэйн",
@@ -1078,7 +1562,7 @@ const data = {
         "https://images-na.ssl-images-amazon.com/images/I/519G02FrC0L._SX404_BO1,204,203,200_.jpg"
     },
     {
-      id: "38",
+      id: "54",
       titleRU: "Learning Web Design",
       titleEN: "Learning Web Design",
       authorsRU: "Дженнифер Роббинс",
@@ -1188,13 +1672,6 @@ const data = {
       tagGroup: "tech",
       titleRU: "TypeScript",
       titleEN: "TypeScript",
-      language: "all"
-    },
-    {
-      id: "13",
-      tagGroup: "tech",
-      titleRU: "Flow",
-      titleEN: "Flow",
       language: "all"
     },
     {

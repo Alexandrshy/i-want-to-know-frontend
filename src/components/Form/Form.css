@@ -1,0 +1,86 @@
+.app-form-title {
+  margin: 0;
+  padding: 45px 0 75px;
+  font-size: 34px;
+  font-weight: 700;
+  line-height: 1.5;
+  text-align: center;
+}
+
+.app-form-wrapper {
+  max-width: 480px;
+  margin: 0 auto 90px;
+}
+
+.app-form-item {
+  margin-bottom: 30px;
+}
+
+.app-form-item--button {
+  margin-top: 40px;
+}
+
+.app-form-label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.app-form-label span,
+.app-form-label {
+  color: #dcdcdc;
+  font-size: 16px;
+}
+
+.app-form-input {
+  display: block;
+  width: 100%;
+  height: 50px;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 0px;
+  border: 1px solid #999;
+  background-color: #fff;
+}
+
+.app-form-textarea {
+  display: block;
+  width: 100%;
+  height: 160px;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 0px;
+  border: 1px solid #999;
+  background-color: #fff;
+  resize: none;
+}
+
+.app-form-button {
+  width: 170px;
+  height: 50px;
+  background-color: #fff;
+  border-radius: 0;
+  border: 1px solid #fff;
+  cursor: pointer;
+  transition: 0.3s all;
+}
+
+.app-form-button span {
+  font-size: 16px;
+  color: #333;
+  text-transform: uppercase;
+  transition: 0.3s all;
+}
+
+.app-form-button:focus,
+.app-form-button:hover {
+  background-color: transparent;
+}
+
+.app-form-button:focus span,
+.app-form-button:hover span {
+  color: #fff;
+}
+
+.app-form-status {
+  margin-top: 10px;
+}

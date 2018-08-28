@@ -40,3 +40,49 @@
   font-size: 18px;
   line-height: 1.5;
 }
+
+@media (max-width: 1320px) {
+  .app-faq-title {
+    padding: 35px 0 60px;
+    font-size: 28px;
+  }
+  .app-faq-list {
+    margin-bottom: 60px;
+  }
+}
+
+@media (max-width: 1000px) {
+  .app-faq-title {
+    padding: 25px 0 30px;
+    font-size: 26px;
+  }
+  .app-faq-item {
+    margin-bottom: 25px;
+  }
+  .app-faq-question {
+    padding-left: 25px;
+    margin-bottom: 10px;
+    font-size: 18px;
+    line-height: 1.4;
+  }
+  .app-faq-question:before {
+    left: 0;
+    transform: translate(0, 0);
+  }
+  .app-faq-answer {
+    font-size: 16px;
+    line-height: 1.4;
+  }
+  .app-faq-list {
+    margin-bottom: 45px;
+  }
+}
+
+@media (max-width: 700px) {
+  .app-faq-title {
+    font-size: 24px;
+  }
+  .app-faq-question {
+    font-size: 16px;
+  }
+}

@@ -28,3 +28,20 @@
   left: 0;
   width: 15px;
 }
+
+@media (max-width: 1000px) {
+  .app-link-main {
+    padding-left: 15px;
+    font-size: 16px;
+  }
+  .app-main-icon {
+    top: 3px;
+    width: 12px;
+  }
+}
+
+@media (max-width: 700px) {
+  .app-main-wrapper {
+    margin-top: 15px;
+  }
+}

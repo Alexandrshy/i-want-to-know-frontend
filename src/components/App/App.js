@@ -11,6 +11,7 @@ import AboutPage from "../../pages/AboutPage";
 import FaqPage from "../../pages/FaqPage";
 import ContactPage from "../../pages/ContactPage";
 import BookPage from "../../pages/BookPage";
+import AddBookPage from "../../pages/AddBookPage";
 import BooksPanelContainer from "../../containers/BooksPanelContainer";
 import NotFound from "../../pages/NotFound";
 import messages from "../../constants/messages";
@@ -51,6 +52,7 @@ class App extends PureComponent<Props> {
                 <Route path="/faq" component={FaqPage} />
                 <Route path="/contacts" component={ContactPage} />
                 <Route path="/book/:book" component={BookPage} />
+                <Route path="/addBook" component={AddBookPage} />
                 <Route component={NotFound} />
               </Switch>
             </main>
