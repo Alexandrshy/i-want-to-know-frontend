@@ -13,7 +13,7 @@ const Header = () => {
       <div className="app-header-container">
         <ul className="app-header-list-link">
           <li className="app-header-item-link">
-            <Link className="app-header-link" to="/form">
+            <Link className="app-header-link" to="/addBook">
               <FormattedMessage id="app-link-add-book" />
             </Link>
           </li>

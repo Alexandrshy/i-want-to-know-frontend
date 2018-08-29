@@ -84,3 +84,42 @@
 .app-form-status {
   margin-top: 10px;
 }
+
+@media (max-width: 1320px) {
+  .app-form-title {
+    padding: 35px 0 60px;
+    font-size: 28px;
+  }
+  .app-form-item {
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 1000px) {
+  .app-form-title {
+    padding: 25px 0 30px;
+    font-size: 26px;
+  }
+  .app-form-item {
+    margin-bottom: 15px;
+  }
+  .app-form-input {
+    height: 40px;
+    padding: 10px;
+  }
+  .app-form-textarea {
+    height: 100px;
+    padding: 10px;
+  }
+  .app-form-label span,
+  .app-form-label {
+    margin-bottom: 5px;
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 700px) {
+  .app-form-title {
+    font-size: 24px;
+  }
+}

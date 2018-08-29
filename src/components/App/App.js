@@ -13,8 +13,9 @@ import ContactPage from "../../pages/ContactPage";
 import BookPage from "../../pages/BookPage";
 import AddBookPage from "../../pages/AddBookPage";
 import BooksPanelContainer from "../../containers/BooksPanelContainer";
-import NotFound from "../../pages/NotFound";
+import NotFoundPage from "../../pages/NotFoundPage";
 import messages from "../../constants/messages";
+import AppScrollToTop from "./AppScrollToTop";
 import "./App.css";
 
 type Props = {
@@ -32,7 +33,7 @@ class App extends PureComponent<Props> {
     this.props.onSetFilter(this.props.location.search);
   }
 
-  componentDidUpdate() {
+  componentDidUpdate(prevProps) {
     if (this.props.location.pathname === "/") {
       this.props.onSetFilter(this.props.location.search);
     }
@@ -42,23 +43,25 @@ class App extends PureComponent<Props> {
     const { lang } = this.props;
     return (
       <IntlProvider locale={lang} messages={messages[lang]}>
-        <div className="app-content">
-          <div className="app-content-wrapper">
-            <Header />
-            <main className="app-main app-container">
-              <Switch>
-                <Route exact path="/" component={HomePage} />
-                <Route path="/about" component={AboutPage} />
-                <Route path="/faq" component={FaqPage} />
-                <Route path="/contacts" component={ContactPage} />
-                <Route path="/book/:book" component={BookPage} />
-                <Route path="/addBook" component={AddBookPage} />
-                <Route component={NotFound} />
-              </Switch>
-            </main>
+        <AppScrollToTop>
+          <div className="app-content">
+            <div className="app-content-wrapper">
+              <Header />
+              <main className="app-main app-container">
+                <Switch>
+                  <Route exact path="/" component={HomePage} />
+                  <Route path="/about" component={AboutPage} />
+                  <Route path="/faq" component={FaqPage} />
+                  <Route path="/contacts" component={ContactPage} />
+                  <Route path="/book/:book" component={BookPage} />
+                  <Route path="/addBook" component={AddBookPage} />
+                  <Route component={NotFoundPage} />
+                </Switch>
+              </main>
+            </div>
+            <Footer />
           </div>
-          <Footer />
-        </div>
+        </AppScrollToTop>
       </IntlProvider>
     );
   }

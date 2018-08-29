@@ -82,6 +82,12 @@
   .app-faq-title {
     font-size: 24px;
   }
+  .app-faq-item {
+    margin-bottom: 20px;
+  }
+  .app-faq-question {
+    padding-left: 20px;
+  }
   .app-faq-question {
     font-size: 16px;
   }

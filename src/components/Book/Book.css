@@ -115,3 +115,82 @@
 .app-book-link-item:last-child::after {
   display: none;
 }
+
+@media (max-width: 1320px) {
+  .app-book-title {
+    padding: 35px 0 60px;
+    font-size: 28px;
+  }
+  .app-book-text {
+    margin-bottom: 60px;
+  }
+}
+
+@media (max-width: 1000px) {
+  .app-book-title {
+    padding: 25px 0 30px;
+    font-size: 26px;
+  }
+  .app-book-photo-wrapper {
+    margin-bottom: 35px;
+  }
+  .app-book-text {
+    margin-bottom: 45px;
+  }
+  .app-book-photo {
+    width: 260px;
+    padding-right: 30px;
+  }
+  .app-book-desk p {
+    margin-bottom: 15px;
+    font-size: 16px;
+    line-height: 1.4;
+  }
+  .app-book-desk ol,
+  .app-book-desk ul {
+    margin-top: 20px;
+    margin-bottom: 25px;
+  }
+  .app-book-desk ol li,
+  .app-book-desk ul li {
+    margin-left: 25px;
+    margin-bottom: 15px;
+    padding-left: 0;
+    font-size: 16px;
+    line-height: 1.4;
+  }
+  .app-book-inform-item {
+    margin-bottom: 15px;
+    font-size: 16px;
+    line-height: 1.4;
+  }
+  .app-book-text h3 {
+    margin-top: 30px;
+  }
+}
+
+@media (max-width: 700px) {
+  .app-book-title {
+    font-size: 24px;
+  }
+  .app-book-text h3 {
+    margin-top: 20px;
+    font-size: 16px;
+  }
+  .app-book-photo-wrapper {
+    display: block;
+    margin-bottom: 20px;
+  }
+  .app-book-photo {
+    width: 100%;
+    padding-right: 0;
+    margin-bottom: 25px;
+  }
+  .app-book-photo img {
+    max-width: 320px;
+    margin: auto;
+  }
+  .app-book-inform {
+    width: 100%;
+  }
+}

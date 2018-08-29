@@ -15,7 +15,7 @@ const FormWrapper = ({ history }: Props) => {
   return (
     <div className="app-form">
       <LinkMainContainer history={history} />
-      <h1 className="app-faq-title">
+      <h1 className="app-form-title">
         <FormattedMessage id="app-footer-link-2" />
       </h1>
       <div className="app-form-wrapper">

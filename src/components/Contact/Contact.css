@@ -54,6 +54,9 @@
     padding: 25px 0 30px;
     font-size: 26px;
   }
+  .app-contact-item {
+    margin-bottom: 15px;
+  }
   .app-contact-text {
     margin-bottom: 45px;
   }
@@ -62,5 +65,16 @@
 @media (max-width: 700px) {
   .app-contact-title {
     font-size: 24px;
+  }
+  .app-contact-list {
+    margin: 20px 0;
+  }
+  .app-contact-item {
+    padding-left: 20px;
+  }
+  .app-contact-text p,
+  .app-contact-text li {
+    font-size: 16px;
+    line-height: 1.4;
   }
 }
