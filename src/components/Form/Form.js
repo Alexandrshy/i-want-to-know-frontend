@@ -20,20 +20,16 @@ class Form extends PureComponent {
 
   handleSubmit(event) {
     event.preventDefault();
-    let fields = [
-      "<b>Name</b>: " + this.state["app-form-name"],
-      "<b>Email</b>: " + this.state["app-form-email"],
-      this.state["app-form-message"]
-    ];
-    let msg = "";
-    fields.forEach(field => {
-      msg += field + "\n";
-    });
-    msg = encodeURI(msg);
-    axios
-      .post(
-        `https://api.telegram.org/bot630282563:AAEfK5_OzvBZPNT7HZy8-gCH1vZ1s9OrP9s/sendMessage?chat_id=-305897377&parse_mode=html&text=${msg}`
-      )
+    let bodyFormData = new URLSearchParams();
+    bodyFormData.append("name", this.state["app-form-name"]);
+    bodyFormData.append("email", this.state["app-form-email"]);
+    bodyFormData.append("message", this.state["app-form-message"]);
+    axios({
+      method: "post",
+      url: "//localhost:8000/mes",
+      data: bodyFormData,
+      config: { headers: { "Content-Type": "multipart/form-data" } }
+    })
       .then(function(response) {
         console.log(response);
       })
@@ -94,7 +90,7 @@ class Form extends PureComponent {
           <button className="app-form-button">
             <FormattedMessage id="app-form-button-send" />
           </button>
-          <p className="app-form-status"></p>
+          <p className="app-form-status" />
         </div>
       </form>
     );
